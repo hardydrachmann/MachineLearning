@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -68,7 +70,18 @@ namespace WindowsFormsML
                 inputDTO.Genre = cbGenre.Text;
 
                 // TEST skal bruge en DTO på web apiet i stedet
-                Prediction prediction = dao.GetPredictions(inputDTO);
+                var results = dao.GetPredictions(inputDTO);
+            
+                JObject obj = JObject.Parse(results);
+
+                foreach (JProperty prop in obj.Properties())
+                {
+                tbGenre.Text = prop.Name + " " + prop.Value;
+                    
+                }
+
+
+
             }
             else
             {

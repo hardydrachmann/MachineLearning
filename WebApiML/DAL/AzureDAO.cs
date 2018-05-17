@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -15,7 +16,7 @@ namespace WebApiML.DAL
     // Install-Package Microsoft.AspNet.WebApi.Client
     public class AzureDAO
     {
-        public async Task<PredictionDTO> InvokeRequestResponseService(InputDTO inputDTO)
+        public async Task<HttpResponseMessage> InvokeRequestResponseService(InputDTO inputDTO)
         {
             using (var client = new HttpClient())
             {
@@ -87,25 +88,26 @@ namespace WebApiML.DAL
 
                 if (response.IsSuccessStatusCode)
                 {
-                    string result = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    Console.WriteLine("Result: {0}", result);
-                    PredictionDTO prediction = new PredictionDTO();
-                    prediction = JsonConvert.DeserializeObject<PredictionDTO>(result);
-                    return prediction;
+                    //string result = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    //Console.WriteLine("Result: {0}", result);
+                    //JObject json = JObject.Parse(result);
+                    //PredictionDTO prediction = new PredictionDTO();
+                    //prediction = JsonConvert.DeserializeObject<PredictionDTO>(result);
+                    return response;
                 }
                 else
                 {
-                    Console.WriteLine(string.Format("The request failed with status code: {0}", response.StatusCode));
+                    //Console.WriteLine(string.Format("The request failed with status code: {0}", response.StatusCode));
 
                     // Print the headers - they include the requert ID and the timestamp,
                     // which are useful for debugging the failure
-                    Console.WriteLine(response.Headers.ToString());
+                    //Console.WriteLine(response.Headers.ToString());
 
-                    string responseContent = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    Console.WriteLine(responseContent);
-                    PredictionDTO prediction = new PredictionDTO();
-                    prediction = JsonConvert.DeserializeObject<PredictionDTO>(responseContent);
-                    return prediction;
+                    //string responseContent = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    //Console.WriteLine(responseContent);
+                    //PredictionDTO prediction = new PredictionDTO();
+                    //prediction = JsonConvert.DeserializeObject<PredictionDTO>(responseContent);
+                    return response;
                 }
             }
         }

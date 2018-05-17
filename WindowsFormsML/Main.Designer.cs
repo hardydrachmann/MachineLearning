@@ -48,7 +48,9 @@ namespace WindowsFormsML
             this.cbMovie = new System.Windows.Forms.ComboBox();
             this.cbGenre = new System.Windows.Forms.ComboBox();
             this.tbBirthYear = new System.Windows.Forms.TextBox();
+            this.tbGenre = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCalculate
@@ -63,12 +65,12 @@ namespace WindowsFormsML
             // 
             // cbSex
             // 
+            this.cbSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSex.FormattingEnabled = true;
             this.cbSex.Location = new System.Drawing.Point(88, 135);
             this.cbSex.Name = "cbSex";
             this.cbSex.Size = new System.Drawing.Size(221, 21);
             this.cbSex.TabIndex = 1;
-            this.cbSex.DropDownStyle = ComboBoxStyle.DropDownList;
             // 
             // btnMinimize
             // 
@@ -159,6 +161,7 @@ namespace WindowsFormsML
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.tbGenre);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -189,30 +192,30 @@ namespace WindowsFormsML
             // 
             // cbClubMember
             // 
+            this.cbClubMember.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbClubMember.FormattingEnabled = true;
             this.cbClubMember.Location = new System.Drawing.Point(88, 170);
             this.cbClubMember.Name = "cbClubMember";
             this.cbClubMember.Size = new System.Drawing.Size(221, 21);
             this.cbClubMember.TabIndex = 13;
-            this.cbClubMember.DropDownStyle = ComboBoxStyle.DropDownList;
             // 
             // cbMovie
             // 
+            this.cbMovie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMovie.FormattingEnabled = true;
             this.cbMovie.Location = new System.Drawing.Point(88, 207);
             this.cbMovie.Name = "cbMovie";
             this.cbMovie.Size = new System.Drawing.Size(221, 21);
             this.cbMovie.TabIndex = 14;
-            this.cbMovie.DropDownStyle = ComboBoxStyle.DropDownList;
             // 
             // cbGenre
             // 
+            this.cbGenre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGenre.FormattingEnabled = true;
             this.cbGenre.Location = new System.Drawing.Point(88, 238);
             this.cbGenre.Name = "cbGenre";
             this.cbGenre.Size = new System.Drawing.Size(221, 21);
             this.cbGenre.TabIndex = 15;
-            this.cbGenre.DropDownStyle = ComboBoxStyle.DropDownList;
             // 
             // tbBirthYear
             // 
@@ -220,6 +223,16 @@ namespace WindowsFormsML
             this.tbBirthYear.Name = "tbBirthYear";
             this.tbBirthYear.Size = new System.Drawing.Size(221, 20);
             this.tbBirthYear.TabIndex = 16;
+            // 
+            // tbGenre
+            // 
+            this.tbGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbGenre.Location = new System.Drawing.Point(0, 0);
+            this.tbGenre.Multiline = true;
+            this.tbGenre.Name = "tbGenre";
+            this.tbGenre.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbGenre.Size = new System.Drawing.Size(465, 335);
+            this.tbGenre.TabIndex = 0;
             // 
             // Main
             // 
@@ -248,6 +261,8 @@ namespace WindowsFormsML
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,5 +288,6 @@ namespace WindowsFormsML
         private System.Windows.Forms.ComboBox cbMovie;
         private System.Windows.Forms.ComboBox cbGenre;
         private System.Windows.Forms.TextBox tbBirthYear;
+        private TextBox tbGenre;
     }
 }

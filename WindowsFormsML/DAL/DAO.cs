@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace WindowsFormsML.DAL
             return selection;
         }
 
-        public Prediction GetPredictions(InputDTO inputDTO)
+        public string GetPredictions(InputDTO inputDTO)
         {
             getClient();
 
@@ -35,12 +36,17 @@ namespace WindowsFormsML.DAL
             var response = client.PostAsync("http://localhost:5000/api/inputs/", byteContent).Result;
 
             // LAV DTO HER i stedet for result:
-            var result = response.Content.ReadAsStringAsync();
+            var result = response.Content.ReadAsStringAsync().Result;
 
-            Prediction prediction = new Prediction();
-            prediction = JsonConvert.DeserializeObject<Prediction>(result.Result);
+            //JObject json = JObject.Parse(result.Result);
+            
 
-            return prediction;
+            
+
+            //Prediction prediction = new Prediction();
+            //prediction = JsonConvert.DeserializeObject<Prediction>(result.Result);
+
+            return result;
         }
 
         private void getClient()

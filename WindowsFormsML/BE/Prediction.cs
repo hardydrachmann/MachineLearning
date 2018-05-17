@@ -8,6 +8,7 @@ namespace WindowsFormsML.BE
 {
     public class Prediction
     {
-        public Dictionary<string, List<Dictionary<string, string>>> prediction { get; set; }
+        public Dictionary<string, List<Dictionary<string, string>>> gOutput { get; set; }
+        //public Dictionary<string, string> mOutput { get; set; }
     }
 }

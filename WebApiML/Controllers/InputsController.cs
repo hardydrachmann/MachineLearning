@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using WebApiML.BE;
@@ -13,7 +14,7 @@ namespace WebApiML.Controllers
         //private InputDTO InputDTO;
 
         // POST api/inputs
-        public async Task<PredictionDTO> Post([FromBody]InputDTO inputDTO)
+        public async Task<HttpResponseMessage> Post([FromBody]InputDTO inputDTO)
         {
             var result = await azureDAO.InvokeRequestResponseService(inputDTO);
             return result;

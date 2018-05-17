@@ -8,6 +8,6 @@ namespace WebApiML.BE
 {
     public class PredictionDTO
     {
-        public Dictionary<string, List<Dictionary<string, string>>> prediction { get; set; }
+        public List<Dictionary<string, string>> prediction { get; set; }
     }
 }
