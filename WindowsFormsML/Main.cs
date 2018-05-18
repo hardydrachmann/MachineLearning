@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsML.BE;
@@ -23,6 +24,22 @@ namespace WindowsFormsML
         {
             InitializeComponent();
             Load += new EventHandler(Main_Load);
+            setupCustomComponents();
+        }
+
+        private void setupCustomComponents()
+        {
+            panelMovie.Parent = pbMovie;
+            panelMovie.BackColor = Color.Transparent;
+            lbMovie.Parent = pbMovie;
+            lbMovie.BackColor = Color.Transparent;
+            lbMovie.Parent = panelMovie;
+
+            panelGenre.Parent = pbGenre;
+            panelGenre.BackColor = Color.Transparent;
+            lbGenre.Parent = pbGenre;
+            lbGenre.BackColor = Color.Transparent;
+            lbGenre.Parent = panelGenre;
         }
 
         private void Main_Load(object sender, System.EventArgs e)
@@ -75,23 +92,34 @@ namespace WindowsFormsML
                     inputDTO.BirthYear = Int32.Parse(tbBirthYear.Text);
                     inputDTO.Sex = cbSex.Text;
                     inputDTO.isClubMember = cbClubMember.Text;
-                    inputDTO.Movie = cbMovie.Text;
+                    if (!cbIncludeMovies.Checked)
+                    {
+                        inputDTO.Movie = "";
+                    }
+                    else
+                    {
+                        inputDTO.Movie = cbMovie.Text;
+                    }
                     inputDTO.Genre = cbGenre.Text;
 
                     var results = dao.GetPredictions(inputDTO);
 
                     JObject obj = JObject.Parse(results);
 
-                    tbGenre.Text = beautifyText(obj.SelectToken("Results").First.ToString());
-                    tbMovie.Text = beautifyText(obj.SelectToken("Results").Last.ToString());
-
- 
+                    lbGenre.Text = beautifyText(obj.SelectToken("Results").First.ToString());
+                    lbMovie.Text = beautifyText(obj.SelectToken("Results").Last.ToString());
                 }
             }
             else
             {
                 promptUser("Fejl!\nFeltet skal indeholde et gyldigt årstal\nPrøv venligst igen...");
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            lbGenre.Text = "";
+            lbMovie.Text = "";
             tbBirthYear.Text = "";
         }
 
@@ -118,6 +146,11 @@ namespace WindowsFormsML
         private void pbClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void cbIncludeMovies_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

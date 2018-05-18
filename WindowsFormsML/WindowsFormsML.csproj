@@ -99,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ProgramIcon.ico" />
+    <None Include="Resources\CalculateWithOpacity.png" />
+    <None Include="Resources\Clear.png" />
+    <None Include="Resources\Calculate.png" />
     <None Include="Resources\Close.png" />
     <Content Include="Resources\Main.png" />
     <None Include="Resources\Minimize.png" />
