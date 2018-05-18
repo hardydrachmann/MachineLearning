@@ -105,19 +105,19 @@ namespace WindowsFormsML
             return text;
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void promptUser(string input)
         {
-            Application.Exit();
+            MessageBox.Show(input);
         }
 
-        private void btnMinimize_Click(object sender, EventArgs e)
+        private void pbMinimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
-        private void promptUser(string input)
+        private void pbClose_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(input);
+            Application.Exit();
         }
     }
 }

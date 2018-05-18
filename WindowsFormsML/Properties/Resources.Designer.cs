@@ -63,9 +63,9 @@ namespace WindowsFormsML.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Forside {
+        internal static System.Drawing.Bitmap Close {
             get {
-                object obj = ResourceManager.GetObject("Forside", resourceCulture);
+                object obj = ResourceManager.GetObject("Close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace WindowsFormsML.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Forside__transparent_ {
+        internal static System.Drawing.Bitmap Main {
             get {
-                object obj = ResourceManager.GetObject("Forside (transparent)", resourceCulture);
+                object obj = ResourceManager.GetObject("Main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minimize {
+            get {
+                object obj = ResourceManager.GetObject("Minimize", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
