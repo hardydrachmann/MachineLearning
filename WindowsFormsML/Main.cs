@@ -82,10 +82,10 @@ namespace WindowsFormsML
 
                     JObject obj = JObject.Parse(results);
 
-                    foreach (JProperty prop in obj.Properties())
-                    {
-                        tbGenre.Text = beautifyText(prop.Name + " " + prop.Value);
-                    }
+                    tbGenre.Text = beautifyText(obj.SelectToken("Results").First.ToString());
+                    tbMovie.Text = beautifyText(obj.SelectToken("Results").Last.ToString());
+
+ 
                 }
             }
             else
@@ -97,7 +97,7 @@ namespace WindowsFormsML
 
         private string beautifyText(string text)
         {
-            var charsToRemove = new string[] { @"\", "\"", "[", "]", "{", "}", "Results" };
+            var charsToRemove = new string[] { @"\", "\"", "[", "]", "{", "}", "Results", "Output (Genre):", "Output (Movie):" };
             foreach (var character in charsToRemove)
             {
                 text = text.Replace(character, string.Empty);

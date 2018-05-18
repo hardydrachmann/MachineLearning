@@ -51,8 +51,10 @@ namespace WindowsFormsML
             this.pbMinimize = new System.Windows.Forms.PictureBox();
             this.pbClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tbMovie = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -176,6 +178,7 @@ namespace WindowsFormsML
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.tbMovie);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -263,6 +266,18 @@ namespace WindowsFormsML
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // tbMovie
+            // 
+            this.tbMovie.BackColor = System.Drawing.Color.White;
+            this.tbMovie.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMovie.Location = new System.Drawing.Point(0, 0);
+            this.tbMovie.Multiline = true;
+            this.tbMovie.Name = "tbMovie";
+            this.tbMovie.ReadOnly = true;
+            this.tbMovie.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbMovie.Size = new System.Drawing.Size(465, 352);
+            this.tbMovie.TabIndex = 1;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,6 +309,8 @@ namespace WindowsFormsML
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -324,5 +341,6 @@ namespace WindowsFormsML
         private PictureBox pictureBox1;
         private PictureBox pbClose;
         private PictureBox pbMinimize;
+        private TextBox tbMovie;
     }
 }
