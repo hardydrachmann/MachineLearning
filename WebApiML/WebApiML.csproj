@@ -193,9 +193,6 @@
     <Compile Include="DAL\AzureDAO.cs" />
     <Compile Include="DAL\DatabaseDAO.cs" />
     <Compile Include="DTO\InputDTO.cs" />
-    <Compile Include="DTO\OutputGenreDTO.cs" />
-    <Compile Include="DTO\OutputMovieDTO.cs" />
-    <Compile Include="DTO\PredictionDTO.cs" />
     <Compile Include="DTO\SelectionDTO.cs" />
     <Compile Include="Genre.cs">
       <DependentUpon>Model.tt</DependentUpon>

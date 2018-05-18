@@ -16,6 +16,9 @@ namespace WindowsFormsML
         private Selection selection;
         private InputDTO inputDTO;
 
+        private const int minYear = 1920;
+        private const int maxYear = 2013;
+
         public Main()
         {
             InitializeComponent();
@@ -63,31 +66,43 @@ namespace WindowsFormsML
             int val;
             if (int.TryParse(tbBirthYear.Text, out val))
             {
-                inputDTO.BirthYear = Int32.Parse(tbBirthYear.Text);
-                inputDTO.Sex = cbSex.Text;
-                inputDTO.isClubMember = cbClubMember.Text;
-                inputDTO.Movie = cbMovie.Text;
-                inputDTO.Genre = cbGenre.Text;
-
-                // TEST skal bruge en DTO på web apiet i stedet
-                var results = dao.GetPredictions(inputDTO);
-            
-                JObject obj = JObject.Parse(results);
-
-                foreach (JProperty prop in obj.Properties())
+                if (val <= minYear || val >= maxYear)
                 {
-                tbGenre.Text = prop.Name + " " + prop.Value;
-                    
+                    promptUser("Det indtastede år er ikke gyldigt!\nPrøv venligst igen...");
                 }
+                else
+                {
+                    inputDTO.BirthYear = Int32.Parse(tbBirthYear.Text);
+                    inputDTO.Sex = cbSex.Text;
+                    inputDTO.isClubMember = cbClubMember.Text;
+                    inputDTO.Movie = cbMovie.Text;
+                    inputDTO.Genre = cbGenre.Text;
 
+                    var results = dao.GetPredictions(inputDTO);
 
+                    JObject obj = JObject.Parse(results);
 
+                    foreach (JProperty prop in obj.Properties())
+                    {
+                        tbGenre.Text = beautifyText(prop.Name + " " + prop.Value);
+                    }
+                }
             }
             else
             {
-                MessageBox.Show("Der kan kun indtastes tal!\nPrøv venligst igen...");
+                promptUser("Der kan kun indtastes tal!\nPrøv venligst igen...");
             }
             tbBirthYear.Text = "";
+        }
+
+        private string beautifyText(string text)
+        {
+            var charsToRemove = new string[] { @"\", "\"", "[", "]", "{", "}", "Results" };
+            foreach (var character in charsToRemove)
+            {
+                text = text.Replace(character, string.Empty);
+            }
+            return text;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -100,5 +115,9 @@ namespace WindowsFormsML
             WindowState = FormWindowState.Minimized;
         }
 
+        private void promptUser(string input)
+        {
+            MessageBox.Show(input);
+        }
     }
 }

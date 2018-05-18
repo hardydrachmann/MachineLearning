@@ -35,17 +35,7 @@ namespace WindowsFormsML.DAL
             byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             var response = client.PostAsync("http://localhost:5000/api/inputs/", byteContent).Result;
 
-            // LAV DTO HER i stedet for result:
             var result = response.Content.ReadAsStringAsync().Result;
-
-            //JObject json = JObject.Parse(result.Result);
-            
-
-            
-
-            //Prediction prediction = new Prediction();
-            //prediction = JsonConvert.DeserializeObject<Prediction>(result.Result);
-
             return result;
         }
 
