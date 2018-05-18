@@ -164,7 +164,8 @@ namespace WindowsFormsML
             // 
             // tbGenre
             // 
-            this.tbGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbGenre.BackColor = System.Drawing.Color.White;
+            this.tbGenre.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbGenre.Location = new System.Drawing.Point(0, 0);
             this.tbGenre.Multiline = true;
             this.tbGenre.Name = "tbGenre";

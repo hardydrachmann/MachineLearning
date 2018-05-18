@@ -68,7 +68,7 @@ namespace WindowsFormsML
             {
                 if (val <= minYear || val >= maxYear)
                 {
-                    promptUser("Det indtastede år er ikke gyldigt!\nPrøv venligst igen...");
+                    promptUser("Fejl!\nDet indtastede årstal er ikke gyldigt\nPrøv venligst igen...");
                 }
                 else
                 {
@@ -90,7 +90,7 @@ namespace WindowsFormsML
             }
             else
             {
-                promptUser("Der kan kun indtastes tal!\nPrøv venligst igen...");
+                promptUser("Fejl!\nFeltet skal indeholde et gyldigt årstal\nPrøv venligst igen...");
             }
             tbBirthYear.Text = "";
         }
