@@ -103,8 +103,11 @@
     <None Include="Resources\Clear.png" />
     <None Include="Resources\Calculate.png" />
     <None Include="Resources\Close.png" />
+    <None Include="Resources\Brain_Watermark.png" />
+    <None Include="Resources\Close_Red.png" />
     <Content Include="Resources\Main.png" />
     <None Include="Resources\Minimize.png" />
+    <None Include="Resources\Minimize_Red.png" />
     <Content Include="Resources\ProgramIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

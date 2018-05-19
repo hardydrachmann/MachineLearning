@@ -41,10 +41,12 @@ namespace WindowsFormsML
             this.label6 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panelGenre = new System.Windows.Forms.Panel();
             this.lbGenre = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panelMovie = new System.Windows.Forms.Panel();
             this.lbMovie = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblProbability = new System.Windows.Forms.Label();
             this.cbClubMember = new System.Windows.Forms.ComboBox();
             this.cbMovie = new System.Windows.Forms.ComboBox();
             this.cbGenre = new System.Windows.Forms.ComboBox();
@@ -53,23 +55,20 @@ namespace WindowsFormsML
             this.btnReset = new System.Windows.Forms.Button();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.cbIncludeMovies = new System.Windows.Forms.CheckBox();
-            this.panelMovie = new System.Windows.Forms.Panel();
-            this.panelGenre = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.pbMinimize = new System.Windows.Forms.PictureBox();
             this.pbClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pbGenre = new System.Windows.Forms.PictureBox();
-            this.pbMovie = new System.Windows.Forms.PictureBox();
+            this.pbWatermark = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panelGenre.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panelMovie.SuspendLayout();
-            this.panelGenre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGenre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMovie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWatermark)).BeginInit();
             this.SuspendLayout();
             // 
             // cbSex
@@ -85,7 +84,7 @@ namespace WindowsFormsML
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 4);
+            this.label1.Location = new System.Drawing.Point(63, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 42);
             this.label1.TabIndex = 4;
@@ -145,6 +144,7 @@ namespace WindowsFormsML
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(315, 80);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -154,14 +154,22 @@ namespace WindowsFormsML
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panelGenre);
-            this.tabPage1.Controls.Add(this.pbGenre);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(568, 446);
+            this.tabPage1.Size = new System.Drawing.Size(568, 439);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Genre";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panelGenre
+            // 
+            this.panelGenre.AutoScroll = true;
+            this.panelGenre.Controls.Add(this.lbGenre);
+            this.panelGenre.Location = new System.Drawing.Point(6, 6);
+            this.panelGenre.Name = "panelGenre";
+            this.panelGenre.Size = new System.Drawing.Size(556, 434);
+            this.panelGenre.TabIndex = 5;
             // 
             // lbGenre
             // 
@@ -175,14 +183,22 @@ namespace WindowsFormsML
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panelMovie);
-            this.tabPage2.Controls.Add(this.pbMovie);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(568, 446);
+            this.tabPage2.Size = new System.Drawing.Size(568, 439);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Film";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // panelMovie
+            // 
+            this.panelMovie.AutoScroll = true;
+            this.panelMovie.Controls.Add(this.lbMovie);
+            this.panelMovie.Location = new System.Drawing.Point(6, 6);
+            this.panelMovie.Name = "panelMovie";
+            this.panelMovie.Size = new System.Drawing.Size(556, 434);
+            this.panelMovie.TabIndex = 4;
             // 
             // lbMovie
             // 
@@ -193,15 +209,15 @@ namespace WindowsFormsML
             this.lbMovie.Size = new System.Drawing.Size(0, 20);
             this.lbMovie.TabIndex = 3;
             // 
-            // label7
+            // lblProbability
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(732, 70);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 29);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Sandsynligheder";
+            this.lblProbability.AutoSize = true;
+            this.lblProbability.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProbability.Location = new System.Drawing.Point(732, 77);
+            this.lblProbability.Name = "lblProbability";
+            this.lblProbability.Size = new System.Drawing.Size(159, 29);
+            this.lblProbability.TabIndex = 11;
+            this.lblProbability.Text = "Sandsynligheder";
             // 
             // cbClubMember
             // 
@@ -241,7 +257,7 @@ namespace WindowsFormsML
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(10, 49);
+            this.panel1.Location = new System.Drawing.Point(10, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(881, 2);
             this.panel1.TabIndex = 19;
@@ -284,47 +300,43 @@ namespace WindowsFormsML
             this.cbIncludeMovies.UseVisualStyleBackColor = true;
             this.cbIncludeMovies.CheckedChanged += new System.EventHandler(this.cbIncludeMovies_CheckedChanged);
             // 
-            // panelMovie
+            // label7
             // 
-            this.panelMovie.AutoScroll = true;
-            this.panelMovie.Controls.Add(this.lbMovie);
-            this.panelMovie.Location = new System.Drawing.Point(6, 6);
-            this.panelMovie.Name = "panelMovie";
-            this.panelMovie.Size = new System.Drawing.Size(556, 434);
-            this.panelMovie.TabIndex = 4;
-            // 
-            // panelGenre
-            // 
-            this.panelGenre.AutoScroll = true;
-            this.panelGenre.Controls.Add(this.lbGenre);
-            this.panelGenre.Location = new System.Drawing.Point(6, 6);
-            this.panelGenre.Name = "panelGenre";
-            this.panelGenre.Size = new System.Drawing.Size(556, 434);
-            this.panelGenre.TabIndex = 5;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(67, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 16);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Prototype: version 0.1 - 2018";
             // 
             // pbMinimize
             // 
             this.pbMinimize.BackColor = System.Drawing.Color.Transparent;
             this.pbMinimize.BackgroundImage = global::WindowsFormsML.Properties.Resources.Minimize;
             this.pbMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbMinimize.Location = new System.Drawing.Point(845, 9);
+            this.pbMinimize.Location = new System.Drawing.Point(832, 5);
             this.pbMinimize.Name = "pbMinimize";
-            this.pbMinimize.Size = new System.Drawing.Size(20, 20);
+            this.pbMinimize.Size = new System.Drawing.Size(25, 25);
             this.pbMinimize.TabIndex = 18;
             this.pbMinimize.TabStop = false;
             this.pbMinimize.Click += new System.EventHandler(this.pbMinimize_Click);
+            this.pbMinimize.MouseEnter += new System.EventHandler(this.pbMinimize_MouseEnter);
+            this.pbMinimize.MouseLeave += new System.EventHandler(this.pbMinimize_MouseLeave);
             // 
             // pbClose
             // 
             this.pbClose.BackColor = System.Drawing.Color.Transparent;
             this.pbClose.BackgroundImage = global::WindowsFormsML.Properties.Resources.Close;
             this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbClose.Location = new System.Drawing.Point(871, 9);
+            this.pbClose.Location = new System.Drawing.Point(866, 5);
             this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(20, 20);
+            this.pbClose.Size = new System.Drawing.Size(25, 25);
             this.pbClose.TabIndex = 17;
             this.pbClose.TabStop = false;
             this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+            this.pbClose.MouseEnter += new System.EventHandler(this.pbClose_MouseEnter);
+            this.pbClose.MouseLeave += new System.EventHandler(this.pbClose_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -337,25 +349,15 @@ namespace WindowsFormsML
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // pbGenre
+            // pbWatermark
             // 
-            this.pbGenre.BackgroundImage = global::WindowsFormsML.Properties.Resources.CalculateWithOpacity;
-            this.pbGenre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbGenre.Location = new System.Drawing.Point(6, 6);
-            this.pbGenre.Name = "pbGenre";
-            this.pbGenre.Size = new System.Drawing.Size(556, 434);
-            this.pbGenre.TabIndex = 3;
-            this.pbGenre.TabStop = false;
-            // 
-            // pbMovie
-            // 
-            this.pbMovie.BackgroundImage = global::WindowsFormsML.Properties.Resources.CalculateWithOpacity;
-            this.pbMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbMovie.Location = new System.Drawing.Point(6, 6);
-            this.pbMovie.Name = "pbMovie";
-            this.pbMovie.Size = new System.Drawing.Size(556, 434);
-            this.pbMovie.TabIndex = 2;
-            this.pbMovie.TabStop = false;
+            this.pbWatermark.BackgroundImage = global::WindowsFormsML.Properties.Resources.Brain_Watermark;
+            this.pbWatermark.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbWatermark.Location = new System.Drawing.Point(11, 5);
+            this.pbWatermark.Name = "pbWatermark";
+            this.pbWatermark.Size = new System.Drawing.Size(60, 50);
+            this.pbWatermark.TabIndex = 3;
+            this.pbWatermark.TabStop = false;
             // 
             // Main
             // 
@@ -363,6 +365,7 @@ namespace WindowsFormsML
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(903, 564);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.cbIncludeMovies);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.btnReset);
@@ -374,7 +377,7 @@ namespace WindowsFormsML
             this.Controls.Add(this.cbGenre);
             this.Controls.Add(this.cbMovie);
             this.Controls.Add(this.cbClubMember);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblProbability);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -383,6 +386,7 @@ namespace WindowsFormsML
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbSex);
+            this.Controls.Add(this.pbWatermark);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
@@ -390,16 +394,15 @@ namespace WindowsFormsML
             this.Text = "Machine Learning";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panelGenre.ResumeLayout(false);
+            this.panelGenre.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.panelMovie.ResumeLayout(false);
             this.panelMovie.PerformLayout();
-            this.panelGenre.ResumeLayout(false);
-            this.panelGenre.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGenre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMovie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWatermark)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,7 +420,7 @@ namespace WindowsFormsML
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblProbability;
         private System.Windows.Forms.ComboBox cbClubMember;
         private System.Windows.Forms.ComboBox cbMovie;
         private System.Windows.Forms.ComboBox cbGenre;
@@ -426,14 +429,14 @@ namespace WindowsFormsML
         private PictureBox pbClose;
         private PictureBox pbMinimize;
         private Panel panel1;
-        private PictureBox pbMovie;
         private Button btnReset;
         private Button btnCalculate;
-        private PictureBox pbGenre;
+        private PictureBox pbWatermark;
         private Label lbGenre;
         private Label lbMovie;
         private CheckBox cbIncludeMovies;
         private Panel panelMovie;
         private Panel panelGenre;
+        private Label label7;
     }
 }

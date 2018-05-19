@@ -63,6 +63,16 @@ namespace WindowsFormsML.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Brain_Watermark {
+            get {
+                object obj = ResourceManager.GetObject("Brain_Watermark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Calculate {
             get {
                 object obj = ResourceManager.GetObject("Calculate", resourceCulture);
@@ -76,16 +86,6 @@ namespace WindowsFormsML.Properties {
         internal static System.Drawing.Bitmap CalculateWithOpacity {
             get {
                 object obj = ResourceManager.GetObject("CalculateWithOpacity", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CalculateWithOpacity1 {
-            get {
-                object obj = ResourceManager.GetObject("CalculateWithOpacity1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +113,16 @@ namespace WindowsFormsML.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Close_Red {
+            get {
+                object obj = ResourceManager.GetObject("Close_Red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Main {
             get {
                 object obj = ResourceManager.GetObject("Main", resourceCulture);
@@ -126,6 +136,16 @@ namespace WindowsFormsML.Properties {
         internal static System.Drawing.Bitmap Minimize {
             get {
                 object obj = ResourceManager.GetObject("Minimize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minimize_Red {
+            get {
+                object obj = ResourceManager.GetObject("Minimize_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

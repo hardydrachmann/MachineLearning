@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using WindowsFormsML.BE;
 using WindowsFormsML.DAL;
 using WindowsFormsML.DTO;
+using WindowsFormsML.Properties;
 
 namespace WindowsFormsML
 {
@@ -17,29 +18,13 @@ namespace WindowsFormsML
         private Selection selection;
         private InputDTO inputDTO;
 
-        private const int minYear = 1920;
-        private const int maxYear = 2013;
+        private const int MIN_YEAR = 1920;
+        private const int MAX_YEAR = 2013;
 
         public Main()
         {
             InitializeComponent();
             Load += new EventHandler(Main_Load);
-            setupCustomComponents();
-        }
-
-        private void setupCustomComponents()
-        {
-            panelMovie.Parent = pbMovie;
-            panelMovie.BackColor = Color.Transparent;
-            lbMovie.Parent = pbMovie;
-            lbMovie.BackColor = Color.Transparent;
-            lbMovie.Parent = panelMovie;
-
-            panelGenre.Parent = pbGenre;
-            panelGenre.BackColor = Color.Transparent;
-            lbGenre.Parent = pbGenre;
-            lbGenre.BackColor = Color.Transparent;
-            lbGenre.Parent = panelGenre;
         }
 
         private void Main_Load(object sender, System.EventArgs e)
@@ -83,7 +68,7 @@ namespace WindowsFormsML
             int val;
             if (int.TryParse(tbBirthYear.Text, out val))
             {
-                if (val <= minYear || val >= maxYear)
+                if (val <= MIN_YEAR || val >= MAX_YEAR)
                 {
                     promptUser("Fejl!\nDet indtastede årstal er ikke gyldigt\nPrøv venligst igen...");
                 }
@@ -143,6 +128,26 @@ namespace WindowsFormsML
             WindowState = FormWindowState.Minimized;
         }
 
+        private void pbClose_MouseEnter(object sender, EventArgs e)
+        {
+            pbClose.BackgroundImage = Resources.Close_Red;
+        }
+
+        private void pbClose_MouseLeave(object sender, EventArgs e)
+        {
+            pbClose.BackgroundImage = Resources.Close;
+        }
+
+        private void pbMinimize_MouseEnter(object sender, EventArgs e)
+        {
+            pbMinimize.BackgroundImage = Resources.Minimize_Red;
+        }
+
+        private void pbMinimize_MouseLeave(object sender, EventArgs e)
+        {
+            pbMinimize.BackgroundImage = Resources.Minimize;
+        }
+
         private void pbClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -150,7 +155,14 @@ namespace WindowsFormsML
 
         private void cbIncludeMovies_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (!cbIncludeMovies.Checked)
+            {
+                cbMovie.Enabled = false;
+            }
+            else
+            {
+                cbMovie.Enabled = true;
+            }
         }
     }
 }
