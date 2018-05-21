@@ -7,14 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApiML
+namespace DAL_ML
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ClubMember
+    public partial class Movie
     {
         public int Id { get; set; }
-        public string IsMember { get; set; }
+        public string Name { get; set; }
+        public int GenreId { get; set; }
+    
+        public virtual Genre Genre { get; set; }
     }
 }

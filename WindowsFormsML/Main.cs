@@ -38,13 +38,13 @@ namespace WindowsFormsML
 
             foreach (var item in selection.Sex)
             {
-                cbSex.Items.Add(item.Name);
+                cbSex.Items.Add(item);
             }
             cbSex.SelectedIndex = 0;
 
-            foreach (var item in selection.isClubMember)
+            foreach (var item in selection.ClubMember)
             {
-                cbClubMember.Items.Add(item.IsMember);
+                cbClubMember.Items.Add(item);
             }
             cbClubMember.SelectedIndex = 0;
 

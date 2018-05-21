@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.2011
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsML", "WindowsFormsML\WindowsFormsML.csproj", "{5DD3C49D-653C-4CF3-BF60-8953B523FC51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiML", "WebApiML\WebApiML.csproj", "{4313A91B-656F-452C-A6B6-FE11D112BB75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_ML", "DAL_ML\DAL_ML.csproj", "{86BAC3D7-313B-4F2F-BED0-1A1C615104F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4313A91B-656F-452C-A6B6-FE11D112BB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4313A91B-656F-452C-A6B6-FE11D112BB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4313A91B-656F-452C-A6B6-FE11D112BB75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BAC3D7-313B-4F2F-BED0-1A1C615104F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BAC3D7-313B-4F2F-BED0-1A1C615104F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BAC3D7-313B-4F2F-BED0-1A1C615104F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BAC3D7-313B-4F2F-BED0-1A1C615104F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

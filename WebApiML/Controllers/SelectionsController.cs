@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using DAL_ML;
+using System.Web.Http;
 using WebApiML.DAL;
 using WebApiML.DTO;
 
@@ -6,7 +7,7 @@ namespace WebApiML.Controllers
 {
     public class SelectionsController : ApiController
     {
-        private DatabaseDAO databaseDAO = new DatabaseDAO();
+        private Facade DALFacade = new Facade();
         private SelectionDTO selectionDTO;
 
         // GET api/selections
@@ -14,10 +15,10 @@ namespace WebApiML.Controllers
         {
             selectionDTO = new SelectionDTO
             {
-                Sex = databaseDAO.GetAllSexes(),
-                isClubMember = databaseDAO.GetAllClubMembers(),
-                Movie = databaseDAO.GetAllMovies(),
-                Genre = databaseDAO.GetAllGenres()
+                Sex = DALFacade.GetSexRepository().GetAll(),
+                ClubMember = DALFacade.GetClubMemberRepository().GetAll(),
+                Movie = DALFacade.GetMovieRepository().GetAll(),
+                Genre = DALFacade.GetGenreRepository().GetAll()
             };
             return selectionDTO;
         }
