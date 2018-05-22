@@ -23,12 +23,12 @@ namespace WindowsFormsML_CodedUITests
     using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
     using Mouse = Microsoft.VisualStudio.TestTools.UITesting.Mouse;
     using MouseButtons = System.Windows.Forms.MouseButtons;
-
-
+    
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public partial class UIMap
     {
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_lbGenreIsPopulated - Use 'AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -41,7 +41,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'FriendlyName' property of 'Scored Probabilities for Class Action: 0.05061298...' label contains 'Scored'
             StringAssert.Contains(uIScoredProbabilitiesfText.FriendlyName, this.AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues.UIScoredProbabilitiesfTextFriendlyName);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_lbGenreIsReset - Use 'AssertMethod_btnCalculate_lbGenreIsResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -54,7 +54,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label starts with 'Ingen'
             StringAssert.StartsWith(uIIngendataersendttilmText.DisplayText, this.AssertMethod_btnCalculate_lbGenreIsResetExpectedValues.UIIngendataersendttilmTextDisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_lbGenreNotDefaultValue - Use 'AssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -67,7 +67,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'DisplayText' property of 'Scored Probabilities for Class Action: 1, Scored ...' label is not equal to 'Ingen data er sendt til modellen endnu...'
             Assert.AreNotEqual(this.AssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues.UIScoredProbabilitiesfText1DisplayText, uIScoredProbabilitiesfText1.DisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_lbGenreNotEmptyString - Use 'AssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -80,7 +80,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'DisplayText' property of 'Scored Probabilities for Class Action: 0.05061298...' label is not equal to ''
             Assert.AreNotEqual(this.AssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues.UIScoredProbabilitiesfTextDisplayText, uIScoredProbabilitiesfText.DisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_lbMovieIsNotReset - Use 'AssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -93,7 +93,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'DisplayText' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label is not equal to 'Ingen data er sendt til modellen endnu...'
             Assert.AreNotEqual(this.AssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues.UIScoredProbabilitiesfText1DisplayText, uIScoredProbabilitiesfText1.DisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_lbMovieIsPopulated - Use 'AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -107,7 +107,7 @@ namespace WindowsFormsML_CodedUITests
             Playback.Wait(20000);
             StringAssert.Contains(uIScoredProbabilitiesfText.FriendlyName, this.AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues.UIScoredProbabilitiesfTextFriendlyName);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_lbMovieIsReset - Use 'AssertMethod_btnCalculate_lbMovieIsResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -120,7 +120,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label starts with 'Ingen'
             StringAssert.StartsWith(uIIngendataersendttilmText.DisplayText, this.AssertMethod_btnCalculate_lbMovieIsResetExpectedValues.UIIngendataersendttilmTextDisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_lbMovieNotDefaultValue - Use 'AssertMethod_btnCalculate_lbMovieNotDefaultValueExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -133,7 +133,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'DisplayText' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label is not equal to 'Ingen data er sendt til modellen endnu...'
             Assert.AreNotEqual(this.AssertMethod_btnCalculate_lbMovieNotDefaultValueExpectedValues.UIScoredProbabilitiesfText1DisplayText, uIScoredProbabilitiesfText1.DisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_lbMovieNotEmptyString - Use 'AssertMethod_btnCalculate_lbMovieNotEmptyStringExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -146,7 +146,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'DisplayText' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label is not equal to ''
             Assert.AreNotEqual(this.AssertMethod_btnCalculate_lbMovieNotEmptyStringExpectedValues.UIScoredProbabilitiesfTextDisplayText, uIScoredProbabilitiesfText.DisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnCalculate_PopulatelbMovie - Use 'AssertMethod_btnCalculate_PopulatelbMovieExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -197,7 +197,7 @@ namespace WindowsFormsML_CodedUITests
             //    Scored Probabilities for Class The Grudge: 0.20273091'
             Assert.AreEqual(this.AssertMethod_btnCalculate_PopulatelbMovieExpectedValues.UIScoredProbabilitiesfTextDisplayText, uIScoredProbabilitiesfText.DisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnReset_lbGenreIsNotReset - Use 'AssertMethod_btnReset_lbGenreIsNotResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -210,7 +210,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'FriendlyName' property of 'Scored Probabilities for Class Action: 0.05061298...' label contains 'Scored'
             StringAssert.Contains(uIScoredProbabilitiesfText.FriendlyName, this.AssertMethod_btnReset_lbGenreIsNotResetExpectedValues.UIScoredProbabilitiesfTextFriendlyName);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnReset_lbGenreIsReset - Use 'AssertMethod_btnReset_lbGenreIsResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -223,7 +223,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'FriendlyName' property of 'Ingen data er sendt til modellen endnu...' label contains 'Ingen'
             StringAssert.Contains(uIIngendataersendttilmText.FriendlyName, this.AssertMethod_btnReset_lbGenreIsResetExpectedValues.UIIngendataersendttilmTextFriendlyName);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnReset_lbMovieIsNotReset - Use 'AssertMethod_btnReset_lbMovieIsNotResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -236,7 +236,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'FriendlyName' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label contains 'Scored'
             StringAssert.Contains(uIScoredProbabilitiesfText.FriendlyName, this.AssertMethod_btnReset_lbMovieIsNotResetExpectedValues.UIScoredProbabilitiesfTextFriendlyName);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnReset_lbMovieIsReset - Use 'AssertMethod_btnReset_lbMovieIsResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -249,7 +249,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'FriendlyName' property of 'Ingen data er sendt til modellen endnu...' label contains 'Ingen'
             StringAssert.Contains(uIIngendataersendttilmText.FriendlyName, this.AssertMethod_btnReset_lbMovieIsResetExpectedValues.UIIngendataersendttilmTextFriendlyName);
         }
-
+        
         /// <summary>
         /// AssertMethod_btnReset_tbBirthYearIsReset - Use 'AssertMethod_btnReset_tbBirthYearIsResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -262,7 +262,59 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'Text' property of 'tbBirthYear' text box equals ''
             Assert.AreEqual(this.AssertMethod_btnReset_tbBirthYearIsResetExpectedValues.UITbBirthYearEditText, uITbBirthYearEdit.Text);
         }
+        
+        /// <summary>
+        /// AssertMethod_btnUpdate_cbClubMemberIsPopulated - Use 'AssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues' to pass parameters into this method.
+        /// </summary>
+        public void AssertMethod_btnUpdate_cbClubMemberIsPopulated()
+        {
+            #region Variable Declarations
+            WinComboBox uISandsynlighederComboBox = this.UIMachineLearningWindow.UICbClubMemberWindow.UISandsynlighederComboBox;
+            #endregion
 
+            // Verify that the 'SelectedItem' property of 'Sandsynligheder' combo box equals 'Ja'
+            Assert.AreEqual(this.AssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues.UISandsynlighederComboBoxSelectedItem, uISandsynlighederComboBox.SelectedItem);
+        }
+        
+        /// <summary>
+        /// AssertMethod_btnUpdate_cbGenreIsPopulated - Use 'AssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues' to pass parameters into this method.
+        /// </summary>
+        public void AssertMethod_btnUpdate_cbGenreIsPopulated()
+        {
+            #region Variable Declarations
+            WinComboBox uICbGenreComboBox = this.UIMachineLearningWindow.UICbGenreWindow.UICbGenreComboBox;
+            #endregion
+
+            // Verify that the 'SelectedItem' property of 'cbGenre' combo box equals 'Action'
+            Assert.AreEqual(this.AssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues.UICbGenreComboBoxSelectedItem, uICbGenreComboBox.SelectedItem);
+        }
+        
+        /// <summary>
+        /// AssertMethod_btnUpdate_cbMovieIsPopulated - Use 'AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues' to pass parameters into this method.
+        /// </summary>
+        public void AssertMethod_btnUpdate_cbMovieIsPopulated()
+        {
+            #region Variable Declarations
+            WinComboBox uICbMovieComboBox = this.UIMachineLearningWindow.UICbMovieWindow.UICbMovieComboBox;
+            #endregion
+
+            // Verify that the 'SelectedItem' property of 'cbMovie' combo box equals 'Passenger 57'
+            Assert.AreEqual(this.AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues.UICbMovieComboBoxSelectedItem, uICbMovieComboBox.SelectedItem);
+        }
+        
+        /// <summary>
+        /// AssertMethod_btnUpdate_cbSexIsPopulated - Use 'AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues' to pass parameters into this method.
+        /// </summary>
+        public void AssertMethod_btnUpdate_cbSexIsPopulated()
+        {
+            #region Variable Declarations
+            WinComboBox uICbSexComboBox = this.UIMachineLearningWindow.UICbSexWindow.UICbSexComboBox;
+            #endregion
+
+            // Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
+            Assert.AreEqual(this.AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues.UICbSexComboBoxSelectedItem, uICbSexComboBox.SelectedItem);
+        }
+        
         /// <summary>
         /// AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatus - Use 'AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -275,7 +327,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'SelectedItem' property of 'Sandsynligheder' combo box equals 'Ja'
             Assert.AreEqual(this.AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues.UISandsynlighederComboBoxSelectedItem, uISandsynlighederComboBox.SelectedItem);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatus - Use 'AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -288,7 +340,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'SelectedItem' property of 'Sandsynligheder' combo box is not equal to 'Ja'
             Assert.AreNotEqual(this.AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues.UISandsynlighederComboBoxSelectedItem, uISandsynlighederComboBox.SelectedItem);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbGenre_HasCorrectSelectedGenre - Use 'AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -301,7 +353,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'SelectedItem' property of 'cbGenre' combo box equals 'Drama'
             Assert.AreEqual(this.AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues.UICbGenreComboBoxSelectedItem, uICbGenreComboBox.SelectedItem);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbGenre_HasIncorrectSelectedGenre - Use 'AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -314,7 +366,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'SelectedItem' property of 'cbGenre' combo box is not equal to 'Drama'
             Assert.AreNotEqual(this.AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues.UICbGenreComboBoxSelectedItem, uICbGenreComboBox.SelectedItem);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbIncludeMovies_CheckBoxIsChecked - Use 'AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -327,7 +379,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'Checked' property of 'Inkluder Film' check box equals 'True'
             Assert.AreEqual(this.AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues.UIInkluderFilmCheckBoxChecked, uIInkluderFilmCheckBox.Checked);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbIncludeMovies_CheckBoxIsUnchecked - Use 'AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -340,7 +392,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'Checked' property of 'Inkluder Film' check box equals 'False'
             Assert.AreEqual(this.AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues.UIInkluderFilmCheckBoxChecked, uIInkluderFilmCheckBox.Checked);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbMovie_ComboBoxIsDisenabled - Use 'AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -353,7 +405,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'Enabled' property of 'cbMovie' combo box equals 'False'
             Assert.AreEqual(this.AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues.UICbMovieComboBoxEnabled, uICbMovieComboBox.Enabled);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbMovie_ComboBoxIsEnabled - Use 'AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -366,7 +418,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'Enabled' property of 'cbMovie' combo box equals 'True'
             Assert.AreEqual(this.AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues.UICbMovieComboBoxEnabled, uICbMovieComboBox.Enabled);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbMovie_HasCorrectSelectedMovie - Use 'AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -379,7 +431,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'SelectedItem' property of 'cbMovie' combo box equals 'Dr. Doolittle'
             Assert.AreEqual(this.AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues.UICbMovieComboBoxSelectedItem, uICbMovieComboBox.SelectedItem);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbMovie_HasIncorrectSelectedMovie - Use 'AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -392,7 +444,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'SelectedItem' property of 'cbMovie' combo box is not equal to 'Dr. Doolittle'
             Assert.AreNotEqual(this.AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues.UICbMovieComboBoxSelectedItem, uICbMovieComboBox.SelectedItem);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbSex_HasCorrectSelectedSex - Use 'AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -405,7 +457,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
             Assert.AreEqual(this.AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues.UICbSexComboBoxSelectedItem, uICbSexComboBox.SelectedItem);
         }
-
+        
         /// <summary>
         /// AssertMethod_cbSex_HasIncorrectSelectedSex - Use 'AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -418,7 +470,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'SelectedItem' property of 'cbSex' combo box is not equal to 'Mand'
             Assert.AreNotEqual(this.AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues.UICbSexComboBoxSelectedItem, uICbSexComboBox.SelectedItem);
         }
-
+        
         /// <summary>
         /// AssertMethod_tabControl1_lbGenreIsReset - Use 'AssertMethod_tabControl1_lbGenreIsResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -431,7 +483,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label equals 'Ingen data er sendt til modellen endnu...'
             Assert.AreEqual(this.AssertMethod_tabControl1_lbGenreIsResetExpectedValues.UIIngendataersendttilmTextDisplayText, uIIngendataersendttilmText.DisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_tabControl1_lbMovieIsReset - Use 'AssertMethod_tabControl1_lbMovieIsResetExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -444,7 +496,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label equals 'Ingen data er sendt til modellen endnu...'
             Assert.AreEqual(this.AssertMethod_tabControl1_lbMovieIsResetExpectedValues.UIIngendataersendttilmTextDisplayText, uIIngendataersendttilmText.DisplayText);
         }
-
+        
         /// <summary>
         /// AssertMethod_tbBirthYear_HasCorrectYearInput - Use 'AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -457,7 +509,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'Text' property of 'tbBirthYear' text box equals '2000'
             Assert.AreEqual(this.AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues.UITbBirthYearEditText, uITbBirthYearEdit.Text);
         }
-
+        
         /// <summary>
         /// AssertMethod_tbBirthYear_HasEmptyString - Use 'AssertMethod_tbBirthYear_HasEmptyStringExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -470,7 +522,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'Text' property of 'tbBirthYear' text box equals ''
             Assert.AreEqual(this.AssertMethod_tbBirthYear_HasEmptyStringExpectedValues.UITbBirthYearEditText, uITbBirthYearEdit.Text);
         }
-
+        
         /// <summary>
         /// AssertMethod_tbBirthYear_HasIncorrectYearInput - Use 'AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -483,7 +535,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'Text' property of 'tbBirthYear' text box is not equal to '2000'
             Assert.AreNotEqual(this.AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues.UITbBirthYearEditText, uITbBirthYearEdit.Text);
         }
-
+        
         /// <summary>
         /// AssertMethod_tbBirthYear_IsNotNull
         /// </summary>
@@ -496,7 +548,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'Text' property of 'tbBirthYear' text box is not equal to 'null'
             Assert.IsNotNull(uITbBirthYearEdit.Text);
         }
-
+        
         /// <summary>
         /// AssertMethod_tbBirthYear_IsNotReadOnly - Use 'AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -509,7 +561,7 @@ namespace WindowsFormsML_CodedUITests
             // Verify that the 'ReadOnly' property of 'tbBirthYear' text box equals 'False'
             Assert.AreEqual(this.AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues.UITbBirthYearEditReadOnly, uITbBirthYearEdit.ReadOnly);
         }
-
+        
         /// <summary>
         /// RecordedMethod__cbIncludeMovies_ActivateCheckBox - Use 'RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams' to pass parameters into this method.
         /// </summary>
@@ -522,7 +574,7 @@ namespace WindowsFormsML_CodedUITests
             // Select 'Inkluder Film' check box
             uIInkluderFilmCheckBox.Checked = this.RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams.UIInkluderFilmCheckBoxChecked;
         }
-
+        
         /// <summary>
         /// RecordedMethod__cbMovie_DisenableComboBox - Use 'RecordedMethod__cbMovie_DisenableComboBoxParams' to pass parameters into this method.
         /// </summary>
@@ -535,7 +587,7 @@ namespace WindowsFormsML_CodedUITests
             // Clear 'Inkluder Film' check box
             uIInkluderFilmCheckBox.Checked = this.RecordedMethod__cbMovie_DisenableComboBoxParams.UIInkluderFilmCheckBoxChecked;
         }
-
+        
         /// <summary>
         /// RecordedMethod__tbBirthYear_InputYear - Use 'RecordedMethod__tbBirthYear_InputYearParams' to pass parameters into this method.
         /// </summary>
@@ -552,7 +604,7 @@ namespace WindowsFormsML_CodedUITests
             // Type '2000' in 'tbBirthYear' text box
             uITbBirthYearEdit.Text = this.RecordedMethod__tbBirthYear_InputYearParams.UITbBirthYearEditText;
         }
-
+        
         /// <summary>
         /// RecordedMethod_btnCalculate_PopulatelbMovieAndlbGenre
         /// </summary>
@@ -573,7 +625,7 @@ namespace WindowsFormsML_CodedUITests
             // Click 'Film' tab
             Mouse.Click(uIFilmTabPage, new Point(30, 11));
         }
-
+        
         /// <summary>
         /// RecordedMethod_btnCalculate_SelectlbGenreOnTabControl
         /// </summary>
@@ -586,7 +638,7 @@ namespace WindowsFormsML_CodedUITests
             // Click 'Genre' tab
             Mouse.Click(uIGenreTabPage, new Point(23, 12));
         }
-
+        
         /// <summary>
         /// RecordedMethod_btnCalculate_SelectlbMovieOnTabControl
         /// </summary>
@@ -599,7 +651,7 @@ namespace WindowsFormsML_CodedUITests
             // Click 'Film' tab
             Mouse.Click(uIFilmTabPage, new Point(21, 14));
         }
-
+        
         /// <summary>
         /// RecordedMethod_btnReset_CleartbBirthYearAndlbMovieAndlbGenre
         /// </summary>
@@ -612,7 +664,7 @@ namespace WindowsFormsML_CodedUITests
             // Click 'Nulstil' button
             Mouse.Click(uINulstilButton, new Point(18, 11));
         }
-
+        
         /// <summary>
         /// RecordedMethod_btnReset_SelectlbGenreOnTabControl
         /// </summary>
@@ -625,7 +677,7 @@ namespace WindowsFormsML_CodedUITests
             // Click 'Genre' tab
             Mouse.Click(uIGenreTabPage, new Point(17, 6));
         }
-
+        
         /// <summary>
         /// RecordedMethod_btnReset_SelectlbMovieOnTabControl
         /// </summary>
@@ -638,7 +690,21 @@ namespace WindowsFormsML_CodedUITests
             // Click 'Film' tab
             Mouse.Click(uIFilmTabPage, new Point(22, 13));
         }
+        
+        /// <summary>
+        /// RecordedMethod_btnUpdate_ClearAndRepopulateAllComboBoxes
+        /// </summary>
+        public void RecordedMethod_btnUpdate_ClearAndRepopulateAllComboBoxes()
+        {
+            #region Variable Declarations
+            WinButton uIOpdaterButton = this.UIMachineLearningWindow.UIOpdaterWindow.UIOpdaterButton;
+            #endregion
 
+            // Wait for 5 seconds for user delay between actions; Click 'Opdater' button
+            Playback.Wait(5000);
+            Mouse.Click(uIOpdaterButton, new Point(29, 8));
+        }
+        
         /// <summary>
         /// RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatus - Use 'RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams' to pass parameters into this method.
         /// </summary>
@@ -651,7 +717,7 @@ namespace WindowsFormsML_CodedUITests
             // Select 'Nej' in 'Sandsynligheder' combo box
             uISandsynlighederComboBox.SelectedItem = this.RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams.UISandsynlighederComboBoxSelectedItem;
         }
-
+        
         /// <summary>
         /// RecordedMethod_cbGenre_SelectCorrectGenre - Use 'RecordedMethod_cbGenre_SelectCorrectGenreParams' to pass parameters into this method.
         /// </summary>
@@ -664,7 +730,7 @@ namespace WindowsFormsML_CodedUITests
             // Select 'Drama' in 'cbGenre' combo box
             uICbGenreComboBox.SelectedItem = this.RecordedMethod_cbGenre_SelectCorrectGenreParams.UICbGenreComboBoxSelectedItem;
         }
-
+        
         /// <summary>
         /// RecordedMethod_cbGenre_SelectIncorrectGenre - Use 'RecordedMethod_cbGenre_SelectIncorrectGenreParams' to pass parameters into this method.
         /// </summary>
@@ -677,7 +743,7 @@ namespace WindowsFormsML_CodedUITests
             // Select 'Horror' in 'cbGenre' combo box
             uICbGenreComboBox.SelectedItem = this.RecordedMethod_cbGenre_SelectIncorrectGenreParams.UICbGenreComboBoxSelectedItem;
         }
-
+        
         /// <summary>
         /// RecordedMethod_cbIncludeMovies_ActivateCheckBox - Use 'RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams' to pass parameters into this method.
         /// </summary>
@@ -690,7 +756,7 @@ namespace WindowsFormsML_CodedUITests
             // Select 'Inkluder Film' check box
             uIInkluderFilmCheckBox.Checked = this.RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams.UIInkluderFilmCheckBoxChecked;
         }
-
+        
         /// <summary>
         /// RecordedMethod_cbMovie_DisenableComboBox - Use 'RecordedMethod_cbMovie_DisenableComboBoxParams' to pass parameters into this method.
         /// </summary>
@@ -703,7 +769,7 @@ namespace WindowsFormsML_CodedUITests
             // Clear 'Inkluder Film' check box
             uIInkluderFilmCheckBox.Checked = this.RecordedMethod_cbMovie_DisenableComboBoxParams.UIInkluderFilmCheckBoxChecked;
         }
-
+        
         /// <summary>
         /// RecordedMethod_cbMovie_SelectCorrectMovie - Use 'RecordedMethod_cbMovie_SelectCorrectMovieParams' to pass parameters into this method.
         /// </summary>
@@ -716,7 +782,7 @@ namespace WindowsFormsML_CodedUITests
             // Select 'Dr. Doolittle' in 'cbMovie' combo box
             uICbMovieComboBox.SelectedItem = this.RecordedMethod_cbMovie_SelectCorrectMovieParams.UICbMovieComboBoxSelectedItem;
         }
-
+        
         /// <summary>
         /// RecordedMethod_cbMovie_SelectIncorrectMovie - Use 'RecordedMethod_cbMovie_SelectIncorrectMovieParams' to pass parameters into this method.
         /// </summary>
@@ -729,7 +795,7 @@ namespace WindowsFormsML_CodedUITests
             // Select 'Ghettoblaster' in 'cbMovie' combo box
             uICbMovieComboBox.SelectedItem = this.RecordedMethod_cbMovie_SelectIncorrectMovieParams.UICbMovieComboBoxSelectedItem;
         }
-
+        
         /// <summary>
         /// RecordedMethod_cbSex_SelectIncorrectSex - Use 'RecordedMethod_cbSex_SelectIncorrectSexParams' to pass parameters into this method.
         /// </summary>
@@ -742,7 +808,7 @@ namespace WindowsFormsML_CodedUITests
             // Select 'Kvinde' in 'cbSex' combo box
             uICbSexComboBox.SelectedItem = this.RecordedMethod_cbSex_SelectIncorrectSexParams.UICbSexComboBoxSelectedItem;
         }
-
+        
         /// <summary>
         /// RecordedMethod_tabControl1_SelectlbMovieOnTabControl
         /// </summary>
@@ -755,7 +821,7 @@ namespace WindowsFormsML_CodedUITests
             // Click 'Film' tab
             Mouse.Click(uIFilmTabPage, new Point(27, 19));
         }
-
+        
         /// <summary>
         /// RecordedMethod_tbBirthYear_InputCorrectYear - Use 'RecordedMethod_tbBirthYear_InputCorrectYearParams' to pass parameters into this method.
         /// </summary>
@@ -768,7 +834,7 @@ namespace WindowsFormsML_CodedUITests
             // Type '2000' in 'tbBirthYear' text box
             uITbBirthYearEdit.Text = this.RecordedMethod_tbBirthYear_InputCorrectYearParams.UITbBirthYearEditText;
         }
-
+        
         /// <summary>
         /// RecordedMethod_tbBirthYear_InputIncorrectYear - Use 'RecordedMethod_tbBirthYear_InputIncorrectYearParams' to pass parameters into this method.
         /// </summary>
@@ -781,72 +847,20 @@ namespace WindowsFormsML_CodedUITests
             // Type '1999' in 'tbBirthYear' text box
             uITbBirthYearEdit.Text = this.RecordedMethod_tbBirthYear_InputIncorrectYearParams.UITbBirthYearEditText;
         }
-
+        
         /// <summary>
-        /// RecordedMethod_btnUpdate_ClearAndRepopulateAllComboBoxes
+        /// TESTASSERT - Use 'TESTASSERTExpectedValues' to pass parameters into this method.
         /// </summary>
-        public void RecordedMethod_btnUpdate_ClearAndRepopulateAllComboBoxes()
+        public void TESTASSERT()
         {
             #region Variable Declarations
-            WinButton uIOpdaterButton = this.UIMachineLearningWindow.UIOpdaterWindow.UIOpdaterButton;
+            WinEdit uITitleEdit = this.UIMp3tagv281CUsersHardWindow.UIItemWindow1.UITitleEdit;
             #endregion
 
-            // Click 'Opdater' button
-            Mouse.Click(uIOpdaterButton, new Point(29, 8));
+            // Verify that the 'Text' property of 'Title:' text box contains 'metal'
+            StringAssert.Contains(uITitleEdit.Text, this.TESTASSERTExpectedValues.UITitleEditText);
         }
-
-        /// <summary>
-        /// AssertMethod_btnUpdate_cbSexIsPopulated - Use 'AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void AssertMethod_btnUpdate_cbSexIsPopulated()
-        {
-            #region Variable Declarations
-            WinComboBox uICbSexComboBox = this.UIMachineLearningWindow.UICbSexWindow.UICbSexComboBox;
-            #endregion
-
-            // Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
-            Assert.AreEqual(this.AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues.UICbSexComboBoxSelectedItem, uICbSexComboBox.SelectedItem);
-        }
-
-        /// <summary>
-        /// AssertMethod_btnUpdate_cbClubMemberIsPopulated - Use 'AssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void AssertMethod_btnUpdate_cbClubMemberIsPopulated()
-        {
-            #region Variable Declarations
-            WinComboBox uISandsynlighederComboBox = this.UIMachineLearningWindow.UICbClubMemberWindow.UISandsynlighederComboBox;
-            #endregion
-
-            // Verify that the 'SelectedItem' property of 'Sandsynligheder' combo box equals 'Ja'
-            Assert.AreEqual(this.AssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues.UISandsynlighederComboBoxSelectedItem, uISandsynlighederComboBox.SelectedItem);
-        }
-
-        /// <summary>
-        /// AssertMethod_btnUpdate_cbMovieIsPopulated - Use 'AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void AssertMethod_btnUpdate_cbMovieIsPopulated()
-        {
-            #region Variable Declarations
-            WinComboBox uICbMovieComboBox = this.UIMachineLearningWindow.UICbMovieWindow.UICbMovieComboBox;
-            #endregion
-
-            // Verify that the 'SelectedItem' property of 'cbMovie' combo box equals 'Passenger 57'
-            Assert.AreEqual(this.AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues.UICbMovieComboBoxSelectedItem, uICbMovieComboBox.SelectedItem);
-        }
-
-        /// <summary>
-        /// AssertMethod_btnUpdate_cbGenreIsPopulated - Use 'AssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void AssertMethod_btnUpdate_cbGenreIsPopulated()
-        {
-            #region Variable Declarations
-            WinComboBox uICbGenreComboBox = this.UIMachineLearningWindow.UICbGenreWindow.UICbGenreComboBox;
-            #endregion
-
-            // Verify that the 'SelectedItem' property of 'cbGenre' combo box equals 'Action'
-            Assert.AreEqual(this.AssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues.UICbGenreComboBoxSelectedItem, uICbGenreComboBox.SelectedItem);
-        }
-
+        
         /// <summary>
         /// TESTRECORDING - Use 'TESTRECORDINGParams' to pass parameters into this method.
         /// </summary>
@@ -863,20 +877,7 @@ namespace WindowsFormsML_CodedUITests
             // Select 'metal' in 'Title:' combo box
             uITitleComboBox.EditableItem = this.TESTRECORDINGParams.UITitleComboBoxEditableItem;
         }
-
-        /// <summary>
-        /// TESTASSERT - Use 'TESTASSERTExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void TESTASSERT()
-        {
-            #region Variable Declarations
-            WinEdit uITitleEdit = this.UIMp3tagv281CUsersHardWindow.UIItemWindow1.UITitleEdit;
-            #endregion
-
-            // Verify that the 'Text' property of 'Title:' text box contains 'metal'
-            StringAssert.Contains(uITitleEdit.Text, this.TESTASSERTExpectedValues.UITitleEditText);
-        }
-
+        
         #region Properties
         public virtual AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues
         {
@@ -889,7 +890,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnCalculate_lbGenreIsResetExpectedValues AssertMethod_btnCalculate_lbGenreIsResetExpectedValues
         {
             get
@@ -901,7 +902,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_lbGenreIsResetExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues AssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues
         {
             get
@@ -913,7 +914,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues AssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues
         {
             get
@@ -925,7 +926,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues AssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues
         {
             get
@@ -937,7 +938,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues
         {
             get
@@ -949,7 +950,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnCalculate_lbMovieIsResetExpectedValues AssertMethod_btnCalculate_lbMovieIsResetExpectedValues
         {
             get
@@ -961,7 +962,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_lbMovieIsResetExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnCalculate_lbMovieNotDefaultValueExpectedValues AssertMethod_btnCalculate_lbMovieNotDefaultValueExpectedValues
         {
             get
@@ -973,7 +974,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_lbMovieNotDefaultValueExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnCalculate_lbMovieNotEmptyStringExpectedValues AssertMethod_btnCalculate_lbMovieNotEmptyStringExpectedValues
         {
             get
@@ -985,7 +986,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_lbMovieNotEmptyStringExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnCalculate_PopulatelbMovieExpectedValues AssertMethod_btnCalculate_PopulatelbMovieExpectedValues
         {
             get
@@ -997,7 +998,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnCalculate_PopulatelbMovieExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnReset_lbGenreIsNotResetExpectedValues AssertMethod_btnReset_lbGenreIsNotResetExpectedValues
         {
             get
@@ -1009,7 +1010,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnReset_lbGenreIsResetExpectedValues AssertMethod_btnReset_lbGenreIsResetExpectedValues
         {
             get
@@ -1021,7 +1022,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnReset_lbGenreIsResetExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnReset_lbMovieIsNotResetExpectedValues AssertMethod_btnReset_lbMovieIsNotResetExpectedValues
         {
             get
@@ -1033,7 +1034,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnReset_lbMovieIsResetExpectedValues AssertMethod_btnReset_lbMovieIsResetExpectedValues
         {
             get
@@ -1045,7 +1046,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnReset_lbMovieIsResetExpectedValues;
             }
         }
-
+        
         public virtual AssertMethod_btnReset_tbBirthYearIsResetExpectedValues AssertMethod_btnReset_tbBirthYearIsResetExpectedValues
         {
             get
@@ -1057,391 +1058,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnReset_tbBirthYearIsResetExpectedValues;
             }
         }
-
-        public virtual AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues == null))
-                {
-                    this.mAssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues = new AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues();
-                }
-                return this.mAssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues == null))
-                {
-                    this.mAssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues = new AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues();
-                }
-                return this.mAssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues == null))
-                {
-                    this.mAssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues = new AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues();
-                }
-                return this.mAssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues == null))
-                {
-                    this.mAssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues = new AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues();
-                }
-                return this.mAssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues == null))
-                {
-                    this.mAssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues = new AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues();
-                }
-                return this.mAssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues == null))
-                {
-                    this.mAssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues = new AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues();
-                }
-                return this.mAssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues == null))
-                {
-                    this.mAssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues = new AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues();
-                }
-                return this.mAssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues == null))
-                {
-                    this.mAssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues = new AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues();
-                }
-                return this.mAssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues == null))
-                {
-                    this.mAssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues = new AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues();
-                }
-                return this.mAssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues == null))
-                {
-                    this.mAssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues = new AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues();
-                }
-                return this.mAssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbSex_HasCorrectSelectedSexExpectedValues == null))
-                {
-                    this.mAssertMethod_cbSex_HasCorrectSelectedSexExpectedValues = new AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues();
-                }
-                return this.mAssertMethod_cbSex_HasCorrectSelectedSexExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues == null))
-                {
-                    this.mAssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues = new AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues();
-                }
-                return this.mAssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_tabControl1_lbGenreIsResetExpectedValues AssertMethod_tabControl1_lbGenreIsResetExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_tabControl1_lbGenreIsResetExpectedValues == null))
-                {
-                    this.mAssertMethod_tabControl1_lbGenreIsResetExpectedValues = new AssertMethod_tabControl1_lbGenreIsResetExpectedValues();
-                }
-                return this.mAssertMethod_tabControl1_lbGenreIsResetExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_tabControl1_lbMovieIsResetExpectedValues AssertMethod_tabControl1_lbMovieIsResetExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_tabControl1_lbMovieIsResetExpectedValues == null))
-                {
-                    this.mAssertMethod_tabControl1_lbMovieIsResetExpectedValues = new AssertMethod_tabControl1_lbMovieIsResetExpectedValues();
-                }
-                return this.mAssertMethod_tabControl1_lbMovieIsResetExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues == null))
-                {
-                    this.mAssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues = new AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues();
-                }
-                return this.mAssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_tbBirthYear_HasEmptyStringExpectedValues AssertMethod_tbBirthYear_HasEmptyStringExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_tbBirthYear_HasEmptyStringExpectedValues == null))
-                {
-                    this.mAssertMethod_tbBirthYear_HasEmptyStringExpectedValues = new AssertMethod_tbBirthYear_HasEmptyStringExpectedValues();
-                }
-                return this.mAssertMethod_tbBirthYear_HasEmptyStringExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues == null))
-                {
-                    this.mAssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues = new AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues();
-                }
-                return this.mAssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues;
-            }
-        }
-
-        public virtual AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues == null))
-                {
-                    this.mAssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues = new AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues();
-                }
-                return this.mAssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues;
-            }
-        }
-
-        public virtual RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod__cbIncludeMovies_ActivateCheckBoxParams == null))
-                {
-                    this.mRecordedMethod__cbIncludeMovies_ActivateCheckBoxParams = new RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams();
-                }
-                return this.mRecordedMethod__cbIncludeMovies_ActivateCheckBoxParams;
-            }
-        }
-
-        public virtual RecordedMethod__cbMovie_DisenableComboBoxParams RecordedMethod__cbMovie_DisenableComboBoxParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod__cbMovie_DisenableComboBoxParams == null))
-                {
-                    this.mRecordedMethod__cbMovie_DisenableComboBoxParams = new RecordedMethod__cbMovie_DisenableComboBoxParams();
-                }
-                return this.mRecordedMethod__cbMovie_DisenableComboBoxParams;
-            }
-        }
-
-        public virtual RecordedMethod__tbBirthYear_InputYearParams RecordedMethod__tbBirthYear_InputYearParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod__tbBirthYear_InputYearParams == null))
-                {
-                    this.mRecordedMethod__tbBirthYear_InputYearParams = new RecordedMethod__tbBirthYear_InputYearParams();
-                }
-                return this.mRecordedMethod__tbBirthYear_InputYearParams;
-            }
-        }
-
-        public virtual RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams == null))
-                {
-                    this.mRecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams = new RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams();
-                }
-                return this.mRecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams;
-            }
-        }
-
-        public virtual RecordedMethod_cbGenre_SelectCorrectGenreParams RecordedMethod_cbGenre_SelectCorrectGenreParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_cbGenre_SelectCorrectGenreParams == null))
-                {
-                    this.mRecordedMethod_cbGenre_SelectCorrectGenreParams = new RecordedMethod_cbGenre_SelectCorrectGenreParams();
-                }
-                return this.mRecordedMethod_cbGenre_SelectCorrectGenreParams;
-            }
-        }
-
-        public virtual RecordedMethod_cbGenre_SelectIncorrectGenreParams RecordedMethod_cbGenre_SelectIncorrectGenreParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_cbGenre_SelectIncorrectGenreParams == null))
-                {
-                    this.mRecordedMethod_cbGenre_SelectIncorrectGenreParams = new RecordedMethod_cbGenre_SelectIncorrectGenreParams();
-                }
-                return this.mRecordedMethod_cbGenre_SelectIncorrectGenreParams;
-            }
-        }
-
-        public virtual RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_cbIncludeMovies_ActivateCheckBoxParams == null))
-                {
-                    this.mRecordedMethod_cbIncludeMovies_ActivateCheckBoxParams = new RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams();
-                }
-                return this.mRecordedMethod_cbIncludeMovies_ActivateCheckBoxParams;
-            }
-        }
-
-        public virtual RecordedMethod_cbMovie_DisenableComboBoxParams RecordedMethod_cbMovie_DisenableComboBoxParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_cbMovie_DisenableComboBoxParams == null))
-                {
-                    this.mRecordedMethod_cbMovie_DisenableComboBoxParams = new RecordedMethod_cbMovie_DisenableComboBoxParams();
-                }
-                return this.mRecordedMethod_cbMovie_DisenableComboBoxParams;
-            }
-        }
-
-        public virtual RecordedMethod_cbMovie_SelectCorrectMovieParams RecordedMethod_cbMovie_SelectCorrectMovieParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_cbMovie_SelectCorrectMovieParams == null))
-                {
-                    this.mRecordedMethod_cbMovie_SelectCorrectMovieParams = new RecordedMethod_cbMovie_SelectCorrectMovieParams();
-                }
-                return this.mRecordedMethod_cbMovie_SelectCorrectMovieParams;
-            }
-        }
-
-        public virtual RecordedMethod_cbMovie_SelectIncorrectMovieParams RecordedMethod_cbMovie_SelectIncorrectMovieParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_cbMovie_SelectIncorrectMovieParams == null))
-                {
-                    this.mRecordedMethod_cbMovie_SelectIncorrectMovieParams = new RecordedMethod_cbMovie_SelectIncorrectMovieParams();
-                }
-                return this.mRecordedMethod_cbMovie_SelectIncorrectMovieParams;
-            }
-        }
-
-        public virtual RecordedMethod_cbSex_SelectIncorrectSexParams RecordedMethod_cbSex_SelectIncorrectSexParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_cbSex_SelectIncorrectSexParams == null))
-                {
-                    this.mRecordedMethod_cbSex_SelectIncorrectSexParams = new RecordedMethod_cbSex_SelectIncorrectSexParams();
-                }
-                return this.mRecordedMethod_cbSex_SelectIncorrectSexParams;
-            }
-        }
-
-        public virtual RecordedMethod_tbBirthYear_InputCorrectYearParams RecordedMethod_tbBirthYear_InputCorrectYearParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_tbBirthYear_InputCorrectYearParams == null))
-                {
-                    this.mRecordedMethod_tbBirthYear_InputCorrectYearParams = new RecordedMethod_tbBirthYear_InputCorrectYearParams();
-                }
-                return this.mRecordedMethod_tbBirthYear_InputCorrectYearParams;
-            }
-        }
-
-        public virtual RecordedMethod_tbBirthYear_InputIncorrectYearParams RecordedMethod_tbBirthYear_InputIncorrectYearParams
-        {
-            get
-            {
-                if ((this.mRecordedMethod_tbBirthYear_InputIncorrectYearParams == null))
-                {
-                    this.mRecordedMethod_tbBirthYear_InputIncorrectYearParams = new RecordedMethod_tbBirthYear_InputIncorrectYearParams();
-                }
-                return this.mRecordedMethod_tbBirthYear_InputIncorrectYearParams;
-            }
-        }
-
-        public virtual AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues == null))
-                {
-                    this.mAssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues = new AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues();
-                }
-                return this.mAssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues;
-            }
-        }
-
+        
         public virtual AssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues AssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues
         {
             get
@@ -1453,19 +1070,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues;
             }
         }
-
-        public virtual AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues == null))
-                {
-                    this.mAssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues = new AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues();
-                }
-                return this.mAssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues;
-            }
-        }
-
+        
         public virtual AssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues AssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues
         {
             get
@@ -1477,19 +1082,403 @@ namespace WindowsFormsML_CodedUITests
                 return this.mAssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues;
             }
         }
-
-        public virtual TESTRECORDINGParams TESTRECORDINGParams
+        
+        public virtual AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues
         {
             get
             {
-                if ((this.mTESTRECORDINGParams == null))
+                if ((this.mAssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues == null))
                 {
-                    this.mTESTRECORDINGParams = new TESTRECORDINGParams();
+                    this.mAssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues = new AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues();
                 }
-                return this.mTESTRECORDINGParams;
+                return this.mAssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues;
             }
         }
-
+        
+        public virtual AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues == null))
+                {
+                    this.mAssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues = new AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues();
+                }
+                return this.mAssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues == null))
+                {
+                    this.mAssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues = new AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues();
+                }
+                return this.mAssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues == null))
+                {
+                    this.mAssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues = new AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues();
+                }
+                return this.mAssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues == null))
+                {
+                    this.mAssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues = new AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues();
+                }
+                return this.mAssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues == null))
+                {
+                    this.mAssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues = new AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues();
+                }
+                return this.mAssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues == null))
+                {
+                    this.mAssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues = new AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues();
+                }
+                return this.mAssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues == null))
+                {
+                    this.mAssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues = new AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues();
+                }
+                return this.mAssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues == null))
+                {
+                    this.mAssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues = new AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues();
+                }
+                return this.mAssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues == null))
+                {
+                    this.mAssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues = new AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues();
+                }
+                return this.mAssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues == null))
+                {
+                    this.mAssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues = new AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues();
+                }
+                return this.mAssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues == null))
+                {
+                    this.mAssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues = new AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues();
+                }
+                return this.mAssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbSex_HasCorrectSelectedSexExpectedValues == null))
+                {
+                    this.mAssertMethod_cbSex_HasCorrectSelectedSexExpectedValues = new AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues();
+                }
+                return this.mAssertMethod_cbSex_HasCorrectSelectedSexExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues == null))
+                {
+                    this.mAssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues = new AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues();
+                }
+                return this.mAssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_tabControl1_lbGenreIsResetExpectedValues AssertMethod_tabControl1_lbGenreIsResetExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_tabControl1_lbGenreIsResetExpectedValues == null))
+                {
+                    this.mAssertMethod_tabControl1_lbGenreIsResetExpectedValues = new AssertMethod_tabControl1_lbGenreIsResetExpectedValues();
+                }
+                return this.mAssertMethod_tabControl1_lbGenreIsResetExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_tabControl1_lbMovieIsResetExpectedValues AssertMethod_tabControl1_lbMovieIsResetExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_tabControl1_lbMovieIsResetExpectedValues == null))
+                {
+                    this.mAssertMethod_tabControl1_lbMovieIsResetExpectedValues = new AssertMethod_tabControl1_lbMovieIsResetExpectedValues();
+                }
+                return this.mAssertMethod_tabControl1_lbMovieIsResetExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues == null))
+                {
+                    this.mAssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues = new AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues();
+                }
+                return this.mAssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_tbBirthYear_HasEmptyStringExpectedValues AssertMethod_tbBirthYear_HasEmptyStringExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_tbBirthYear_HasEmptyStringExpectedValues == null))
+                {
+                    this.mAssertMethod_tbBirthYear_HasEmptyStringExpectedValues = new AssertMethod_tbBirthYear_HasEmptyStringExpectedValues();
+                }
+                return this.mAssertMethod_tbBirthYear_HasEmptyStringExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues == null))
+                {
+                    this.mAssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues = new AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues();
+                }
+                return this.mAssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues == null))
+                {
+                    this.mAssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues = new AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues();
+                }
+                return this.mAssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues;
+            }
+        }
+        
+        public virtual RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod__cbIncludeMovies_ActivateCheckBoxParams == null))
+                {
+                    this.mRecordedMethod__cbIncludeMovies_ActivateCheckBoxParams = new RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams();
+                }
+                return this.mRecordedMethod__cbIncludeMovies_ActivateCheckBoxParams;
+            }
+        }
+        
+        public virtual RecordedMethod__cbMovie_DisenableComboBoxParams RecordedMethod__cbMovie_DisenableComboBoxParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod__cbMovie_DisenableComboBoxParams == null))
+                {
+                    this.mRecordedMethod__cbMovie_DisenableComboBoxParams = new RecordedMethod__cbMovie_DisenableComboBoxParams();
+                }
+                return this.mRecordedMethod__cbMovie_DisenableComboBoxParams;
+            }
+        }
+        
+        public virtual RecordedMethod__tbBirthYear_InputYearParams RecordedMethod__tbBirthYear_InputYearParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod__tbBirthYear_InputYearParams == null))
+                {
+                    this.mRecordedMethod__tbBirthYear_InputYearParams = new RecordedMethod__tbBirthYear_InputYearParams();
+                }
+                return this.mRecordedMethod__tbBirthYear_InputYearParams;
+            }
+        }
+        
+        public virtual RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams == null))
+                {
+                    this.mRecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams = new RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams();
+                }
+                return this.mRecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams;
+            }
+        }
+        
+        public virtual RecordedMethod_cbGenre_SelectCorrectGenreParams RecordedMethod_cbGenre_SelectCorrectGenreParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_cbGenre_SelectCorrectGenreParams == null))
+                {
+                    this.mRecordedMethod_cbGenre_SelectCorrectGenreParams = new RecordedMethod_cbGenre_SelectCorrectGenreParams();
+                }
+                return this.mRecordedMethod_cbGenre_SelectCorrectGenreParams;
+            }
+        }
+        
+        public virtual RecordedMethod_cbGenre_SelectIncorrectGenreParams RecordedMethod_cbGenre_SelectIncorrectGenreParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_cbGenre_SelectIncorrectGenreParams == null))
+                {
+                    this.mRecordedMethod_cbGenre_SelectIncorrectGenreParams = new RecordedMethod_cbGenre_SelectIncorrectGenreParams();
+                }
+                return this.mRecordedMethod_cbGenre_SelectIncorrectGenreParams;
+            }
+        }
+        
+        public virtual RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_cbIncludeMovies_ActivateCheckBoxParams == null))
+                {
+                    this.mRecordedMethod_cbIncludeMovies_ActivateCheckBoxParams = new RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams();
+                }
+                return this.mRecordedMethod_cbIncludeMovies_ActivateCheckBoxParams;
+            }
+        }
+        
+        public virtual RecordedMethod_cbMovie_DisenableComboBoxParams RecordedMethod_cbMovie_DisenableComboBoxParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_cbMovie_DisenableComboBoxParams == null))
+                {
+                    this.mRecordedMethod_cbMovie_DisenableComboBoxParams = new RecordedMethod_cbMovie_DisenableComboBoxParams();
+                }
+                return this.mRecordedMethod_cbMovie_DisenableComboBoxParams;
+            }
+        }
+        
+        public virtual RecordedMethod_cbMovie_SelectCorrectMovieParams RecordedMethod_cbMovie_SelectCorrectMovieParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_cbMovie_SelectCorrectMovieParams == null))
+                {
+                    this.mRecordedMethod_cbMovie_SelectCorrectMovieParams = new RecordedMethod_cbMovie_SelectCorrectMovieParams();
+                }
+                return this.mRecordedMethod_cbMovie_SelectCorrectMovieParams;
+            }
+        }
+        
+        public virtual RecordedMethod_cbMovie_SelectIncorrectMovieParams RecordedMethod_cbMovie_SelectIncorrectMovieParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_cbMovie_SelectIncorrectMovieParams == null))
+                {
+                    this.mRecordedMethod_cbMovie_SelectIncorrectMovieParams = new RecordedMethod_cbMovie_SelectIncorrectMovieParams();
+                }
+                return this.mRecordedMethod_cbMovie_SelectIncorrectMovieParams;
+            }
+        }
+        
+        public virtual RecordedMethod_cbSex_SelectIncorrectSexParams RecordedMethod_cbSex_SelectIncorrectSexParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_cbSex_SelectIncorrectSexParams == null))
+                {
+                    this.mRecordedMethod_cbSex_SelectIncorrectSexParams = new RecordedMethod_cbSex_SelectIncorrectSexParams();
+                }
+                return this.mRecordedMethod_cbSex_SelectIncorrectSexParams;
+            }
+        }
+        
+        public virtual RecordedMethod_tbBirthYear_InputCorrectYearParams RecordedMethod_tbBirthYear_InputCorrectYearParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_tbBirthYear_InputCorrectYearParams == null))
+                {
+                    this.mRecordedMethod_tbBirthYear_InputCorrectYearParams = new RecordedMethod_tbBirthYear_InputCorrectYearParams();
+                }
+                return this.mRecordedMethod_tbBirthYear_InputCorrectYearParams;
+            }
+        }
+        
+        public virtual RecordedMethod_tbBirthYear_InputIncorrectYearParams RecordedMethod_tbBirthYear_InputIncorrectYearParams
+        {
+            get
+            {
+                if ((this.mRecordedMethod_tbBirthYear_InputIncorrectYearParams == null))
+                {
+                    this.mRecordedMethod_tbBirthYear_InputIncorrectYearParams = new RecordedMethod_tbBirthYear_InputIncorrectYearParams();
+                }
+                return this.mRecordedMethod_tbBirthYear_InputIncorrectYearParams;
+            }
+        }
+        
         public virtual TESTASSERTExpectedValues TESTASSERTExpectedValues
         {
             get
@@ -1501,7 +1490,19 @@ namespace WindowsFormsML_CodedUITests
                 return this.mTESTASSERTExpectedValues;
             }
         }
-
+        
+        public virtual TESTRECORDINGParams TESTRECORDINGParams
+        {
+            get
+            {
+                if ((this.mTESTRECORDINGParams == null))
+                {
+                    this.mTESTRECORDINGParams = new TESTRECORDINGParams();
+                }
+                return this.mTESTRECORDINGParams;
+            }
+        }
+        
         public UIMachineLearningWindow UIMachineLearningWindow
         {
             get
@@ -1513,7 +1514,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIMachineLearningWindow;
             }
         }
-
+        
         public UIMp3tagv281CUsersHardWindow UIMp3tagv281CUsersHardWindow
         {
             get
@@ -1526,125 +1527,125 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues;
-
+        
         private AssertMethod_btnCalculate_lbGenreIsResetExpectedValues mAssertMethod_btnCalculate_lbGenreIsResetExpectedValues;
-
+        
         private AssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues mAssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues;
-
+        
         private AssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues mAssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues;
-
+        
         private AssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues mAssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues;
-
+        
         private AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues;
-
+        
         private AssertMethod_btnCalculate_lbMovieIsResetExpectedValues mAssertMethod_btnCalculate_lbMovieIsResetExpectedValues;
-
+        
         private AssertMethod_btnCalculate_lbMovieNotDefaultValueExpectedValues mAssertMethod_btnCalculate_lbMovieNotDefaultValueExpectedValues;
-
+        
         private AssertMethod_btnCalculate_lbMovieNotEmptyStringExpectedValues mAssertMethod_btnCalculate_lbMovieNotEmptyStringExpectedValues;
-
+        
         private AssertMethod_btnCalculate_PopulatelbMovieExpectedValues mAssertMethod_btnCalculate_PopulatelbMovieExpectedValues;
-
+        
         private AssertMethod_btnReset_lbGenreIsNotResetExpectedValues mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues;
-
+        
         private AssertMethod_btnReset_lbGenreIsResetExpectedValues mAssertMethod_btnReset_lbGenreIsResetExpectedValues;
-
+        
         private AssertMethod_btnReset_lbMovieIsNotResetExpectedValues mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues;
-
+        
         private AssertMethod_btnReset_lbMovieIsResetExpectedValues mAssertMethod_btnReset_lbMovieIsResetExpectedValues;
-
+        
         private AssertMethod_btnReset_tbBirthYearIsResetExpectedValues mAssertMethod_btnReset_tbBirthYearIsResetExpectedValues;
-
-        private AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues mAssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues;
-
-        private AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues mAssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues;
-
-        private AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues mAssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues;
-
-        private AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues mAssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues;
-
-        private AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues mAssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues;
-
-        private AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues mAssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues;
-
-        private AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues mAssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues;
-
-        private AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues mAssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues;
-
-        private AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues mAssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues;
-
-        private AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues mAssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues;
-
-        private AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues mAssertMethod_cbSex_HasCorrectSelectedSexExpectedValues;
-
-        private AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues mAssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues;
-
-        private AssertMethod_tabControl1_lbGenreIsResetExpectedValues mAssertMethod_tabControl1_lbGenreIsResetExpectedValues;
-
-        private AssertMethod_tabControl1_lbMovieIsResetExpectedValues mAssertMethod_tabControl1_lbMovieIsResetExpectedValues;
-
-        private AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues mAssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues;
-
-        private AssertMethod_tbBirthYear_HasEmptyStringExpectedValues mAssertMethod_tbBirthYear_HasEmptyStringExpectedValues;
-
-        private AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues mAssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues;
-
-        private AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues mAssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues;
-
-        private RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams mRecordedMethod__cbIncludeMovies_ActivateCheckBoxParams;
-
-        private RecordedMethod__cbMovie_DisenableComboBoxParams mRecordedMethod__cbMovie_DisenableComboBoxParams;
-
-        private RecordedMethod__tbBirthYear_InputYearParams mRecordedMethod__tbBirthYear_InputYearParams;
-
-        private RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams mRecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams;
-
-        private RecordedMethod_cbGenre_SelectCorrectGenreParams mRecordedMethod_cbGenre_SelectCorrectGenreParams;
-
-        private RecordedMethod_cbGenre_SelectIncorrectGenreParams mRecordedMethod_cbGenre_SelectIncorrectGenreParams;
-
-        private RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams mRecordedMethod_cbIncludeMovies_ActivateCheckBoxParams;
-
-        private RecordedMethod_cbMovie_DisenableComboBoxParams mRecordedMethod_cbMovie_DisenableComboBoxParams;
-
-        private RecordedMethod_cbMovie_SelectCorrectMovieParams mRecordedMethod_cbMovie_SelectCorrectMovieParams;
-
-        private RecordedMethod_cbMovie_SelectIncorrectMovieParams mRecordedMethod_cbMovie_SelectIncorrectMovieParams;
-
-        private RecordedMethod_cbSex_SelectIncorrectSexParams mRecordedMethod_cbSex_SelectIncorrectSexParams;
-
-        private RecordedMethod_tbBirthYear_InputCorrectYearParams mRecordedMethod_tbBirthYear_InputCorrectYearParams;
-
-        private RecordedMethod_tbBirthYear_InputIncorrectYearParams mRecordedMethod_tbBirthYear_InputIncorrectYearParams;
-
-        private AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues mAssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues;
-
+        
         private AssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues mAssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues;
-
-        private AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues mAssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues;
-
+        
         private AssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues mAssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues;
-
-        private TESTRECORDINGParams mTESTRECORDINGParams;
-
+        
+        private AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues mAssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues;
+        
+        private AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues mAssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues;
+        
+        private AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues mAssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues;
+        
+        private AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues mAssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues;
+        
+        private AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues mAssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues;
+        
+        private AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues mAssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues;
+        
+        private AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues mAssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues;
+        
+        private AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues mAssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues;
+        
+        private AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues mAssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues;
+        
+        private AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues mAssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues;
+        
+        private AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues mAssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues;
+        
+        private AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues mAssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues;
+        
+        private AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues mAssertMethod_cbSex_HasCorrectSelectedSexExpectedValues;
+        
+        private AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues mAssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues;
+        
+        private AssertMethod_tabControl1_lbGenreIsResetExpectedValues mAssertMethod_tabControl1_lbGenreIsResetExpectedValues;
+        
+        private AssertMethod_tabControl1_lbMovieIsResetExpectedValues mAssertMethod_tabControl1_lbMovieIsResetExpectedValues;
+        
+        private AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues mAssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues;
+        
+        private AssertMethod_tbBirthYear_HasEmptyStringExpectedValues mAssertMethod_tbBirthYear_HasEmptyStringExpectedValues;
+        
+        private AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues mAssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues;
+        
+        private AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues mAssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues;
+        
+        private RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams mRecordedMethod__cbIncludeMovies_ActivateCheckBoxParams;
+        
+        private RecordedMethod__cbMovie_DisenableComboBoxParams mRecordedMethod__cbMovie_DisenableComboBoxParams;
+        
+        private RecordedMethod__tbBirthYear_InputYearParams mRecordedMethod__tbBirthYear_InputYearParams;
+        
+        private RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams mRecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams;
+        
+        private RecordedMethod_cbGenre_SelectCorrectGenreParams mRecordedMethod_cbGenre_SelectCorrectGenreParams;
+        
+        private RecordedMethod_cbGenre_SelectIncorrectGenreParams mRecordedMethod_cbGenre_SelectIncorrectGenreParams;
+        
+        private RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams mRecordedMethod_cbIncludeMovies_ActivateCheckBoxParams;
+        
+        private RecordedMethod_cbMovie_DisenableComboBoxParams mRecordedMethod_cbMovie_DisenableComboBoxParams;
+        
+        private RecordedMethod_cbMovie_SelectCorrectMovieParams mRecordedMethod_cbMovie_SelectCorrectMovieParams;
+        
+        private RecordedMethod_cbMovie_SelectIncorrectMovieParams mRecordedMethod_cbMovie_SelectIncorrectMovieParams;
+        
+        private RecordedMethod_cbSex_SelectIncorrectSexParams mRecordedMethod_cbSex_SelectIncorrectSexParams;
+        
+        private RecordedMethod_tbBirthYear_InputCorrectYearParams mRecordedMethod_tbBirthYear_InputCorrectYearParams;
+        
+        private RecordedMethod_tbBirthYear_InputIncorrectYearParams mRecordedMethod_tbBirthYear_InputIncorrectYearParams;
+        
         private TESTASSERTExpectedValues mTESTASSERTExpectedValues;
-
+        
+        private TESTRECORDINGParams mTESTRECORDINGParams;
+        
         private UIMachineLearningWindow mUIMachineLearningWindow;
-
+        
         private UIMp3tagv281CUsersHardWindow mUIMp3tagv281CUsersHardWindow;
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_lbGenreIsPopulated'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'FriendlyName' property of 'Scored Probabilities for Class Action: 0.05061298...' label contains 'Scored'
@@ -1652,14 +1653,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIScoredProbabilitiesfTextFriendlyName = "Scored";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_lbGenreIsReset'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_lbGenreIsResetExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label starts with 'Ingen'
@@ -1667,14 +1668,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIIngendataersendttilmTextDisplayText = "Ingen";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_lbGenreNotDefaultValue'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of 'Scored Probabilities for Class Action: 1, Scored ...' label is not equal to 'Ingen data er sendt til modellen endnu...'
@@ -1682,14 +1683,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIScoredProbabilitiesfText1DisplayText = "Ingen data er sendt til modellen endnu...";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_lbGenreNotEmptyString'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of 'Scored Probabilities for Class Action: 0.05061298...' label is not equal to ''
@@ -1697,14 +1698,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIScoredProbabilitiesfTextDisplayText = "";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_lbMovieIsNotReset'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label is not equal to 'Ingen data er sendt til modellen endnu...'
@@ -1712,14 +1713,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIScoredProbabilitiesfText1DisplayText = "Ingen data er sendt til modellen endnu...";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_lbMovieIsPopulated'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Wait for 20 seconds for user delay between actions; Verify that the 'FriendlyName' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label contains 'Scored'
@@ -1727,14 +1728,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIScoredProbabilitiesfTextFriendlyName = "Scored";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_lbMovieIsReset'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_lbMovieIsResetExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label starts with 'Ingen'
@@ -1742,14 +1743,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIIngendataersendttilmTextDisplayText = "Ingen";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_lbMovieNotDefaultValue'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_lbMovieNotDefaultValueExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label is not equal to 'Ingen data er sendt til modellen endnu...'
@@ -1757,14 +1758,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIScoredProbabilitiesfText1DisplayText = "Ingen data er sendt til modellen endnu...";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_lbMovieNotEmptyString'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_lbMovieNotEmptyStringExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label is not equal to ''
@@ -1772,14 +1773,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIScoredProbabilitiesfTextDisplayText = "";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnCalculate_PopulatelbMovie'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnCalculate_PopulatelbMovieExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label equals ' 
@@ -1850,14 +1851,14 @@ namespace WindowsFormsML_CodedUITests
             "Probabilities for Class The Grudge: 0.20273091";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnReset_lbGenreIsNotReset'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnReset_lbGenreIsNotResetExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'FriendlyName' property of 'Scored Probabilities for Class Action: 0.05061298...' label contains 'Scored'
@@ -1865,14 +1866,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIScoredProbabilitiesfTextFriendlyName = "Scored";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnReset_lbGenreIsReset'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnReset_lbGenreIsResetExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'FriendlyName' property of 'Ingen data er sendt til modellen endnu...' label contains 'Ingen'
@@ -1880,14 +1881,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIIngendataersendttilmTextFriendlyName = "Ingen";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnReset_lbMovieIsNotReset'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnReset_lbMovieIsNotResetExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'FriendlyName' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label contains 'Scored'
@@ -1895,14 +1896,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIScoredProbabilitiesfTextFriendlyName = "Scored";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnReset_lbMovieIsReset'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnReset_lbMovieIsResetExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'FriendlyName' property of 'Ingen data er sendt til modellen endnu...' label contains 'Ingen'
@@ -1910,14 +1911,14 @@ namespace WindowsFormsML_CodedUITests
         public string UIIngendataersendttilmTextFriendlyName = "Ingen";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnReset_tbBirthYearIsReset'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnReset_tbBirthYearIsResetExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'Text' property of 'tbBirthYear' text box equals ''
@@ -1925,494 +1926,14 @@ namespace WindowsFormsML_CodedUITests
         public string UITbBirthYearEditText = "";
         #endregion
     }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatus'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'Sandsynligheder' combo box equals 'Ja'
-        /// </summary>
-        public string UISandsynlighederComboBoxSelectedItem = "Ja";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatus'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'Sandsynligheder' combo box is not equal to 'Ja'
-        /// </summary>
-        public string UISandsynlighederComboBoxSelectedItem = "Ja";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbGenre_HasCorrectSelectedGenre'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'cbGenre' combo box equals 'Drama'
-        /// </summary>
-        public string UICbGenreComboBoxSelectedItem = "Drama";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbGenre_HasIncorrectSelectedGenre'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'cbGenre' combo box is not equal to 'Drama'
-        /// </summary>
-        public string UICbGenreComboBoxSelectedItem = "Drama";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbIncludeMovies_CheckBoxIsChecked'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'Checked' property of 'Inkluder Film' check box equals 'True'
-        /// </summary>
-        public bool UIInkluderFilmCheckBoxChecked = true;
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbIncludeMovies_CheckBoxIsUnchecked'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'Checked' property of 'Inkluder Film' check box equals 'False'
-        /// </summary>
-        public bool UIInkluderFilmCheckBoxChecked = false;
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbMovie_ComboBoxIsDisenabled'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'Enabled' property of 'cbMovie' combo box equals 'False'
-        /// </summary>
-        public bool UICbMovieComboBoxEnabled = false;
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbMovie_ComboBoxIsEnabled'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'Enabled' property of 'cbMovie' combo box equals 'True'
-        /// </summary>
-        public bool UICbMovieComboBoxEnabled = true;
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbMovie_HasCorrectSelectedMovie'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'cbMovie' combo box equals 'Dr. Doolittle'
-        /// </summary>
-        public string UICbMovieComboBoxSelectedItem = "Dr. Doolittle";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbMovie_HasIncorrectSelectedMovie'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'cbMovie' combo box is not equal to 'Dr. Doolittle'
-        /// </summary>
-        public string UICbMovieComboBoxSelectedItem = "Dr. Doolittle";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbSex_HasCorrectSelectedSex'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
-        /// </summary>
-        public string UICbSexComboBoxSelectedItem = "Mand";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_cbSex_HasIncorrectSelectedSex'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'cbSex' combo box is not equal to 'Mand'
-        /// </summary>
-        public string UICbSexComboBoxSelectedItem = "Mand";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_tabControl1_lbGenreIsReset'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_tabControl1_lbGenreIsResetExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label equals 'Ingen data er sendt til modellen endnu...'
-        /// </summary>
-        public string UIIngendataersendttilmTextDisplayText = "Ingen data er sendt til modellen endnu...";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_tabControl1_lbMovieIsReset'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_tabControl1_lbMovieIsResetExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label equals 'Ingen data er sendt til modellen endnu...'
-        /// </summary>
-        public string UIIngendataersendttilmTextDisplayText = "Ingen data er sendt til modellen endnu...";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_tbBirthYear_HasCorrectYearInput'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'Text' property of 'tbBirthYear' text box equals '2000'
-        /// </summary>
-        public string UITbBirthYearEditText = "2000";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_tbBirthYear_HasEmptyString'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_tbBirthYear_HasEmptyStringExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'Text' property of 'tbBirthYear' text box equals ''
-        /// </summary>
-        public string UITbBirthYearEditText = "";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_tbBirthYear_HasIncorrectYearInput'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'Text' property of 'tbBirthYear' text box is not equal to '2000'
-        /// </summary>
-        public string UITbBirthYearEditText = "2000";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_tbBirthYear_IsNotReadOnly'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'ReadOnly' property of 'tbBirthYear' text box equals 'False'
-        /// </summary>
-        public bool UITbBirthYearEditReadOnly = false;
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod__cbIncludeMovies_ActivateCheckBox'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Select 'Inkluder Film' check box
-        /// </summary>
-        public bool UIInkluderFilmCheckBoxChecked = true;
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod__cbMovie_DisenableComboBox'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod__cbMovie_DisenableComboBoxParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Clear 'Inkluder Film' check box
-        /// </summary>
-        public bool UIInkluderFilmCheckBoxChecked = false;
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod__tbBirthYear_InputYear'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod__tbBirthYear_InputYearParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Type '2000' in 'tbBirthYear' text box
-        /// </summary>
-        public string UITbBirthYearEditText = "2000";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatus'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Select 'Nej' in 'Sandsynligheder' combo box
-        /// </summary>
-        public string UISandsynlighederComboBoxSelectedItem = "Nej";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_cbGenre_SelectCorrectGenre'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_cbGenre_SelectCorrectGenreParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Select 'Drama' in 'cbGenre' combo box
-        /// </summary>
-        public string UICbGenreComboBoxSelectedItem = "Drama";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_cbGenre_SelectIncorrectGenre'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_cbGenre_SelectIncorrectGenreParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Select 'Horror' in 'cbGenre' combo box
-        /// </summary>
-        public string UICbGenreComboBoxSelectedItem = "Horror";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_cbIncludeMovies_ActivateCheckBox'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Select 'Inkluder Film' check box
-        /// </summary>
-        public bool UIInkluderFilmCheckBoxChecked = true;
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_cbMovie_DisenableComboBox'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_cbMovie_DisenableComboBoxParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Clear 'Inkluder Film' check box
-        /// </summary>
-        public bool UIInkluderFilmCheckBoxChecked = false;
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_cbMovie_SelectCorrectMovie'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_cbMovie_SelectCorrectMovieParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Select 'Dr. Doolittle' in 'cbMovie' combo box
-        /// </summary>
-        public string UICbMovieComboBoxSelectedItem = "Dr. Doolittle";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_cbMovie_SelectIncorrectMovie'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_cbMovie_SelectIncorrectMovieParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Select 'Ghettoblaster' in 'cbMovie' combo box
-        /// </summary>
-        public string UICbMovieComboBoxSelectedItem = "Ghettoblaster";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_cbSex_SelectIncorrectSex'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_cbSex_SelectIncorrectSexParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Select 'Kvinde' in 'cbSex' combo box
-        /// </summary>
-        public string UICbSexComboBoxSelectedItem = "Kvinde";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_tbBirthYear_InputCorrectYear'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_tbBirthYear_InputCorrectYearParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Type '2000' in 'tbBirthYear' text box
-        /// </summary>
-        public string UITbBirthYearEditText = "2000";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod_tbBirthYear_InputIncorrectYear'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class RecordedMethod_tbBirthYear_InputIncorrectYearParams
-    {
-
-        #region Fields
-        /// <summary>
-        /// Type '1999' in 'tbBirthYear' text box
-        /// </summary>
-        public string UITbBirthYearEditText = "1999";
-        #endregion
-    }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_btnUpdate_cbSexIsPopulated'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
-        /// </summary>
-        public string UICbSexComboBoxSelectedItem = "Mand";
-        #endregion
-    }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnUpdate_cbClubMemberIsPopulated'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnUpdate_cbClubMemberIsPopulatedExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'SelectedItem' property of 'Sandsynligheder' combo box equals 'Ja'
@@ -2420,29 +1941,14 @@ namespace WindowsFormsML_CodedUITests
         public string UISandsynlighederComboBoxSelectedItem = "Ja";
         #endregion
     }
-
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_btnUpdate_cbMovieIsPopulated'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues
-    {
-
-        #region Fields
-        /// <summary>
-        /// Verify that the 'SelectedItem' property of 'cbMovie' combo box equals 'Passenger 57'
-        /// </summary>
-        public string UICbMovieComboBoxSelectedItem = "Passenger 57";
-        #endregion
-    }
-
+    
     /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnUpdate_cbGenreIsPopulated'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class AssertMethod_btnUpdate_cbGenreIsPopulatedExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'SelectedItem' property of 'cbGenre' combo box equals 'Action'
@@ -2450,29 +1956,509 @@ namespace WindowsFormsML_CodedUITests
         public string UICbGenreComboBoxSelectedItem = "Action";
         #endregion
     }
-
+    
     /// <summary>
-    /// Parameters to be passed into 'TESTRECORDING'
+    /// Parameters to be passed into 'AssertMethod_btnUpdate_cbMovieIsPopulated'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class TESTRECORDINGParams
+    public class AssertMethod_btnUpdate_cbMovieIsPopulatedExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
-        /// Select 'metal' in 'Title:' combo box
+        /// Verify that the 'SelectedItem' property of 'cbMovie' combo box equals 'Passenger 57'
         /// </summary>
-        public string UITitleComboBoxEditableItem = "metal";
+        public string UICbMovieComboBoxSelectedItem = "Passenger 57";
         #endregion
     }
-
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_btnUpdate_cbSexIsPopulated'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
+        /// </summary>
+        public string UICbSexComboBoxSelectedItem = "Mand";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatus'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbClubMember_HasCorrectSelectedClubMemberStatusExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'SelectedItem' property of 'Sandsynligheder' combo box equals 'Ja'
+        /// </summary>
+        public string UISandsynlighederComboBoxSelectedItem = "Ja";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatus'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbClubMember_HasIncorrectSelectedClubMemberStatusExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'SelectedItem' property of 'Sandsynligheder' combo box is not equal to 'Ja'
+        /// </summary>
+        public string UISandsynlighederComboBoxSelectedItem = "Ja";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbGenre_HasCorrectSelectedGenre'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbGenre_HasCorrectSelectedGenreExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'SelectedItem' property of 'cbGenre' combo box equals 'Drama'
+        /// </summary>
+        public string UICbGenreComboBoxSelectedItem = "Drama";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbGenre_HasIncorrectSelectedGenre'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbGenre_HasIncorrectSelectedGenreExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'SelectedItem' property of 'cbGenre' combo box is not equal to 'Drama'
+        /// </summary>
+        public string UICbGenreComboBoxSelectedItem = "Drama";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbIncludeMovies_CheckBoxIsChecked'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbIncludeMovies_CheckBoxIsCheckedExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Checked' property of 'Inkluder Film' check box equals 'True'
+        /// </summary>
+        public bool UIInkluderFilmCheckBoxChecked = true;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbIncludeMovies_CheckBoxIsUnchecked'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbIncludeMovies_CheckBoxIsUncheckedExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Checked' property of 'Inkluder Film' check box equals 'False'
+        /// </summary>
+        public bool UIInkluderFilmCheckBoxChecked = false;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbMovie_ComboBoxIsDisenabled'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbMovie_ComboBoxIsDisenabledExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Enabled' property of 'cbMovie' combo box equals 'False'
+        /// </summary>
+        public bool UICbMovieComboBoxEnabled = false;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbMovie_ComboBoxIsEnabled'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbMovie_ComboBoxIsEnabledExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Enabled' property of 'cbMovie' combo box equals 'True'
+        /// </summary>
+        public bool UICbMovieComboBoxEnabled = true;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbMovie_HasCorrectSelectedMovie'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbMovie_HasCorrectSelectedMovieExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'SelectedItem' property of 'cbMovie' combo box equals 'Dr. Doolittle'
+        /// </summary>
+        public string UICbMovieComboBoxSelectedItem = "Dr. Doolittle";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbMovie_HasIncorrectSelectedMovie'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbMovie_HasIncorrectSelectedMovieExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'SelectedItem' property of 'cbMovie' combo box is not equal to 'Dr. Doolittle'
+        /// </summary>
+        public string UICbMovieComboBoxSelectedItem = "Dr. Doolittle";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbSex_HasCorrectSelectedSex'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbSex_HasCorrectSelectedSexExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
+        /// </summary>
+        public string UICbSexComboBoxSelectedItem = "Mand";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_cbSex_HasIncorrectSelectedSex'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_cbSex_HasIncorrectSelectedSexExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'SelectedItem' property of 'cbSex' combo box is not equal to 'Mand'
+        /// </summary>
+        public string UICbSexComboBoxSelectedItem = "Mand";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_tabControl1_lbGenreIsReset'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_tabControl1_lbGenreIsResetExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label equals 'Ingen data er sendt til modellen endnu...'
+        /// </summary>
+        public string UIIngendataersendttilmTextDisplayText = "Ingen data er sendt til modellen endnu...";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_tabControl1_lbMovieIsReset'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_tabControl1_lbMovieIsResetExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'DisplayText' property of 'Ingen data er sendt til modellen endnu...' label equals 'Ingen data er sendt til modellen endnu...'
+        /// </summary>
+        public string UIIngendataersendttilmTextDisplayText = "Ingen data er sendt til modellen endnu...";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_tbBirthYear_HasCorrectYearInput'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_tbBirthYear_HasCorrectYearInputExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Text' property of 'tbBirthYear' text box equals '2000'
+        /// </summary>
+        public string UITbBirthYearEditText = "2000";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_tbBirthYear_HasEmptyString'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_tbBirthYear_HasEmptyStringExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Text' property of 'tbBirthYear' text box equals ''
+        /// </summary>
+        public string UITbBirthYearEditText = "";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_tbBirthYear_HasIncorrectYearInput'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_tbBirthYear_HasIncorrectYearInputExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Text' property of 'tbBirthYear' text box is not equal to '2000'
+        /// </summary>
+        public string UITbBirthYearEditText = "2000";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_tbBirthYear_IsNotReadOnly'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_tbBirthYear_IsNotReadOnlyExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'ReadOnly' property of 'tbBirthYear' text box equals 'False'
+        /// </summary>
+        public bool UITbBirthYearEditReadOnly = false;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod__cbIncludeMovies_ActivateCheckBox'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod__cbIncludeMovies_ActivateCheckBoxParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Select 'Inkluder Film' check box
+        /// </summary>
+        public bool UIInkluderFilmCheckBoxChecked = true;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod__cbMovie_DisenableComboBox'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod__cbMovie_DisenableComboBoxParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Clear 'Inkluder Film' check box
+        /// </summary>
+        public bool UIInkluderFilmCheckBoxChecked = false;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod__tbBirthYear_InputYear'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod__tbBirthYear_InputYearParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Type '2000' in 'tbBirthYear' text box
+        /// </summary>
+        public string UITbBirthYearEditText = "2000";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatus'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_cbClubMember_SelectIncorrectClubMemberStatusParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Select 'Nej' in 'Sandsynligheder' combo box
+        /// </summary>
+        public string UISandsynlighederComboBoxSelectedItem = "Nej";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_cbGenre_SelectCorrectGenre'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_cbGenre_SelectCorrectGenreParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Select 'Drama' in 'cbGenre' combo box
+        /// </summary>
+        public string UICbGenreComboBoxSelectedItem = "Drama";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_cbGenre_SelectIncorrectGenre'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_cbGenre_SelectIncorrectGenreParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Select 'Horror' in 'cbGenre' combo box
+        /// </summary>
+        public string UICbGenreComboBoxSelectedItem = "Horror";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_cbIncludeMovies_ActivateCheckBox'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_cbIncludeMovies_ActivateCheckBoxParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Select 'Inkluder Film' check box
+        /// </summary>
+        public bool UIInkluderFilmCheckBoxChecked = true;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_cbMovie_DisenableComboBox'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_cbMovie_DisenableComboBoxParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Clear 'Inkluder Film' check box
+        /// </summary>
+        public bool UIInkluderFilmCheckBoxChecked = false;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_cbMovie_SelectCorrectMovie'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_cbMovie_SelectCorrectMovieParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Select 'Dr. Doolittle' in 'cbMovie' combo box
+        /// </summary>
+        public string UICbMovieComboBoxSelectedItem = "Dr. Doolittle";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_cbMovie_SelectIncorrectMovie'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_cbMovie_SelectIncorrectMovieParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Select 'Ghettoblaster' in 'cbMovie' combo box
+        /// </summary>
+        public string UICbMovieComboBoxSelectedItem = "Ghettoblaster";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_cbSex_SelectIncorrectSex'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_cbSex_SelectIncorrectSexParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Select 'Kvinde' in 'cbSex' combo box
+        /// </summary>
+        public string UICbSexComboBoxSelectedItem = "Kvinde";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_tbBirthYear_InputCorrectYear'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_tbBirthYear_InputCorrectYearParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Type '2000' in 'tbBirthYear' text box
+        /// </summary>
+        public string UITbBirthYearEditText = "2000";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'RecordedMethod_tbBirthYear_InputIncorrectYear'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class RecordedMethod_tbBirthYear_InputIncorrectYearParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Type '1999' in 'tbBirthYear' text box
+        /// </summary>
+        public string UITbBirthYearEditText = "1999";
+        #endregion
+    }
+    
     /// <summary>
     /// Parameters to be passed into 'TESTASSERT'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class TESTASSERTExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'Text' property of 'Title:' text box contains 'metal'
@@ -2480,11 +2466,26 @@ namespace WindowsFormsML_CodedUITests
         public string UITitleEditText = "metal";
         #endregion
     }
-
+    
+    /// <summary>
+    /// Parameters to be passed into 'TESTRECORDING'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class TESTRECORDINGParams
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Select 'metal' in 'Title:' combo box
+        /// </summary>
+        public string UITitleComboBoxEditableItem = "metal";
+        #endregion
+    }
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIMachineLearningWindow : WinWindow
     {
-
+        
         public UIMachineLearningWindow()
         {
             #region Search Criteria
@@ -2493,7 +2494,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public UITbBirthYearWindow UITbBirthYearWindow
         {
@@ -2506,7 +2507,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUITbBirthYearWindow;
             }
         }
-
+        
         public WinClient UIMachineLearningClient
         {
             get
@@ -2522,7 +2523,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIMachineLearningClient;
             }
         }
-
+        
         public UICbSexWindow UICbSexWindow
         {
             get
@@ -2534,7 +2535,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUICbSexWindow;
             }
         }
-
+        
         public UICbClubMemberWindow UICbClubMemberWindow
         {
             get
@@ -2546,7 +2547,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUICbClubMemberWindow;
             }
         }
-
+        
         public UICbMovieWindow UICbMovieWindow
         {
             get
@@ -2558,7 +2559,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUICbMovieWindow;
             }
         }
-
+        
         public UIInkluderFilmWindow UIInkluderFilmWindow
         {
             get
@@ -2570,7 +2571,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIInkluderFilmWindow;
             }
         }
-
+        
         public UICbGenreWindow UICbGenreWindow
         {
             get
@@ -2582,7 +2583,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUICbGenreWindow;
             }
         }
-
+        
         public UIBeregnWindow UIBeregnWindow
         {
             get
@@ -2594,7 +2595,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIBeregnWindow;
             }
         }
-
+        
         public UIKlubmedlemTabList UIKlubmedlemTabList
         {
             get
@@ -2606,7 +2607,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIKlubmedlemTabList;
             }
         }
-
+        
         public UIScoredProbabilitiesfWindow UIScoredProbabilitiesfWindow
         {
             get
@@ -2618,7 +2619,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIScoredProbabilitiesfWindow;
             }
         }
-
+        
         public UIScoredProbabilitiesfWindow1 UIScoredProbabilitiesfWindow1
         {
             get
@@ -2630,7 +2631,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIScoredProbabilitiesfWindow1;
             }
         }
-
+        
         public UINulstilWindow UINulstilWindow
         {
             get
@@ -2642,7 +2643,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUINulstilWindow;
             }
         }
-
+        
         public UIOpdaterWindow UIOpdaterWindow
         {
             get
@@ -2655,41 +2656,41 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private UITbBirthYearWindow mUITbBirthYearWindow;
-
+        
         private WinClient mUIMachineLearningClient;
-
+        
         private UICbSexWindow mUICbSexWindow;
-
+        
         private UICbClubMemberWindow mUICbClubMemberWindow;
-
+        
         private UICbMovieWindow mUICbMovieWindow;
-
+        
         private UIInkluderFilmWindow mUIInkluderFilmWindow;
-
+        
         private UICbGenreWindow mUICbGenreWindow;
-
+        
         private UIBeregnWindow mUIBeregnWindow;
-
+        
         private UIKlubmedlemTabList mUIKlubmedlemTabList;
-
+        
         private UIScoredProbabilitiesfWindow mUIScoredProbabilitiesfWindow;
-
+        
         private UIScoredProbabilitiesfWindow1 mUIScoredProbabilitiesfWindow1;
-
+        
         private UINulstilWindow mUINulstilWindow;
-
+        
         private UIOpdaterWindow mUIOpdaterWindow;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UITbBirthYearWindow : WinWindow
     {
-
-        public UITbBirthYearWindow(UITestControl searchLimitContainer) :
+        
+        public UITbBirthYearWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -2697,7 +2698,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinEdit UITbBirthYearEdit
         {
@@ -2714,17 +2715,17 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinEdit mUITbBirthYearEdit;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UICbSexWindow : WinWindow
     {
-
-        public UICbSexWindow(UITestControl searchLimitContainer) :
+        
+        public UICbSexWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -2732,7 +2733,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinComboBox UICbSexComboBox
         {
@@ -2749,17 +2750,17 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinComboBox mUICbSexComboBox;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UICbClubMemberWindow : WinWindow
     {
-
-        public UICbClubMemberWindow(UITestControl searchLimitContainer) :
+        
+        public UICbClubMemberWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -2767,7 +2768,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinComboBox UISandsynlighederComboBox
         {
@@ -2785,17 +2786,17 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinComboBox mUISandsynlighederComboBox;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UICbMovieWindow : WinWindow
     {
-
-        public UICbMovieWindow(UITestControl searchLimitContainer) :
+        
+        public UICbMovieWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -2803,7 +2804,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinComboBox UICbMovieComboBox
         {
@@ -2820,17 +2821,17 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinComboBox mUICbMovieComboBox;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIInkluderFilmWindow : WinWindow
     {
-
-        public UIInkluderFilmWindow(UITestControl searchLimitContainer) :
+        
+        public UIInkluderFilmWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -2838,7 +2839,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinCheckBox UIInkluderFilmCheckBox
         {
@@ -2856,17 +2857,17 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinCheckBox mUIInkluderFilmCheckBox;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UICbGenreWindow : WinWindow
     {
-
-        public UICbGenreWindow(UITestControl searchLimitContainer) :
+        
+        public UICbGenreWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -2874,7 +2875,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinComboBox UICbGenreComboBox
         {
@@ -2891,17 +2892,17 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinComboBox mUICbGenreComboBox;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIBeregnWindow : WinWindow
     {
-
-        public UIBeregnWindow(UITestControl searchLimitContainer) :
+        
+        public UIBeregnWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -2909,7 +2910,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinButton UIBeregnButton
         {
@@ -2927,17 +2928,17 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinButton mUIBeregnButton;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIKlubmedlemTabList : WinTabList
     {
-
-        public UIKlubmedlemTabList(UITestControl searchLimitContainer) :
+        
+        public UIKlubmedlemTabList(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -2945,7 +2946,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinTabPage UIFilmTabPage
         {
@@ -2962,7 +2963,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIFilmTabPage;
             }
         }
-
+        
         public WinTabPage UIGenreTabPage
         {
             get
@@ -2979,19 +2980,19 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinTabPage mUIFilmTabPage;
-
+        
         private WinTabPage mUIGenreTabPage;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIScoredProbabilitiesfWindow : WinWindow
     {
-
-        public UIScoredProbabilitiesfWindow(UITestControl searchLimitContainer) :
+        
+        public UIScoredProbabilitiesfWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -2999,7 +3000,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinText UIScoredProbabilitiesfText
         {
@@ -3050,7 +3051,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIScoredProbabilitiesfText;
             }
         }
-
+        
         public WinText UIIngendataersendttilmText
         {
             get
@@ -3066,7 +3067,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIIngendataersendttilmText;
             }
         }
-
+        
         public WinText UIScoredProbabilitiesfText1
         {
             get
@@ -3116,7 +3117,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIScoredProbabilitiesfText1;
             }
         }
-
+        
         public WinText UIScoredProbabilitiesfText2
         {
             get
@@ -3167,23 +3168,23 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinText mUIScoredProbabilitiesfText;
-
+        
         private WinText mUIIngendataersendttilmText;
-
+        
         private WinText mUIScoredProbabilitiesfText1;
-
+        
         private WinText mUIScoredProbabilitiesfText2;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIScoredProbabilitiesfWindow1 : WinWindow
     {
-
-        public UIScoredProbabilitiesfWindow1(UITestControl searchLimitContainer) :
+        
+        public UIScoredProbabilitiesfWindow1(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -3191,7 +3192,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinText UIScoredProbabilitiesfText
         {
@@ -3208,7 +3209,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIScoredProbabilitiesfText;
             }
         }
-
+        
         public WinText UIIngendataersendttilmText
         {
             get
@@ -3224,7 +3225,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIIngendataersendttilmText;
             }
         }
-
+        
         public WinText UIScoredProbabilitiesfText1
         {
             get
@@ -3241,21 +3242,21 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinText mUIScoredProbabilitiesfText;
-
+        
         private WinText mUIIngendataersendttilmText;
-
+        
         private WinText mUIScoredProbabilitiesfText1;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UINulstilWindow : WinWindow
     {
-
-        public UINulstilWindow(UITestControl searchLimitContainer) :
+        
+        public UINulstilWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -3263,7 +3264,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinButton UINulstilButton
         {
@@ -3281,17 +3282,17 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinButton mUINulstilButton;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIOpdaterWindow : WinWindow
     {
-
-        public UIOpdaterWindow(UITestControl searchLimitContainer) :
+        
+        public UIOpdaterWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -3299,7 +3300,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Machine Learning");
             #endregion
         }
-
+        
         #region Properties
         public WinButton UIOpdaterButton
         {
@@ -3317,16 +3318,16 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinButton mUIOpdaterButton;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIMp3tagv281CUsersHardWindow : WinWindow
     {
-
+        
         public UIMp3tagv281CUsersHardWindow()
         {
             #region Search Criteria
@@ -3335,7 +3336,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Mp3tag v2.81  -  C:\\Users\\Hardy Drachmann\\Mp3tag\\");
             #endregion
         }
-
+        
         #region Properties
         public WinTitleBar UIMp3tagv281CUsersHardTitleBar
         {
@@ -3351,7 +3352,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIMp3tagv281CUsersHardTitleBar;
             }
         }
-
+        
         public UIItemWindow UIItemWindow
         {
             get
@@ -3363,7 +3364,7 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIItemWindow;
             }
         }
-
+        
         public UIItemWindow1 UIItemWindow1
         {
             get
@@ -3376,21 +3377,21 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinTitleBar mUIMp3tagv281CUsersHardTitleBar;
-
+        
         private UIItemWindow mUIItemWindow;
-
+        
         private UIItemWindow1 mUIItemWindow1;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIItemWindow : WinWindow
     {
-
-        public UIItemWindow(UITestControl searchLimitContainer) :
+        
+        public UIItemWindow(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -3398,7 +3399,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Mp3tag v2.81  -  C:\\Users\\Hardy Drachmann\\Mp3tag\\");
             #endregion
         }
-
+        
         #region Properties
         public WinComboBox UITitleComboBox
         {
@@ -3416,17 +3417,17 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinComboBox mUITitleComboBox;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIItemWindow1 : WinWindow
     {
-
-        public UIItemWindow1(UITestControl searchLimitContainer) :
+        
+        public UIItemWindow1(UITestControl searchLimitContainer) : 
                 base(searchLimitContainer)
         {
             #region Search Criteria
@@ -3434,7 +3435,7 @@ namespace WindowsFormsML_CodedUITests
             this.WindowTitles.Add("Mp3tag v2.81  -  C:\\Users\\Hardy Drachmann\\Mp3tag\\");
             #endregion
         }
-
+        
         #region Properties
         public WinEdit UITitleEdit
         {
@@ -3452,7 +3453,7 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         #endregion
-
+        
         #region Fields
         private WinEdit mUITitleEdit;
         #endregion

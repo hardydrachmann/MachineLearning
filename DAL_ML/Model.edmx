@@ -10,7 +10,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="IsMember" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="IsMember" Type="nvarchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="Genre">
           <Key>
@@ -32,7 +32,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <Association Name="FK_Movie_Genre">
           <End Role="Genre" Type="Self.Genre" Multiplicity="1" />
@@ -65,7 +65,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="IsMember" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="IsMember" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityType Name="Genre">
           <Key>
@@ -73,7 +73,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Movies" Relationship="Self.FK_Movie_Genre" FromRole="Genre" ToRole="Movie" />
+          <NavigationProperty Name="Movie" Relationship="Self.FK_Movie_Genre" FromRole="Genre" ToRole="Movie" />
         </EntityType>
         <EntityType Name="Movie">
           <Key>
@@ -89,7 +89,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <Association Name="FK_Movie_Genre">
           <End Role="Genre" Type="Self.Genre" Multiplicity="1" />
@@ -104,13 +104,13 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="MachineLearningDBEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="ClubMembers" EntityType="Self.ClubMember" />
-          <EntitySet Name="Genres" EntityType="Self.Genre" />
-          <EntitySet Name="Movies" EntityType="Self.Movie" />
-          <EntitySet Name="Sexes" EntityType="Self.Sex" />
+          <EntitySet Name="ClubMember" EntityType="Self.ClubMember" />
+          <EntitySet Name="Genre" EntityType="Self.Genre" />
+          <EntitySet Name="Movie" EntityType="Self.Movie" />
+          <EntitySet Name="Sex" EntityType="Self.Sex" />
           <AssociationSet Name="FK_Movie_Genre" Association="Self.FK_Movie_Genre">
-            <End Role="Genre" EntitySet="Genres" />
-            <End Role="Movie" EntitySet="Movies" />
+            <End Role="Genre" EntitySet="Genre" />
+            <End Role="Movie" EntitySet="Movie" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -119,7 +119,7 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="MachineLearningDBModelStoreContainer" CdmEntityContainer="MachineLearningDBEntities">
-          <EntitySetMapping Name="ClubMembers">
+          <EntitySetMapping Name="ClubMember">
             <EntityTypeMapping TypeName="MachineLearningDBModel.ClubMember">
               <MappingFragment StoreEntitySet="ClubMember">
                 <ScalarProperty Name="Id" ColumnName="Id" />
@@ -127,7 +127,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Genres">
+          <EntitySetMapping Name="Genre">
             <EntityTypeMapping TypeName="MachineLearningDBModel.Genre">
               <MappingFragment StoreEntitySet="Genre">
                 <ScalarProperty Name="Id" ColumnName="Id" />
@@ -135,7 +135,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Movies">
+          <EntitySetMapping Name="Movie">
             <EntityTypeMapping TypeName="MachineLearningDBModel.Movie">
               <MappingFragment StoreEntitySet="Movie">
                 <ScalarProperty Name="Id" ColumnName="Id" />
@@ -144,7 +144,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Sexes">
+          <EntitySetMapping Name="Sex">
             <EntityTypeMapping TypeName="MachineLearningDBModel.Sex">
               <MappingFragment StoreEntitySet="Sex">
                 <ScalarProperty Name="Id" ColumnName="Id" />
@@ -166,7 +166,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

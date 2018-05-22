@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApiML
+namespace DAL_ML
 {
     using System;
     using System.Data.Entity;
@@ -25,9 +25,9 @@ namespace WebApiML
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<ClubMember> ClubMembers { get; set; }
-        public virtual DbSet<Genre> Genres { get; set; }
-        public virtual DbSet<Movie> Movies { get; set; }
-        public virtual DbSet<Sex> Sexes { get; set; }
+        public virtual DbSet<ClubMember> ClubMember { get; set; }
+        public virtual DbSet<Genre> Genre { get; set; }
+        public virtual DbSet<Movie> Movie { get; set; }
+        public virtual DbSet<Sex> Sex { get; set; }
     }
 }
