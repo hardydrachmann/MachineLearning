@@ -103,8 +103,8 @@ namespace WindowsFormsML
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            lbGenre.Text = "";
-            lbMovie.Text = "";
+            lbGenre.Text = "Ingen data er sendt til modellen endnu...";
+            lbMovie.Text = "Ingen data er sendt til modellen endnu...";
             tbBirthYear.Text = "";
         }
 
@@ -164,5 +164,15 @@ namespace WindowsFormsML
                 cbMovie.Enabled = true;
             }
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            cbSex.Items.Clear();
+            cbClubMember.Items.Clear();
+            cbMovie.Items.Clear();
+            cbGenre.Items.Clear();
+            populate();
+        }
+
     }
 }

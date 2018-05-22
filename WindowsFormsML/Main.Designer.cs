@@ -60,6 +60,7 @@ namespace WindowsFormsML
             this.pbClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbWatermark = new System.Windows.Forms.PictureBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelGenre.SuspendLayout();
@@ -75,9 +76,9 @@ namespace WindowsFormsML
             // 
             this.cbSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSex.FormattingEnabled = true;
-            this.cbSex.Location = new System.Drawing.Point(98, 140);
+            this.cbSex.Location = new System.Drawing.Point(93, 140);
             this.cbSex.Name = "cbSex";
-            this.cbSex.Size = new System.Drawing.Size(211, 21);
+            this.cbSex.Size = new System.Drawing.Size(216, 21);
             this.cbSex.TabIndex = 1;
             // 
             // label1
@@ -177,8 +178,9 @@ namespace WindowsFormsML
             this.lbGenre.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGenre.Location = new System.Drawing.Point(3, 0);
             this.lbGenre.Name = "lbGenre";
-            this.lbGenre.Size = new System.Drawing.Size(0, 20);
+            this.lbGenre.Size = new System.Drawing.Size(250, 20);
             this.lbGenre.TabIndex = 4;
+            this.lbGenre.Text = "Ingen data er sendt til modellen endnu...";
             // 
             // tabPage2
             // 
@@ -206,8 +208,9 @@ namespace WindowsFormsML
             this.lbMovie.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMovie.Location = new System.Drawing.Point(3, 0);
             this.lbMovie.Name = "lbMovie";
-            this.lbMovie.Size = new System.Drawing.Size(0, 20);
+            this.lbMovie.Size = new System.Drawing.Size(250, 20);
             this.lbMovie.TabIndex = 3;
+            this.lbMovie.Text = "Ingen data er sendt til modellen endnu...";
             // 
             // lblProbability
             // 
@@ -223,34 +226,34 @@ namespace WindowsFormsML
             // 
             this.cbClubMember.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbClubMember.FormattingEnabled = true;
-            this.cbClubMember.Location = new System.Drawing.Point(98, 175);
+            this.cbClubMember.Location = new System.Drawing.Point(93, 175);
             this.cbClubMember.Name = "cbClubMember";
-            this.cbClubMember.Size = new System.Drawing.Size(211, 21);
+            this.cbClubMember.Size = new System.Drawing.Size(216, 21);
             this.cbClubMember.TabIndex = 13;
             // 
             // cbMovie
             // 
             this.cbMovie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMovie.FormattingEnabled = true;
-            this.cbMovie.Location = new System.Drawing.Point(98, 210);
+            this.cbMovie.Location = new System.Drawing.Point(93, 210);
             this.cbMovie.Name = "cbMovie";
-            this.cbMovie.Size = new System.Drawing.Size(211, 21);
+            this.cbMovie.Size = new System.Drawing.Size(216, 21);
             this.cbMovie.TabIndex = 14;
             // 
             // cbGenre
             // 
             this.cbGenre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGenre.FormattingEnabled = true;
-            this.cbGenre.Location = new System.Drawing.Point(98, 266);
+            this.cbGenre.Location = new System.Drawing.Point(93, 266);
             this.cbGenre.Name = "cbGenre";
-            this.cbGenre.Size = new System.Drawing.Size(211, 21);
+            this.cbGenre.Size = new System.Drawing.Size(216, 21);
             this.cbGenre.TabIndex = 15;
             // 
             // tbBirthYear
             // 
-            this.tbBirthYear.Location = new System.Drawing.Point(98, 104);
+            this.tbBirthYear.Location = new System.Drawing.Point(93, 104);
             this.tbBirthYear.Name = "tbBirthYear";
-            this.tbBirthYear.Size = new System.Drawing.Size(211, 20);
+            this.tbBirthYear.Size = new System.Drawing.Size(216, 20);
             this.tbBirthYear.TabIndex = 16;
             // 
             // panel1
@@ -266,9 +269,9 @@ namespace WindowsFormsML
             // 
             this.btnReset.BackColor = System.Drawing.Color.SkyBlue;
             this.btnReset.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
-            this.btnReset.Location = new System.Drawing.Point(144, 316);
+            this.btnReset.Location = new System.Drawing.Point(167, 316);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 30);
+            this.btnReset.Size = new System.Drawing.Size(68, 30);
             this.btnReset.TabIndex = 25;
             this.btnReset.Text = "Nulstil";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -278,9 +281,9 @@ namespace WindowsFormsML
             // 
             this.btnCalculate.BackColor = System.Drawing.Color.SkyBlue;
             this.btnCalculate.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCalculate.Location = new System.Drawing.Point(234, 316);
+            this.btnCalculate.Location = new System.Drawing.Point(241, 316);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(75, 30);
+            this.btnCalculate.Size = new System.Drawing.Size(68, 30);
             this.btnCalculate.TabIndex = 26;
             this.btnCalculate.Text = "Beregn";
             this.btnCalculate.UseVisualStyleBackColor = false;
@@ -292,7 +295,7 @@ namespace WindowsFormsML
             this.cbIncludeMovies.Checked = true;
             this.cbIncludeMovies.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbIncludeMovies.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbIncludeMovies.Location = new System.Drawing.Point(98, 237);
+            this.cbIncludeMovies.Location = new System.Drawing.Point(93, 237);
             this.cbIncludeMovies.Name = "cbIncludeMovies";
             this.cbIncludeMovies.Size = new System.Drawing.Size(87, 20);
             this.cbIncludeMovies.TabIndex = 28;
@@ -359,12 +362,25 @@ namespace WindowsFormsML
             this.pbWatermark.TabIndex = 3;
             this.pbWatermark.TabStop = false;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnUpdate.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.btnUpdate.Location = new System.Drawing.Point(93, 316);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(68, 30);
+            this.btnUpdate.TabIndex = 30;
+            this.btnUpdate.Text = "Opdater";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(903, 564);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbIncludeMovies);
             this.Controls.Add(this.btnCalculate);
@@ -438,5 +454,6 @@ namespace WindowsFormsML
         private Panel panelMovie;
         private Panel panelGenre;
         private Label label7;
+        private Button btnUpdate;
     }
 }
