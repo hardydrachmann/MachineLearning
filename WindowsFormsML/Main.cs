@@ -5,9 +5,8 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsML.BE;
 using WindowsFormsML.DAL;
-using WindowsFormsML.DTO;
+using WindowsFormsML.Models;
 using WindowsFormsML.Properties;
 
 namespace WindowsFormsML

@@ -1,14 +1,8 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
-using System.Threading.Tasks;
-using WindowsFormsML.BE;
-using WindowsFormsML.DTO;
+using WindowsFormsML.Models;
 
 namespace WindowsFormsML.DAL
 {

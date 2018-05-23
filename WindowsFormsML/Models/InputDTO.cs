@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsML.DTO
+﻿namespace WindowsFormsML.Models
 {
     public class InputDTO
     {
