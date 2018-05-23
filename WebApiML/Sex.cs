@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DAL_ML
+namespace WebApiML
 {
     using System;
     using System.Collections.Generic;

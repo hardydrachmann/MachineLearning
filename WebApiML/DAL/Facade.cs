@@ -1,11 +1,6 @@
-﻿using DAL_ML.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using WebApiML.DAL.Repository;
 
-namespace DAL_ML
+namespace WebApiML.DAL
 {
     public class Facade
     {

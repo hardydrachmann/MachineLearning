@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
-namespace DAL_ML.Repository
+namespace WebApiML.DAL.Repository
 {
     public class SexRepository : IRepository<string>
     {
