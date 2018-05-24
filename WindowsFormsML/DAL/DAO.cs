@@ -29,8 +29,15 @@ namespace WindowsFormsML.DAL
             byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             var response = client.PostAsync("http://localhost:5000/api/inputs/", byteContent).Result;
 
-            var result = response.Content.ReadAsStringAsync().Result;
-            return result;
+            if (response.IsSuccessStatusCode)
+            {
+                var result = response.Content.ReadAsStringAsync().Result;
+                return result;
+            }
+            else
+            {
+                return "Error: " + response.Headers.ToString();
+            }
         }
 
         private void getClient()

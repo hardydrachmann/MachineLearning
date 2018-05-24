@@ -4,7 +4,7 @@ namespace WebApiML.DAL.Repository
 {
     public class GenreRepository : IRepository<string>
     {
-        MachineLearningDBEntities MLcontext = new MachineLearningDBEntities();
+        MachineLearningDBEntities MLcontext;
 
         public GenreRepository(MachineLearningDBEntities context)
         {

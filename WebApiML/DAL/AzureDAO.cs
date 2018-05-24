@@ -82,30 +82,7 @@ namespace WebApiML.DAL
                 //      result = await DoSomeTask().ConfigureAwait(false)
 
                 HttpResponseMessage response = await client.PostAsJsonAsync("", scoreRequest).ConfigureAwait(false);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    //string result = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    //Console.WriteLine("Result: {0}", result);
-                    //JObject json = JObject.Parse(result);
-                    //PredictionDTO prediction = new PredictionDTO();
-                    //prediction = JsonConvert.DeserializeObject<PredictionDTO>(result);
-                    return response;
-                }
-                else
-                {
-                    //Console.WriteLine(string.Format("The request failed with status code: {0}", response.StatusCode));
-
-                    // Print the headers - they include the requert ID and the timestamp,
-                    // which are useful for debugging the failure
-                    //Console.WriteLine(response.Headers.ToString());
-
-                    //string responseContent = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    //Console.WriteLine(responseContent);
-                    //PredictionDTO prediction = new PredictionDTO();
-                    //prediction = JsonConvert.DeserializeObject<PredictionDTO>(responseContent);
-                    return response;
-                }
+                return response;
             }
         }
     }

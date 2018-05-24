@@ -4,7 +4,7 @@ namespace WebApiML.DAL.Repository
 {
     public class MovieRepository : IRepository<string>
     {
-        MachineLearningDBEntities MLcontext = new MachineLearningDBEntities();
+        MachineLearningDBEntities MLcontext;
 
         public MovieRepository(MachineLearningDBEntities context)
         {
@@ -18,7 +18,7 @@ namespace WebApiML.DAL.Repository
             {
                 movieList.Add(movie.Name);
             }
-            return  movieList;
+            return movieList;
         }
     }
 }

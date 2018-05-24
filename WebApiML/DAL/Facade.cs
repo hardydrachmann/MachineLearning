@@ -6,12 +6,6 @@ namespace WebApiML.DAL
     {
         private MachineLearningDBEntities context;
 
-        private IRepository<string> movieRepo;
-        private IRepository<string> genreRepo;
-        private IRepository<string> sexRepo;
-        private IRepository<string> clubMemberRepo;
-
-
         public Facade()
         {
             context = new MachineLearningDBEntities();
@@ -19,22 +13,22 @@ namespace WebApiML.DAL
 
         public IRepository<string> GetMovieRepository()
         {
-            return movieRepo ?? (movieRepo = new MovieRepository(context));
+            return new MovieRepository(context);
         }
 
         public IRepository<string> GetGenreRepository()
         {
-            return genreRepo ?? (genreRepo = new GenreRepository(context));
+            return new GenreRepository(context);
         }
 
         public IRepository<string> GetSexRepository()
         {
-            return sexRepo ?? (sexRepo = new SexRepository(context));
+            return new SexRepository(context);
         }
 
         public IRepository<string> GetClubMemberRepository()
         {
-            return clubMemberRepo ?? (clubMemberRepo = new ClubMemberRepository(context));
+            return new ClubMemberRepository(context);
         }
     }
 }

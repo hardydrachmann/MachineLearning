@@ -4,7 +4,7 @@ namespace WebApiML.DAL.Repository
 {
     public class SexRepository : IRepository<string>
     {
-        MachineLearningDBEntities MLcontext = new MachineLearningDBEntities();
+        MachineLearningDBEntities MLcontext;
 
         public SexRepository(MachineLearningDBEntities context)
         {
