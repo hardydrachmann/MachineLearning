@@ -10,6 +10,7 @@ namespace WebApiML.Controllers
         private SelectionDTO selectionDTO;
 
         // GET api/selections
+        [HttpGet]
         public SelectionDTO GetAll()
         {
             selectionDTO = new SelectionDTO

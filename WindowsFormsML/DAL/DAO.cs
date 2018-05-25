@@ -22,7 +22,6 @@ namespace WindowsFormsML.DAL
         public string GetPredictions(InputDTO inputDTO)
         {
             getClient();
-
             var myContent = JsonConvert.SerializeObject(inputDTO);
             var buffer = Encoding.UTF8.GetBytes(myContent);
             var byteContent = new ByteArrayContent(buffer);
