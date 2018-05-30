@@ -105,7 +105,7 @@ namespace WindowsFormsML
 
         private string beautifyText(string text)
         {
-            var charsToRemove = new string[] { @"\", "\"", "[", "]", "{", "}", "Results", "Class", "Output (Genre):", "Output (Movie):" };
+            var charsToRemove = new string[] { @"\", "\"", "[", "]", "{", "}", "Results", "Class ", "Output (Genre):", "Output (Movie):" };
             foreach (var character in charsToRemove)
             {
                 text = text.Replace(character, string.Empty);
