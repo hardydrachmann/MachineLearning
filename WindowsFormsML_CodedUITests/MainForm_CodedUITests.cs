@@ -123,12 +123,12 @@ namespace WindowsFormsML_CodedUITests
         public void CodedUITest_btnCalculate_PopulatelbMovieAndlbGenre()
         {
             UIMap.RecordedMethod_btnCalculate_PopulatelbMovieAndlbGenre();
+            // Has a 25 seconds delay inserted here due to a longer response time from the Azure ML web server.
         }
 
         [TestMethod]
         public void CodedUITest_btnCalculate_lbGenreAndlbMovieArePopulated()
         {
-            // Has 20 seconds delay before start due to upper test methods longer response time from Azure ML web server.
             UIMap.AssertMethod_btnCalculate_lbMovieIsPopulated();
             UIMap.RecordedMethod_btnCalculate_SelectlbGenreOnTabControl();
             UIMap.AssertMethod_btnCalculate_lbGenreIsPopulated();
@@ -151,6 +151,7 @@ namespace WindowsFormsML_CodedUITests
         public void CodedUITest_btnUpdate_ClearAndRepopulateAllComboBoxes()
         {
             UIMap.RecordedMethod_btnUpdate_ClearAndRepopulateAllComboBoxes();
+            //Has a 5 seconds delay inserted here due to a slow computer.
             UIMap.AssertMethod_btnUpdate_cbSexIsPopulated();
             UIMap.AssertMethod_btnUpdate_cbClubMemberIsPopulated();
             UIMap.AssertMethod_btnUpdate_cbMovieIsPopulated();

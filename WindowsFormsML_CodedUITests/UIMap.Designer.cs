@@ -19,6 +19,7 @@ namespace WindowsFormsML_CodedUITests
     using Microsoft.VisualStudio.TestTools.UITest.Extension;
     using Microsoft.VisualStudio.TestTools.UITesting;
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
+    using Microsoft.VisualStudio.TestTools.UITesting.WpfControls;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
     using Mouse = Microsoft.VisualStudio.TestTools.UITesting.Mouse;
@@ -28,19 +29,6 @@ namespace WindowsFormsML_CodedUITests
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public partial class UIMap
     {
-        
-        /// <summary>
-        /// AssertMethod_btnCalculate_lbGenreIsPopulated - Use 'AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void AssertMethod_btnCalculate_lbGenreIsPopulated()
-        {
-            #region Variable Declarations
-            WinText uIScoredProbabilitiesfText = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow1.UIScoredProbabilitiesfText;
-            #endregion
-
-            // Verify that the 'FriendlyName' property of 'Scored Probabilities for Class Action: 0.05061298...' label contains 'Scored'
-            StringAssert.Contains(uIScoredProbabilitiesfText.FriendlyName, this.AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues.UIScoredProbabilitiesfTextFriendlyName);
-        }
         
         /// <summary>
         /// AssertMethod_btnCalculate_lbGenreIsReset - Use 'AssertMethod_btnCalculate_lbGenreIsResetExpectedValues' to pass parameters into this method.
@@ -92,20 +80,6 @@ namespace WindowsFormsML_CodedUITests
 
             // Verify that the 'DisplayText' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label is not equal to 'Ingen data er sendt til modellen endnu...'
             Assert.AreNotEqual(this.AssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues.UIScoredProbabilitiesfText1DisplayText, uIScoredProbabilitiesfText1.DisplayText);
-        }
-        
-        /// <summary>
-        /// AssertMethod_btnCalculate_lbMovieIsPopulated - Use 'AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void AssertMethod_btnCalculate_lbMovieIsPopulated()
-        {
-            #region Variable Declarations
-            WinText uIScoredProbabilitiesfText = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow.UIScoredProbabilitiesfText;
-            #endregion
-
-            // Wait for 20 seconds for user delay between actions; Verify that the 'FriendlyName' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label contains 'Scored'
-            Playback.Wait(20000);
-            StringAssert.Contains(uIScoredProbabilitiesfText.FriendlyName, this.AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues.UIScoredProbabilitiesfTextFriendlyName);
         }
         
         /// <summary>
@@ -199,19 +173,6 @@ namespace WindowsFormsML_CodedUITests
         }
         
         /// <summary>
-        /// AssertMethod_btnReset_lbGenreIsNotReset - Use 'AssertMethod_btnReset_lbGenreIsNotResetExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void AssertMethod_btnReset_lbGenreIsNotReset()
-        {
-            #region Variable Declarations
-            WinText uIScoredProbabilitiesfText = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow1.UIScoredProbabilitiesfText;
-            #endregion
-
-            // Verify that the 'FriendlyName' property of 'Scored Probabilities for Class Action: 0.05061298...' label contains 'Scored'
-            StringAssert.Contains(uIScoredProbabilitiesfText.FriendlyName, this.AssertMethod_btnReset_lbGenreIsNotResetExpectedValues.UIScoredProbabilitiesfTextFriendlyName);
-        }
-        
-        /// <summary>
         /// AssertMethod_btnReset_lbGenreIsReset - Use 'AssertMethod_btnReset_lbGenreIsResetExpectedValues' to pass parameters into this method.
         /// </summary>
         public void AssertMethod_btnReset_lbGenreIsReset()
@@ -220,21 +181,8 @@ namespace WindowsFormsML_CodedUITests
             WinText uIIngendataersendttilmText = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow1.UIIngendataersendttilmText;
             #endregion
 
-            // Verify that the 'FriendlyName' property of 'Ingen data er sendt til modellen endnu...' label contains 'Ingen'
-            StringAssert.Contains(uIIngendataersendttilmText.FriendlyName, this.AssertMethod_btnReset_lbGenreIsResetExpectedValues.UIIngendataersendttilmTextFriendlyName);
-        }
-        
-        /// <summary>
-        /// AssertMethod_btnReset_lbMovieIsNotReset - Use 'AssertMethod_btnReset_lbMovieIsNotResetExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void AssertMethod_btnReset_lbMovieIsNotReset()
-        {
-            #region Variable Declarations
-            WinText uIScoredProbabilitiesfText = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow.UIScoredProbabilitiesfText;
-            #endregion
-
-            // Verify that the 'FriendlyName' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label contains 'Scored'
-            StringAssert.Contains(uIScoredProbabilitiesfText.FriendlyName, this.AssertMethod_btnReset_lbMovieIsNotResetExpectedValues.UIScoredProbabilitiesfTextFriendlyName);
+            // Verify that the 'Height' property of 'Ingen data er sendt til modellen endnu...' label equals '20'
+            Assert.AreEqual(this.AssertMethod_btnReset_lbGenreIsResetExpectedValues.UIIngendataersendttilmTextHeight, uIIngendataersendttilmText.Height);
         }
         
         /// <summary>
@@ -246,8 +194,8 @@ namespace WindowsFormsML_CodedUITests
             WinText uIIngendataersendttilmText = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow.UIIngendataersendttilmText;
             #endregion
 
-            // Verify that the 'FriendlyName' property of 'Ingen data er sendt til modellen endnu...' label contains 'Ingen'
-            StringAssert.Contains(uIIngendataersendttilmText.FriendlyName, this.AssertMethod_btnReset_lbMovieIsResetExpectedValues.UIIngendataersendttilmTextFriendlyName);
+            // Verify that the 'Height' property of 'Ingen data er sendt til modellen endnu...' label equals '20'
+            Assert.AreEqual(this.AssertMethod_btnReset_lbMovieIsResetExpectedValues.UIIngendataersendttilmTextHeight, uIIngendataersendttilmText.Height);
         }
         
         /// <summary>
@@ -311,7 +259,8 @@ namespace WindowsFormsML_CodedUITests
             WinComboBox uICbSexComboBox = this.UIMachineLearningWindow.UICbSexWindow.UICbSexComboBox;
             #endregion
 
-            // Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
+            // Wait for 5 seconds for user delay between actions; Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
+            Playback.Wait(5000);
             Assert.AreEqual(this.AssertMethod_btnUpdate_cbSexIsPopulatedExpectedValues.UICbSexComboBoxSelectedItem, uICbSexComboBox.SelectedItem);
         }
         
@@ -622,7 +571,8 @@ namespace WindowsFormsML_CodedUITests
             // Click 'Beregn' button
             Mouse.Click(uIBeregnButton, new Point(40, 13));
 
-            // Click 'Film' tab
+            // Wait for 25 seconds for user delay between actions; Click 'Film' tab
+            Playback.Wait(25000);
             Mouse.Click(uIFilmTabPage, new Point(30, 11));
         }
         
@@ -700,8 +650,7 @@ namespace WindowsFormsML_CodedUITests
             WinButton uIOpdaterButton = this.UIMachineLearningWindow.UIOpdaterWindow.UIOpdaterButton;
             #endregion
 
-            // Wait for 5 seconds for user delay between actions; Click 'Opdater' button
-            Playback.Wait(5000);
+            // Click 'Opdater' button
             Mouse.Click(uIOpdaterButton, new Point(29, 8));
         }
         
@@ -878,19 +827,59 @@ namespace WindowsFormsML_CodedUITests
             uITitleComboBox.EditableItem = this.TESTRECORDINGParams.UITitleComboBoxEditableItem;
         }
         
-        #region Properties
-        public virtual AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues
+        /// <summary>
+        /// AssertMethod_btnCalculate_lbGenreIsPopulated - Use 'AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues' to pass parameters into this method.
+        /// </summary>
+        public void AssertMethod_btnCalculate_lbGenreIsPopulated()
         {
-            get
-            {
-                if ((this.mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues == null))
-                {
-                    this.mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues = new AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues();
-                }
-                return this.mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues;
-            }
+            #region Variable Declarations
+            WinText uIScoredProbabilitiesfText3 = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow1.UIScoredProbabilitiesfText3;
+            #endregion
+
+            // Verify that the 'Height' property of 'Scored Probabilities for Action: 0.05061298634741...' label is not equal to '20'
+            Assert.AreNotEqual(this.AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues.UIScoredProbabilitiesfText3Height, uIScoredProbabilitiesfText3.Height);
         }
         
+        /// <summary>
+        /// AssertMethod_btnCalculate_lbMovieIsPopulated - Use 'AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues' to pass parameters into this method.
+        /// </summary>
+        public void AssertMethod_btnCalculate_lbMovieIsPopulated()
+        {
+            #region Variable Declarations
+            WinText uIScoredProbabilitiesfText4 = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow.UIScoredProbabilitiesfText4;
+            #endregion
+
+            // Verify that the 'Height' property of 'Scored Probabilities for 12 Years A Slave: 0, Sco...' label is not equal to '20'
+            Assert.AreNotEqual(this.AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues.UIScoredProbabilitiesfText4Height, uIScoredProbabilitiesfText4.Height);
+        }
+        
+        /// <summary>
+        /// AssertMethod_btnReset_lbGenreIsNotReset - Use 'AssertMethod_btnReset_lbGenreIsNotResetExpectedValues' to pass parameters into this method.
+        /// </summary>
+        public void AssertMethod_btnReset_lbGenreIsNotReset()
+        {
+            #region Variable Declarations
+            WinText uIScoredProbabilitiesfText3 = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow1.UIScoredProbabilitiesfText3;
+            #endregion
+
+            // Verify that the 'Height' property of 'Scored Probabilities for Action: 0.05061298634741...' label is not equal to '20'
+            Assert.AreNotEqual(this.AssertMethod_btnReset_lbGenreIsNotResetExpectedValues.UIScoredProbabilitiesfText3Height, uIScoredProbabilitiesfText3.Height);
+        }
+        
+        /// <summary>
+        /// AssertMethod_btnReset_lbMovieIsNotReset - Use 'AssertMethod_btnReset_lbMovieIsNotResetExpectedValues' to pass parameters into this method.
+        /// </summary>
+        public void AssertMethod_btnReset_lbMovieIsNotReset()
+        {
+            #region Variable Declarations
+            WinText uIScoredProbabilitiesfText4 = this.UIMachineLearningWindow.UIScoredProbabilitiesfWindow.UIScoredProbabilitiesfText4;
+            #endregion
+
+            // Verify that the 'Height' property of 'Scored Probabilities for 12 Years A Slave: 0, Sco...' label is not equal to '20'
+            Assert.AreNotEqual(this.AssertMethod_btnReset_lbMovieIsNotResetExpectedValues.UIScoredProbabilitiesfText4Height, uIScoredProbabilitiesfText4.Height);
+        }
+        
+        #region Properties
         public virtual AssertMethod_btnCalculate_lbGenreIsResetExpectedValues AssertMethod_btnCalculate_lbGenreIsResetExpectedValues
         {
             get
@@ -936,18 +925,6 @@ namespace WindowsFormsML_CodedUITests
                     this.mAssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues = new AssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues();
                 }
                 return this.mAssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues;
-            }
-        }
-        
-        public virtual AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues == null))
-                {
-                    this.mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues = new AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues();
-                }
-                return this.mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues;
             }
         }
         
@@ -999,18 +976,6 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         
-        public virtual AssertMethod_btnReset_lbGenreIsNotResetExpectedValues AssertMethod_btnReset_lbGenreIsNotResetExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues == null))
-                {
-                    this.mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues = new AssertMethod_btnReset_lbGenreIsNotResetExpectedValues();
-                }
-                return this.mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues;
-            }
-        }
-        
         public virtual AssertMethod_btnReset_lbGenreIsResetExpectedValues AssertMethod_btnReset_lbGenreIsResetExpectedValues
         {
             get
@@ -1020,18 +985,6 @@ namespace WindowsFormsML_CodedUITests
                     this.mAssertMethod_btnReset_lbGenreIsResetExpectedValues = new AssertMethod_btnReset_lbGenreIsResetExpectedValues();
                 }
                 return this.mAssertMethod_btnReset_lbGenreIsResetExpectedValues;
-            }
-        }
-        
-        public virtual AssertMethod_btnReset_lbMovieIsNotResetExpectedValues AssertMethod_btnReset_lbMovieIsNotResetExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues == null))
-                {
-                    this.mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues = new AssertMethod_btnReset_lbMovieIsNotResetExpectedValues();
-                }
-                return this.mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues;
             }
         }
         
@@ -1503,6 +1456,54 @@ namespace WindowsFormsML_CodedUITests
             }
         }
         
+        public virtual AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues == null))
+                {
+                    this.mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues = new AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues();
+                }
+                return this.mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues == null))
+                {
+                    this.mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues = new AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues();
+                }
+                return this.mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_btnReset_lbGenreIsNotResetExpectedValues AssertMethod_btnReset_lbGenreIsNotResetExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues == null))
+                {
+                    this.mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues = new AssertMethod_btnReset_lbGenreIsNotResetExpectedValues();
+                }
+                return this.mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod_btnReset_lbMovieIsNotResetExpectedValues AssertMethod_btnReset_lbMovieIsNotResetExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues == null))
+                {
+                    this.mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues = new AssertMethod_btnReset_lbMovieIsNotResetExpectedValues();
+                }
+                return this.mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues;
+            }
+        }
+        
         public UIMachineLearningWindow UIMachineLearningWindow
         {
             get
@@ -1526,11 +1527,21 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIMp3tagv281CUsersHardWindow;
             }
         }
+        
+        public UIMachineLearningMicroWindow UIMachineLearningMicroWindow
+        {
+            get
+            {
+                if ((this.mUIMachineLearningMicroWindow == null))
+                {
+                    this.mUIMachineLearningMicroWindow = new UIMachineLearningMicroWindow();
+                }
+                return this.mUIMachineLearningMicroWindow;
+            }
+        }
         #endregion
         
         #region Fields
-        private AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues;
-        
         private AssertMethod_btnCalculate_lbGenreIsResetExpectedValues mAssertMethod_btnCalculate_lbGenreIsResetExpectedValues;
         
         private AssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues mAssertMethod_btnCalculate_lbGenreNotDefaultValueExpectedValues;
@@ -1538,8 +1549,6 @@ namespace WindowsFormsML_CodedUITests
         private AssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues mAssertMethod_btnCalculate_lbGenreNotEmptyStringExpectedValues;
         
         private AssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues mAssertMethod_btnCalculate_lbMovieIsNotResetExpectedValues;
-        
-        private AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues;
         
         private AssertMethod_btnCalculate_lbMovieIsResetExpectedValues mAssertMethod_btnCalculate_lbMovieIsResetExpectedValues;
         
@@ -1549,11 +1558,7 @@ namespace WindowsFormsML_CodedUITests
         
         private AssertMethod_btnCalculate_PopulatelbMovieExpectedValues mAssertMethod_btnCalculate_PopulatelbMovieExpectedValues;
         
-        private AssertMethod_btnReset_lbGenreIsNotResetExpectedValues mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues;
-        
         private AssertMethod_btnReset_lbGenreIsResetExpectedValues mAssertMethod_btnReset_lbGenreIsResetExpectedValues;
-        
-        private AssertMethod_btnReset_lbMovieIsNotResetExpectedValues mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues;
         
         private AssertMethod_btnReset_lbMovieIsResetExpectedValues mAssertMethod_btnReset_lbMovieIsResetExpectedValues;
         
@@ -1633,24 +1638,19 @@ namespace WindowsFormsML_CodedUITests
         
         private TESTRECORDINGParams mTESTRECORDINGParams;
         
+        private AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues mAssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues;
+        
+        private AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues mAssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues;
+        
+        private AssertMethod_btnReset_lbGenreIsNotResetExpectedValues mAssertMethod_btnReset_lbGenreIsNotResetExpectedValues;
+        
+        private AssertMethod_btnReset_lbMovieIsNotResetExpectedValues mAssertMethod_btnReset_lbMovieIsNotResetExpectedValues;
+        
         private UIMachineLearningWindow mUIMachineLearningWindow;
         
         private UIMp3tagv281CUsersHardWindow mUIMp3tagv281CUsersHardWindow;
-        #endregion
-    }
-    
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_btnCalculate_lbGenreIsPopulated'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues
-    {
         
-        #region Fields
-        /// <summary>
-        /// Verify that the 'FriendlyName' property of 'Scored Probabilities for Class Action: 0.05061298...' label contains 'Scored'
-        /// </summary>
-        public string UIScoredProbabilitiesfTextFriendlyName = "Scored";
+        private UIMachineLearningMicroWindow mUIMachineLearningMicroWindow;
         #endregion
     }
     
@@ -1711,21 +1711,6 @@ namespace WindowsFormsML_CodedUITests
         /// Verify that the 'DisplayText' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label is not equal to 'Ingen data er sendt til modellen endnu...'
         /// </summary>
         public string UIScoredProbabilitiesfText1DisplayText = "Ingen data er sendt til modellen endnu...";
-        #endregion
-    }
-    
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_btnCalculate_lbMovieIsPopulated'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues
-    {
-        
-        #region Fields
-        /// <summary>
-        /// Wait for 20 seconds for user delay between actions; Verify that the 'FriendlyName' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label contains 'Scored'
-        /// </summary>
-        public string UIScoredProbabilitiesfTextFriendlyName = "Scored";
         #endregion
     }
     
@@ -1853,21 +1838,6 @@ namespace WindowsFormsML_CodedUITests
     }
     
     /// <summary>
-    /// Parameters to be passed into 'AssertMethod_btnReset_lbGenreIsNotReset'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_btnReset_lbGenreIsNotResetExpectedValues
-    {
-        
-        #region Fields
-        /// <summary>
-        /// Verify that the 'FriendlyName' property of 'Scored Probabilities for Class Action: 0.05061298...' label contains 'Scored'
-        /// </summary>
-        public string UIScoredProbabilitiesfTextFriendlyName = "Scored";
-        #endregion
-    }
-    
-    /// <summary>
     /// Parameters to be passed into 'AssertMethod_btnReset_lbGenreIsReset'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
@@ -1876,24 +1846,9 @@ namespace WindowsFormsML_CodedUITests
         
         #region Fields
         /// <summary>
-        /// Verify that the 'FriendlyName' property of 'Ingen data er sendt til modellen endnu...' label contains 'Ingen'
+        /// Verify that the 'Height' property of 'Ingen data er sendt til modellen endnu...' label equals '20'
         /// </summary>
-        public string UIIngendataersendttilmTextFriendlyName = "Ingen";
-        #endregion
-    }
-    
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod_btnReset_lbMovieIsNotReset'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
-    public class AssertMethod_btnReset_lbMovieIsNotResetExpectedValues
-    {
-        
-        #region Fields
-        /// <summary>
-        /// Verify that the 'FriendlyName' property of 'Scored Probabilities for Class 12 Years A Slave: ...' label contains 'Scored'
-        /// </summary>
-        public string UIScoredProbabilitiesfTextFriendlyName = "Scored";
+        public int UIIngendataersendttilmTextHeight = 20;
         #endregion
     }
     
@@ -1906,9 +1861,9 @@ namespace WindowsFormsML_CodedUITests
         
         #region Fields
         /// <summary>
-        /// Verify that the 'FriendlyName' property of 'Ingen data er sendt til modellen endnu...' label contains 'Ingen'
+        /// Verify that the 'Height' property of 'Ingen data er sendt til modellen endnu...' label equals '20'
         /// </summary>
-        public string UIIngendataersendttilmTextFriendlyName = "Ingen";
+        public int UIIngendataersendttilmTextHeight = 20;
         #endregion
     }
     
@@ -1981,7 +1936,7 @@ namespace WindowsFormsML_CodedUITests
         
         #region Fields
         /// <summary>
-        /// Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
+        /// Wait for 5 seconds for user delay between actions; Verify that the 'SelectedItem' property of 'cbSex' combo box equals 'Mand'
         /// </summary>
         public string UICbSexComboBoxSelectedItem = "Mand";
         #endregion
@@ -2482,6 +2437,66 @@ namespace WindowsFormsML_CodedUITests
         #endregion
     }
     
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_btnCalculate_lbGenreIsPopulated'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_btnCalculate_lbGenreIsPopulatedExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Height' property of 'Scored Probabilities for Action: 0.05061298634741...' label is not equal to '20'
+        /// </summary>
+        public int UIScoredProbabilitiesfText3Height = 20;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_btnCalculate_lbMovieIsPopulated'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_btnCalculate_lbMovieIsPopulatedExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Height' property of 'Scored Probabilities for 12 Years A Slave: 0, Sco...' label is not equal to '20'
+        /// </summary>
+        public int UIScoredProbabilitiesfText4Height = 20;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_btnReset_lbGenreIsNotReset'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_btnReset_lbGenreIsNotResetExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Height' property of 'Scored Probabilities for Action: 0.05061298634741...' label is not equal to '20'
+        /// </summary>
+        public int UIScoredProbabilitiesfText3Height = 20;
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'AssertMethod_btnReset_lbMovieIsNotReset'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class AssertMethod_btnReset_lbMovieIsNotResetExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'Height' property of 'Scored Probabilities for 12 Years A Slave: 0, Sco...' label is not equal to '20'
+        /// </summary>
+        public int UIScoredProbabilitiesfText4Height = 20;
+        #endregion
+    }
+    
     [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
     public class UIMachineLearningWindow : WinWindow
     {
@@ -2655,6 +2670,18 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIOpdaterWindow;
             }
         }
+        
+        public UIPanelMovieWindow UIPanelMovieWindow
+        {
+            get
+            {
+                if ((this.mUIPanelMovieWindow == null))
+                {
+                    this.mUIPanelMovieWindow = new UIPanelMovieWindow(this);
+                }
+                return this.mUIPanelMovieWindow;
+            }
+        }
         #endregion
         
         #region Fields
@@ -2683,6 +2710,8 @@ namespace WindowsFormsML_CodedUITests
         private UINulstilWindow mUINulstilWindow;
         
         private UIOpdaterWindow mUIOpdaterWindow;
+        
+        private UIPanelMovieWindow mUIPanelMovieWindow;
         #endregion
     }
     
@@ -3167,6 +3196,145 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIScoredProbabilitiesfText2;
             }
         }
+        
+        public WinText UIScoredProbabilitiesfText3
+        {
+            get
+            {
+                if ((this.mUIScoredProbabilitiesfText3 == null))
+                {
+                    this.mUIScoredProbabilitiesfText3 = new WinText(this);
+                    #region Search Criteria
+                    this.mUIScoredProbabilitiesfText3.SearchProperties[WinText.PropertyNames.Name] = "       Scored Probabilities for  12 Years A Slave: 0,    Scored Probabilities for" +
+                        "  2001: A Space Odyssey: 0,    Scored Probabilities for  A Girl Walks Home Alone" +
+                        " At Night: 0,    Scored Probabilities for  Aliens: 0,    Scored Probabilities fo" +
+                        "r  Avengers: Infinity War: 0,    Scored Probabilities for  Blade Runner: 0,    S" +
+                        "cored Probabilities for  Casablanca: 0,    Scored Probabilities for  Chicago: 0," +
+                        "    Scored Probabilities for  Citizen Kane: 0,    Scored Probabilities for  City" +
+                        " Of Angels: 0,    Scored Probabilities for  Die Hard: 0,    Scored Probabilities" +
+                        " for  Don\'t Knock Twice: 0.570124831309042,    Scored Probabilities for  Dr. Doo" +
+                        "little: 0,    Scored Probabilities for  Enough Said: 0,    Scored Probabilities " +
+                        "for  Four Weddings And A Funeral: 0,    Scored Probabilities for  Gimme Shelter:" +
+                        " 0,    Scored Probabilities for  Gone In 60 Seconds: 0,    Scored Probabilities " +
+                        "for  Gravity: 0,    Scored Probabilities for  Hairspray: 0,    Scored Probabilit" +
+                        "ies for  Hoop Dreams: 0,    Scored Probabilities for  Interstellar: 0,    Scored" +
+                        " Probabilities for  Lights Out: 0.0741898148148148,    Scored Probabilities for " +
+                        " Man On Wire: 0,    Scored Probabilities for  Memento: 0,    Scored Probabilitie" +
+                        "s for  Metropolis: 0,    Scored Probabilities for  Office Space: 0,    Scored Pr" +
+                        "obabilities for  Oldboy: 0,    Scored Probabilities for  Passenger 57: 0,    Sco" +
+                        "red Probabilities for  Psycho: 0,    Scored Probabilities for  Se7en: 0,    Scor" +
+                        "ed Probabilities for  Shine A Light: 0,    Scored Probabilities for  Singin\' In " +
+                        "The Rain: 0,    Scored Probabilities for  Stop Making Sense: 0,    Scored Probab" +
+                        "ilities for  The Act Of Killing: 0,    Scored Probabilities for  The Cove: 0,   " +
+                        " Scored Probabilities for  The Fast  The Furious: 0,    Scored Probabilities for" +
+                        "  The Grudge: 0.202730919178288,    Scored Probabilities for  The Last Waltz: 0," +
+                        "    Scored Probabilities for  The Long Kiss Goodnight: 0,    Scored Probabilitie" +
+                        "s for  The Nutty Professor: 0,    Scored Probabilities for  The Ring: 0.06861598" +
+                        "44054581,    Scored Probabilities for  The Silence Of The Lambs: 0,    Scored Pr" +
+                        "obabilities for  The Song Remains The Same: 0,    Scored Probabilities for  The " +
+                        "Sound Of Music: 0,    Scored Probabilities for  The Thin Blue Line: 0,    Scored" +
+                        " Probabilities for  The Town: 0,    Scored Probabilities for  Toy Story: 0,    S" +
+                        "cored Probabilities for  West Side Story: 0,    Scored Probabilities for  White " +
+                        "Chicks: 0,    Scored Probabilities for  Wrong Turn: 0.0843384502923977,    Score" +
+                        "d Labels: Don\'t Knock Twice  ";
+                    this.mUIScoredProbabilitiesfText3.WindowTitles.Add("Machine Learning");
+                    #endregion
+                }
+                return this.mUIScoredProbabilitiesfText3;
+            }
+        }
+        
+        public WinText UIScoredProbabilitiesfText4
+        {
+            get
+            {
+                if ((this.mUIScoredProbabilitiesfText4 == null))
+                {
+                    this.mUIScoredProbabilitiesfText4 = new WinText(this);
+                    #region Search Criteria
+                    this.mUIScoredProbabilitiesfText4.SearchProperties[WinText.PropertyNames.Name] = "       Scored Probabilities for 12 Years A Slave: 0,    Scored Probabilities for " +
+                        "2001: A Space Odyssey: 0,    Scored Probabilities for A Girl Walks Home Alone At" +
+                        " Night: 0,    Scored Probabilities for Aliens: 0,    Scored Probabilities for Av" +
+                        "engers: Infinity War: 0,    Scored Probabilities for Blade Runner: 0,    Scored " +
+                        "Probabilities for Casablanca: 0,    Scored Probabilities for Chicago: 0,    Scor" +
+                        "ed Probabilities for Citizen Kane: 0,    Scored Probabilities for City Of Angels" +
+                        ": 0,    Scored Probabilities for Die Hard: 0,    Scored Probabilities for Don\'t " +
+                        "Knock Twice: 0.570124831309042,    Scored Probabilities for Dr. Doolittle: 0,   " +
+                        " Scored Probabilities for Enough Said: 0,    Scored Probabilities for Four Weddi" +
+                        "ngs And A Funeral: 0,    Scored Probabilities for Gimme Shelter: 0,    Scored Pr" +
+                        "obabilities for Gone In 60 Seconds: 0,    Scored Probabilities for Gravity: 0,  " +
+                        "  Scored Probabilities for Hairspray: 0,    Scored Probabilities for Hoop Dreams" +
+                        ": 0,    Scored Probabilities for Interstellar: 0,    Scored Probabilities for Li" +
+                        "ghts Out: 0.0741898148148148,    Scored Probabilities for Man On Wire: 0,    Sco" +
+                        "red Probabilities for Memento: 0,    Scored Probabilities for Metropolis: 0,    " +
+                        "Scored Probabilities for Office Space: 0,    Scored Probabilities for Oldboy: 0," +
+                        "    Scored Probabilities for Passenger 57: 0,    Scored Probabilities for Psycho" +
+                        ": 0,    Scored Probabilities for Se7en: 0,    Scored Probabilities for Shine A L" +
+                        "ight: 0,    Scored Probabilities for Singin\' In The Rain: 0,    Scored Probabili" +
+                        "ties for Stop Making Sense: 0,    Scored Probabilities for The Act Of Killing: 0" +
+                        ",    Scored Probabilities for The Cove: 0,    Scored Probabilities for The Fast " +
+                        " The Furious: 0,    Scored Probabilities for The Grudge: 0.202730919178288,    S" +
+                        "cored Probabilities for The Last Waltz: 0,    Scored Probabilities for The Long " +
+                        "Kiss Goodnight: 0,    Scored Probabilities for The Nutty Professor: 0,    Scored" +
+                        " Probabilities for The Ring: 0.0686159844054581,    Scored Probabilities for The" +
+                        " Silence Of The Lambs: 0,    Scored Probabilities for The Song Remains The Same:" +
+                        " 0,    Scored Probabilities for The Sound Of Music: 0,    Scored Probabilities f" +
+                        "or The Thin Blue Line: 0,    Scored Probabilities for The Town: 0,    Scored Pro" +
+                        "babilities for Toy Story: 0,    Scored Probabilities for West Side Story: 0,    " +
+                        "Scored Probabilities for White Chicks: 0,    Scored Probabilities for Wrong Turn" +
+                        ": 0.0843384502923977,    Scored Labels: Don\'t Knock Twice  ";
+                    this.mUIScoredProbabilitiesfText4.WindowTitles.Add("Machine Learning");
+                    #endregion
+                }
+                return this.mUIScoredProbabilitiesfText4;
+            }
+        }
+        
+        public WinText UIScoredProbabilitiesfText5
+        {
+            get
+            {
+                if ((this.mUIScoredProbabilitiesfText5 == null))
+                {
+                    this.mUIScoredProbabilitiesfText5 = new WinText(this);
+                    #region Search Criteria
+                    this.mUIScoredProbabilitiesfText5.SearchProperties[WinText.PropertyNames.Name] = "       Scored Probabilities for 12 Years A Slave: 0,    Scored Probabilities for " +
+                        "2001: A Space Odyssey: 0,    Scored Probabilities for A Girl Walks Home Alone At" +
+                        " Night: 0,    Scored Probabilities for Aliens: 0,    Scored Probabilities for Av" +
+                        "engers: Infinity War: 0,    Scored Probabilities for Blade Runner: 0,    Scored " +
+                        "Probabilities for Casablanca: 0,    Scored Probabilities for Chicago: 0,    Scor" +
+                        "ed Probabilities for Citizen Kane: 0,    Scored Probabilities for City Of Angels" +
+                        ": 0,    Scored Probabilities for Die Hard: 0.228937894834634,    Scored Probabil" +
+                        "ities for Don\'t Knock Twice: 0,    Scored Probabilities for Dr. Doolittle: 0,   " +
+                        " Scored Probabilities for Enough Said: 0,    Scored Probabilities for Four Weddi" +
+                        "ngs And A Funeral: 0,    Scored Probabilities for Gimme Shelter: 0,    Scored Pr" +
+                        "obabilities for Gone In 60 Seconds: 0.228069258639911,    Scored Probabilities f" +
+                        "or Gravity: 0,    Scored Probabilities for Hairspray: 0,    Scored Probabilities" +
+                        " for Hoop Dreams: 0,    Scored Probabilities for Interstellar: 0,    Scored Prob" +
+                        "abilities for Lights Out: 0,    Scored Probabilities for Man On Wire: 0,    Scor" +
+                        "ed Probabilities for Memento: 0,    Scored Probabilities for Metropolis: 0,    S" +
+                        "cored Probabilities for Office Space: 0,    Scored Probabilities for Oldboy: 0, " +
+                        "   Scored Probabilities for Passenger 57: 0.334619642635947,    Scored Probabili" +
+                        "ties for Psycho: 0,    Scored Probabilities for Se7en: 0,    Scored Probabilitie" +
+                        "s for Shine A Light: 0,    Scored Probabilities for Singin\' In The Rain: 0,    S" +
+                        "cored Probabilities for Stop Making Sense: 0,    Scored Probabilities for The Ac" +
+                        "t Of Killing: 0,    Scored Probabilities for The Cove: 0,    Scored Probabilitie" +
+                        "s for The Fast  The Furious: 0.156273225566704,    Scored Probabilities for The " +
+                        "Grudge: 0,    Scored Probabilities for The Last Waltz: 0,    Scored Probabilitie" +
+                        "s for The Long Kiss Goodnight: 0.0520999783228044,    Scored Probabilities for T" +
+                        "he Nutty Professor: 0,    Scored Probabilities for The Ring: 0,    Scored Probab" +
+                        "ilities for The Silence Of The Lambs: 0,    Scored Probabilities for The Song Re" +
+                        "mains The Same: 0,    Scored Probabilities for The Sound Of Music: 0,    Scored " +
+                        "Probabilities for The Thin Blue Line: 0,    Scored Probabilities for The Town: 0" +
+                        ",    Scored Probabilities for Toy Story: 0,    Scored Probabilities for West Sid" +
+                        "e Story: 0,    Scored Probabilities for White Chicks: 0,    Scored Probabilities" +
+                        " for Wrong Turn: 0,    Scored Labels: Passenger 57  ";
+                    this.mUIScoredProbabilitiesfText5.WindowTitles.Add("Machine Learning");
+                    #endregion
+                }
+                return this.mUIScoredProbabilitiesfText5;
+            }
+        }
         #endregion
         
         #region Fields
@@ -3177,6 +3345,12 @@ namespace WindowsFormsML_CodedUITests
         private WinText mUIScoredProbabilitiesfText1;
         
         private WinText mUIScoredProbabilitiesfText2;
+        
+        private WinText mUIScoredProbabilitiesfText3;
+        
+        private WinText mUIScoredProbabilitiesfText4;
+        
+        private WinText mUIScoredProbabilitiesfText5;
         #endregion
     }
     
@@ -3241,6 +3415,54 @@ namespace WindowsFormsML_CodedUITests
                 return this.mUIScoredProbabilitiesfText1;
             }
         }
+        
+        public WinText UIScoredProbabilitiesfText2
+        {
+            get
+            {
+                if ((this.mUIScoredProbabilitiesfText2 == null))
+                {
+                    this.mUIScoredProbabilitiesfText2 = new WinText(this);
+                    #region Search Criteria
+                    this.mUIScoredProbabilitiesfText2.SearchProperties[WinText.PropertyNames.Name] = @"       Scored Probabilities for  Action: 0.0506129863474147,    Scored Probabilities for  Animation: 0.00492610837438424,    Scored Probabilities for  Comedy: 0.0126498920854986,    Scored Probabilities for  Concert: 0.154040950250728,    Scored Probabilities for  Documentary: 0.0633779116874155,    Scored Probabilities for  Drama: 0.269961421557166,    Scored Probabilities for  Horror: 0.118118804633621,    Scored Probabilities for  Musical: 0.00550256786500367,    Scored Probabilities for  Romantic: 0.131428161870946,    Scored Probabilities for  Sci-Fi: 0,    Scored Probabilities for  Thriller: 0.189381195327821,    Scored Labels: Drama  ";
+                    this.mUIScoredProbabilitiesfText2.WindowTitles.Add("Machine Learning");
+                    #endregion
+                }
+                return this.mUIScoredProbabilitiesfText2;
+            }
+        }
+        
+        public WinText UIScoredProbabilitiesfText3
+        {
+            get
+            {
+                if ((this.mUIScoredProbabilitiesfText3 == null))
+                {
+                    this.mUIScoredProbabilitiesfText3 = new WinText(this);
+                    #region Search Criteria
+                    this.mUIScoredProbabilitiesfText3.SearchProperties[WinText.PropertyNames.Name] = @"       Scored Probabilities for Action: 0.0506129863474147,    Scored Probabilities for Animation: 0.00492610837438424,    Scored Probabilities for Comedy: 0.0126498920854986,    Scored Probabilities for Concert: 0.154040950250728,    Scored Probabilities for Documentary: 0.0633779116874155,    Scored Probabilities for Drama: 0.269961421557166,    Scored Probabilities for Horror: 0.118118804633621,    Scored Probabilities for Musical: 0.00550256786500367,    Scored Probabilities for Romantic: 0.131428161870946,    Scored Probabilities for Sci-Fi: 0,    Scored Probabilities for Thriller: 0.189381195327821,    Scored Labels: Drama  ";
+                    this.mUIScoredProbabilitiesfText3.WindowTitles.Add("Machine Learning");
+                    #endregion
+                }
+                return this.mUIScoredProbabilitiesfText3;
+            }
+        }
+        
+        public WinText UIScoredProbabilitiesfText4
+        {
+            get
+            {
+                if ((this.mUIScoredProbabilitiesfText4 == null))
+                {
+                    this.mUIScoredProbabilitiesfText4 = new WinText(this);
+                    #region Search Criteria
+                    this.mUIScoredProbabilitiesfText4.SearchProperties[WinText.PropertyNames.Name] = @"       Scored Probabilities for Action: 1,    Scored Probabilities for Animation: 0,    Scored Probabilities for Comedy: 0,    Scored Probabilities for Concert: 0,    Scored Probabilities for Documentary: 0,    Scored Probabilities for Drama: 0,    Scored Probabilities for Horror: 0,    Scored Probabilities for Musical: 0,    Scored Probabilities for Romantic: 0,    Scored Probabilities for Sci-Fi: 0,    Scored Probabilities for Thriller: 0,    Scored Labels: Action  ";
+                    this.mUIScoredProbabilitiesfText4.WindowTitles.Add("Machine Learning");
+                    #endregion
+                }
+                return this.mUIScoredProbabilitiesfText4;
+            }
+        }
         #endregion
         
         #region Fields
@@ -3249,6 +3471,12 @@ namespace WindowsFormsML_CodedUITests
         private WinText mUIIngendataersendttilmText;
         
         private WinText mUIScoredProbabilitiesfText1;
+        
+        private WinText mUIScoredProbabilitiesfText2;
+        
+        private WinText mUIScoredProbabilitiesfText3;
+        
+        private WinText mUIScoredProbabilitiesfText4;
         #endregion
     }
     
@@ -3321,6 +3549,42 @@ namespace WindowsFormsML_CodedUITests
         
         #region Fields
         private WinButton mUIOpdaterButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIPanelMovieWindow : WinWindow
+    {
+        
+        public UIPanelMovieWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "panelMovie";
+            this.WindowTitles.Add("Machine Learning");
+            #endregion
+        }
+        
+        #region Properties
+        public WinClient UIIngendataersendttilmClient
+        {
+            get
+            {
+                if ((this.mUIIngendataersendttilmClient == null))
+                {
+                    this.mUIIngendataersendttilmClient = new WinClient(this);
+                    #region Search Criteria
+                    this.mUIIngendataersendttilmClient.SearchProperties[WinControl.PropertyNames.Name] = "Ingen data er sendt til modellen endnu...";
+                    this.mUIIngendataersendttilmClient.WindowTitles.Add("Machine Learning");
+                    #endregion
+                }
+                return this.mUIIngendataersendttilmClient;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinClient mUIIngendataersendttilmClient;
         #endregion
     }
     
@@ -3456,6 +3720,108 @@ namespace WindowsFormsML_CodedUITests
         
         #region Fields
         private WinEdit mUITitleEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UIMachineLearningMicroWindow : WpfWindow
+    {
+        
+        public UIMachineLearningMicroWindow()
+        {
+            #region Search Criteria
+            this.SearchProperties[WpfWindow.PropertyNames.Name] = "MachineLearning - Microsoft Visual Studio ";
+            this.SearchProperties.Add(new PropertyExpression(WpfWindow.PropertyNames.ClassName, "HwndWrapper", PropertyExpressionOperator.Contains));
+            this.WindowTitles.Add("MachineLearning - Microsoft Visual Studio ");
+            #endregion
+        }
+        
+        #region Properties
+        public UITabGroupST003ae79031TabList UITabGroupST003ae79031TabList
+        {
+            get
+            {
+                if ((this.mUITabGroupST003ae79031TabList == null))
+                {
+                    this.mUITabGroupST003ae79031TabList = new UITabGroupST003ae79031TabList(this);
+                }
+                return this.mUITabGroupST003ae79031TabList;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UITabGroupST003ae79031TabList mUITabGroupST003ae79031TabList;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UITabGroupST003ae79031TabList : WpfTabList
+    {
+        
+        public UITabGroupST003ae79031TabList(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WpfTabList.PropertyNames.AutomationId] = "TabGroup|ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}|ST:0:0:{131369f2-062d-44a2" +
+                "-8671-91ff31efb4f4}|ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}";
+            this.WindowTitles.Add("MachineLearning - Microsoft Visual Studio ");
+            #endregion
+        }
+        
+        #region Properties
+        public UISolutionExplorerPane UISolutionExplorerPane
+        {
+            get
+            {
+                if ((this.mUISolutionExplorerPane == null))
+                {
+                    this.mUISolutionExplorerPane = new UISolutionExplorerPane(this);
+                }
+                return this.mUISolutionExplorerPane;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UISolutionExplorerPane mUISolutionExplorerPane;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "15.0.26208.0")]
+    public class UISolutionExplorerPane : WpfPane
+    {
+        
+        public UISolutionExplorerPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WpfPane.PropertyNames.ClassName] = "Uia.GenericPane";
+            this.SearchProperties[WpfPane.PropertyNames.Name] = "Solution Explorer";
+            this.WindowTitles.Add("MachineLearning - Microsoft Visual Studio ");
+            #endregion
+        }
+        
+        #region Properties
+        public WpfTree UISolutionExplorerTree
+        {
+            get
+            {
+                if ((this.mUISolutionExplorerTree == null))
+                {
+                    this.mUISolutionExplorerTree = new WpfTree(this);
+                    #region Search Criteria
+                    this.mUISolutionExplorerTree.SearchProperties[WpfTree.PropertyNames.AutomationId] = "SolutionExplorer";
+                    this.mUISolutionExplorerTree.WindowTitles.Add("MachineLearning - Microsoft Visual Studio ");
+                    #endregion
+                }
+                return this.mUISolutionExplorerTree;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WpfTree mUISolutionExplorerTree;
         #endregion
     }
 }
