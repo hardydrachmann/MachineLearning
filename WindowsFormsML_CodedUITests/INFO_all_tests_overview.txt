@@ -1,0 +1,30 @@
+Som udvikler vil jeg skrive tests der kontrollerer at...
+
+komponenten til fødselsår ved start af program ikke er 'read only'
+komponenten til fødselsår ved start af program indeholder en tom streng
+komponenten til fødselsår ved start af program ikke er 'null'
+komponenten til fødselsår har et korrekt indtastet årstal
+komponenten til fødselsår har et forkert indtastet årstal
+komponenten til valg af køn har et korrekt valgt køn
+komponenten til valg af køn har et forkert valgt køn
+komponenten til valg af medlemsstatus har en korrekt valgt medlemsstatus
+komponenten til valg af medlemsstatus har en forkert valgt medlemsstatus
+komponenten til valg af film har en korrekt valgt film
+komponenten til valg af film har en forkert valgt film
+komponenten til valg af film er aktiveret
+komponenten til valg af film er deaktiveret
+komponenten til valg af genre har en korrekt valgt genre
+komponenten til valg af genre har en forkert valgt genre
+komponenten til at inkludere/excludere filmkomponenten er deaktiveret
+komponenten til at inkludere/excludere filmkomponenten er aktiveret
+komponenten til at vise sandsynligheder på genrevalg indeholder en tom streng
+komponenten til at vise sandsynligheder på filmvalg indeholder en tom streng
+komponenten til at vise sandsynligheder på genrevalg indeholder sandsyngligheder efter tryk på 'Beregn' knappen
+komponenten til at vise sandsynligheder på filmvalg indeholder sandsyngligheder efter tryk på 'Beregn' knappen
+komponenten til at vise sandsynligheder på genrevalg indeholder en tom streng efter tryk på 'Reset' knappen
+komponenten til at vise sandsynligheder på filmvalg indeholder en tom streng efter tryk på 'Reset' knappen
+komponenten til fødselsår indeholder en tom streng efter tryk på 'Reset' knappen
+komponenten til valg af køn er udfyldt med data på ny efter tryk på 'Update' knappen
+komponenten til valg af medlemsstatus er udfyldt med data på ny efter tryk på 'Update' knappen
+komponenten til valg af film er udfyldt med data på ny efter tryk på 'Update' knappen
+komponenten til valf af genre er udfyldt med data på ny efter tryk på 'Update' knappen
