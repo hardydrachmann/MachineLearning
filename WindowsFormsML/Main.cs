@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
+using System.ComponentModel;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsML.DAL;
 using WindowsFormsML.Models;
@@ -56,7 +58,7 @@ namespace WindowsFormsML
             cbGenre.SelectedIndex = 0;
         }
 
-        private void btnCalculate_Click(object sender, EventArgs e)
+        private async void btnCalculate_ClickAsync(object sender, EventArgs e)
         {
             inputDTO = new InputDTO();
 
@@ -69,6 +71,9 @@ namespace WindowsFormsML
                 }
                 else
                 {
+
+                    await RunProgressBar();
+
                     inputDTO.BirthYear = Int32.Parse(tbBirthYear.Text);
                     inputDTO.Sex = cbSex.Text;
                     inputDTO.isClubMember = cbClubMember.Text;
@@ -168,6 +173,5 @@ namespace WindowsFormsML
             cbGenre.Items.Clear();
             populate();
         }
-
     }
 }

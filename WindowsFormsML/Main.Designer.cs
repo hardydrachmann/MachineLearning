@@ -287,7 +287,7 @@ namespace WindowsFormsML
             this.btnCalculate.TabIndex = 26;
             this.btnCalculate.Text = "Beregn";
             this.btnCalculate.UseVisualStyleBackColor = false;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_ClickAsync);
             // 
             // cbIncludeMovies
             // 
@@ -346,9 +346,9 @@ namespace WindowsFormsML
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::WindowsFormsML.Properties.Resources.Main;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 410);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 410);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 157);
+            this.pictureBox1.Size = new System.Drawing.Size(293, 157);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
