@@ -287,7 +287,7 @@ namespace WindowsFormsML
             this.btnCalculate.TabIndex = 26;
             this.btnCalculate.Text = "Beregn";
             this.btnCalculate.UseVisualStyleBackColor = false;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_ClickAsync);
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // cbIncludeMovies
             // 

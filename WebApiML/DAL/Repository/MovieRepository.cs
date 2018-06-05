@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity.Core;
+using System.Net;
+using System.Web.Http;
 
 namespace WebApiML.DAL.Repository
 {
@@ -11,14 +15,31 @@ namespace WebApiML.DAL.Repository
             MLcontext = context;
         }
 
+        // Implementation of IRepository<T> interface
+        // Gets all Movie from database and returns it
         public List<string> GetAll()
         {
             List<string> movieList = new List<string>();
-            foreach (var movie in MLcontext.Movie)
+
+            try
             {
-                movieList.Add(movie.Name);
+                    foreach (var movie in MLcontext.Movie)
+                    {
+                        movieList.Add(movie.Name);
+                    }
+                    return movieList;
             }
-            return movieList;
+            catch (EntityException e)
+            {
+                throw e;
+            }
+            finally
+            {
+                MLcontext.Database.Connection.Close();
+            }
+
+
+
         }
     }
-}   
+}

@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity.Core;
+using System.Net;
+using System.Web.Http;
 
 namespace WebApiML.DAL.Repository
 {
@@ -11,14 +15,31 @@ namespace WebApiML.DAL.Repository
             MLcontext = context;
         }
 
+        // Implementation of IRepository<T> interface
+        // Gets all Genre from database and returns it
         public List<string> GetAll()
         {
             List<string> genreList = new List<string>();
-            foreach (var genre in MLcontext.Genre)
+
+            try
             {
-                genreList.Add(genre.Name);
+                    foreach (var genre in MLcontext.Genre)
+                    {
+                        genreList.Add(genre.Name);
+                    }
+                    return genreList;
             }
-            return genreList;
+            catch (EntityException e)
+            {
+                throw e;
+            }
+            finally
+            {
+                MLcontext.Database.Connection.Close();
+            }
+
+
+
         }
     }
 }

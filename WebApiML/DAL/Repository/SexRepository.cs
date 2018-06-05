@@ -1,4 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity.Core;
+using System.Data.Entity.Infrastructure;
+using System.Data.SqlClient;
+using System.Net;
+using System.Web.Http;
 
 namespace WebApiML.DAL.Repository
 {
@@ -11,14 +17,29 @@ namespace WebApiML.DAL.Repository
             MLcontext = context;
         }
 
+        // Implementation of IRepository<T> interface
+        // Gets all Sex from database and returns it
         public List<string> GetAll()
         {
             List<string> sexesList = new List<string>();
-            foreach (var sex in MLcontext.Sex)
+            try
             {
-                sexesList.Add(sex.Name);
+                    foreach (var sex in MLcontext.Sex)
+                    {
+                        sexesList.Add(sex.Name);
+                    }
+                    return sexesList;
             }
-            return sexesList;
+            catch (EntityException e)
+            {
+                throw e;
+            }
+            finally
+            {
+                MLcontext.Database.Connection.Close();
+            }
+
         }
+
     }
 }

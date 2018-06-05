@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity.Core;
+using System.Net;
+using System.Web.Http;
 
 namespace WebApiML.DAL.Repository
 {
@@ -11,14 +15,29 @@ namespace WebApiML.DAL.Repository
             MLcontext = context;
         }
 
+        // Implementation of IRepository<T> interface
+        // Gets all ClubMember from database and returns it
         public List<string> GetAll()
         {
             List<string> clubMembersList = new List<string>();
-            foreach (var clubMember in MLcontext.ClubMember)
+            try
             {
-                clubMembersList.Add(clubMember.IsMember);
+                    foreach (var clubMember in MLcontext.ClubMember)
+                    {
+                        clubMembersList.Add(clubMember.IsMember);
+                    }
+                    return clubMembersList;
             }
-            return clubMembersList;
+            catch (EntityException e)
+            {
+                throw e;
+            }
+            finally
+            {
+                MLcontext.Database.Connection.Close();
+            }
+
         }
+
     }
 }

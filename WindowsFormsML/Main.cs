@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 using System.ComponentModel;
+using System.Net;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 using WindowsFormsML.DAL;
 using WindowsFormsML.Models;
@@ -11,6 +13,7 @@ namespace WindowsFormsML
 {
     public partial class Main : Form
     {
+
         private DAO dao = new DAO();
         private Selection selection;
         private InputDTO inputDTO;
@@ -24,41 +27,58 @@ namespace WindowsFormsML
             Load += new EventHandler(Main_Load);
         }
 
+        // Calls the populate method, as the first thing when the form is loaded
         private void Main_Load(object sender, System.EventArgs e)
         {
             populate();
         }
 
+        // Populate the comboboxes with data from database
         public void populate()
         {
+
             selection = dao.GetSelections();
-
-            foreach (var item in selection.Sex)
+            if (selection != null)
             {
-                cbSex.Items.Add(item);
-            }
-            cbSex.SelectedIndex = 0;
+                btnCalculate.Enabled = true;
+                btnReset.Enabled = true;
+                foreach (var item in selection.Sex)
+                {
+                    cbSex.Items.Add(item);
+                }
+                cbSex.SelectedIndex = 0;
 
-            foreach (var item in selection.ClubMember)
-            {
-                cbClubMember.Items.Add(item);
-            }
-            cbClubMember.SelectedIndex = 0;
+                foreach (var item in selection.ClubMember)
+                {
+                    cbClubMember.Items.Add(item);
+                }
+                cbClubMember.SelectedIndex = 0;
 
-            foreach (var item in selection.Movie)
-            {
-                cbMovie.Items.Add(item);
-            }
-            cbMovie.SelectedIndex = 0;
+                foreach (var item in selection.Movie)
+                {
+                    cbMovie.Items.Add(item);
+                }
+                cbMovie.SelectedIndex = 0;
 
-            foreach (var item in selection.Genre)
-            {
-                cbGenre.Items.Add(item);
+                foreach (var item in selection.Genre)
+                {
+                    cbGenre.Items.Add(item);
+                }
+                cbGenre.SelectedIndex = 0;
             }
-            cbGenre.SelectedIndex = 0;
+            else
+            {
+                btnCalculate.Enabled = false;
+                btnReset.Enabled = false;
+                MessageBox.Show("Error: Connection Failed");
+            }
+
+
         }
 
-        private async void btnCalculate_ClickAsync(object sender, EventArgs e)
+        // Calculate posibilities from inputed data using Azure ML trained model
+        // Sets the result to genre and movie label
+        private void btnCalculate_Click(object sender, EventArgs e)
         {
             inputDTO = new InputDTO();
 
@@ -71,9 +91,6 @@ namespace WindowsFormsML
                 }
                 else
                 {
-
-                    await RunProgressBar();
-
                     inputDTO.BirthYear = Int32.Parse(tbBirthYear.Text);
                     inputDTO.Sex = cbSex.Text;
                     inputDTO.isClubMember = cbClubMember.Text;
@@ -101,6 +118,7 @@ namespace WindowsFormsML
             }
         }
 
+        // sets the genre and movie labels plus birthyear textbox to default values
         private void btnReset_Click(object sender, EventArgs e)
         {
             lbGenre.Text = "Ingen data er sendt til modellen endnu...";
@@ -108,6 +126,7 @@ namespace WindowsFormsML
             tbBirthYear.Text = "";
         }
 
+        // Replaces characters in "text" with empty string
         private string beautifyText(string text)
         {
             var charsToRemove = new string[] { @"\", "\"", "[", "]", "{", "}", "Results", "Class ", "Output (Genre):", "Output (Movie):" };
@@ -118,41 +137,49 @@ namespace WindowsFormsML
             return text;
         }
 
+        // Open a message box with the "input" as message
         private void promptUser(string input)
         {
             MessageBox.Show(input);
         }
 
-        private void pbMinimize_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
+        // Change the close-buttons image when mouse enters
         private void pbClose_MouseEnter(object sender, EventArgs e)
         {
             pbClose.BackgroundImage = Resources.Close_Red;
         }
 
+        // Change the close-buttons image when mouse leaves
         private void pbClose_MouseLeave(object sender, EventArgs e)
         {
             pbClose.BackgroundImage = Resources.Close;
         }
 
+        // Change the minimize-buttons image when mouse enters
         private void pbMinimize_MouseEnter(object sender, EventArgs e)
         {
             pbMinimize.BackgroundImage = Resources.Minimize_Red;
         }
 
+        // Change the minimize-buttons image when mouse leaves
         private void pbMinimize_MouseLeave(object sender, EventArgs e)
         {
             pbMinimize.BackgroundImage = Resources.Minimize;
         }
 
+        // Event that minizie the applikation
+        private void pbMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        // Event that exit the applikation
         private void pbClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        // Event that check if Checkbox is enabled
         private void cbIncludeMovies_CheckedChanged(object sender, EventArgs e)
         {
             if (!cbIncludeMovies.Checked)
@@ -165,6 +192,7 @@ namespace WindowsFormsML
             }
         }
 
+        // Event that clear and repopulate Comboboxes
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             cbSex.Items.Clear();
