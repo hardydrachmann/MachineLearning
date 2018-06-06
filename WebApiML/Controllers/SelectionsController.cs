@@ -13,14 +13,12 @@ namespace WebApiML.Controllers
     {
         private Facade DALFacade = new Facade();
         private SelectionDTO selectionDTO;
-
-        // GEts
-        // Return selectionDTO with lists of Sex, ClubMemeber, Movie and Genre
+        
+        // Return object with lists of Sex, ClubMemeber, Movie and Genre
         // GET: api/selections
         [HttpGet]
         public SelectionDTO GetAll()
         {
-            try { 
             selectionDTO = new SelectionDTO
             {
                 Sex = DALFacade.GetSexRepository().GetAll(),
@@ -28,21 +26,7 @@ namespace WebApiML.Controllers
                 Movie = DALFacade.GetMovieRepository().GetAll(),
                 Genre = DALFacade.GetGenreRepository().GetAll()
             };
-                return selectionDTO;
-            }
-            catch (EntityException e)
-            {
-                throw new HttpException("SQL Error" + e.Message);
-            }
-            //if (selectionDTO != null)
-            //{
-
-            //    return selectionDTO;
-            //}
-            //else
-            //{
-            //    throw new HttpResponseException(HttpStatusCode.NotFound);
-            //}
+            return selectionDTO;
         }
 
     }

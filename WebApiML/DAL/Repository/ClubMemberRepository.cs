@@ -16,26 +16,15 @@ namespace WebApiML.DAL.Repository
         }
 
         // Implementation of IRepository<T> interface
-        // Gets all ClubMember from database and returns it
+        // Returns a list of club members from database
         public List<string> GetAll()
         {
             List<string> clubMembersList = new List<string>();
-            try
+            foreach (var clubMember in MLcontext.ClubMember)
             {
-                    foreach (var clubMember in MLcontext.ClubMember)
-                    {
-                        clubMembersList.Add(clubMember.IsMember);
-                    }
-                    return clubMembersList;
+                clubMembersList.Add(clubMember.IsMember);
             }
-            catch (EntityException e)
-            {
-                throw e;
-            }
-            finally
-            {
-                MLcontext.Database.Connection.Close();
-            }
+            return clubMembersList;
 
         }
 

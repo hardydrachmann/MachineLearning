@@ -16,30 +16,16 @@ namespace WebApiML.DAL.Repository
         }
 
         // Implementation of IRepository<T> interface
-        // Gets all Genre from database and returns it
+        // Returns a list of genres from database
         public List<string> GetAll()
         {
             List<string> genreList = new List<string>();
 
-            try
+            foreach (var genre in MLcontext.Genre)
             {
-                    foreach (var genre in MLcontext.Genre)
-                    {
-                        genreList.Add(genre.Name);
-                    }
-                    return genreList;
+                genreList.Add(genre.Name);
             }
-            catch (EntityException e)
-            {
-                throw e;
-            }
-            finally
-            {
-                MLcontext.Database.Connection.Close();
-            }
-
-
-
+            return genreList;
         }
     }
 }

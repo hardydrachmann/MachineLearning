@@ -70,7 +70,7 @@ namespace WindowsFormsML
             {
                 btnCalculate.Enabled = false;
                 btnReset.Enabled = false;
-                MessageBox.Show("Error: Connection Failed");
+                promptUser("Fejl!\nDatabase forbindelse\nPrøv venligst igen...");
             }
 
 

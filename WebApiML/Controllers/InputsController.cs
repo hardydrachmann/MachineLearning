@@ -10,8 +10,8 @@ namespace WebApiML.Controllers
     {
         private AzureDAO azureDAO = new AzureDAO();
 
-        // Sends a request to Azures Service with input data
-        // Return posibilities from Azure Service
+        // Sends a request to Azure ML web service with input data
+        // Return posibilities from web service
         // POST: api/inputs
         [HttpPost]
         public async Task<HttpResponseMessage> Post([FromBody]InputDTO inputDTO)

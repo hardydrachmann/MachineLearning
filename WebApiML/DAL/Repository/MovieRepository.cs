@@ -16,30 +16,16 @@ namespace WebApiML.DAL.Repository
         }
 
         // Implementation of IRepository<T> interface
-        // Gets all Movie from database and returns it
+        // Returns a list of movies from database
         public List<string> GetAll()
         {
             List<string> movieList = new List<string>();
 
-            try
+            foreach (var movie in MLcontext.Movie)
             {
-                    foreach (var movie in MLcontext.Movie)
-                    {
-                        movieList.Add(movie.Name);
-                    }
-                    return movieList;
+                movieList.Add(movie.Name);
             }
-            catch (EntityException e)
-            {
-                throw e;
-            }
-            finally
-            {
-                MLcontext.Database.Connection.Close();
-            }
-
-
-
+            return movieList;
         }
     }
 }

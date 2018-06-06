@@ -18,26 +18,15 @@ namespace WebApiML.DAL.Repository
         }
 
         // Implementation of IRepository<T> interface
-        // Gets all Sex from database and returns it
+        // Returns a list of sexes from database
         public List<string> GetAll()
         {
             List<string> sexesList = new List<string>();
-            try
+            foreach (var sex in MLcontext.Sex)
             {
-                    foreach (var sex in MLcontext.Sex)
-                    {
-                        sexesList.Add(sex.Name);
-                    }
-                    return sexesList;
+                sexesList.Add(sex.Name);
             }
-            catch (EntityException e)
-            {
-                throw e;
-            }
-            finally
-            {
-                MLcontext.Database.Connection.Close();
-            }
+            return sexesList;
 
         }
 
