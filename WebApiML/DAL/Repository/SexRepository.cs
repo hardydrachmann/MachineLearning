@@ -18,7 +18,7 @@ namespace WebApiML.DAL.Repository
         }
 
         // Implementation of IRepository<T> interface
-        // Returns a list of sexes from database
+        // Returns a list of sexes from the database
         public List<string> GetAll()
         {
             List<string> sexesList = new List<string>();

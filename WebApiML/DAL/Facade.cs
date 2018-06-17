@@ -3,7 +3,8 @@
 namespace WebApiML.DAL
 {
     /// <summary>
-    /// This class also funtions as factory that returns different repository objects to the SelectionsController
+    /// This class also funtions as a factory
+    /// It returns different repository objects to the SelectionsController
     /// </summary>
     public class Facade
     {

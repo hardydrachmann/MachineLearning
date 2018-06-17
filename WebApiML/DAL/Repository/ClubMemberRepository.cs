@@ -16,7 +16,7 @@ namespace WebApiML.DAL.Repository
         }
 
         // Implementation of IRepository<T> interface
-        // Returns a list of club members from database
+        // Returns a list of club members from the database
         public List<string> GetAll()
         {
             List<string> clubMembersList = new List<string>();

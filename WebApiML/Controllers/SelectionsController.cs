@@ -14,7 +14,7 @@ namespace WebApiML.Controllers
         private Facade DALFacade = new Facade();
         private SelectionDTO selectionDTO;
         
-        // Return object with lists of Sex, ClubMemeber, Movie and Genre
+        // Return a SelectionDTO object containing lists of Sex, ClubMemeber, Movie and Genre
         // GET: api/selections
         [HttpGet]
         public SelectionDTO GetAll()

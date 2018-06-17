@@ -1,9 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
-using System.ComponentModel;
-using System.Net;
-using System.Threading.Tasks;
-using System.Web;
 using System.Windows.Forms;
 using WindowsFormsML.DAL;
 using WindowsFormsML.Models;
@@ -33,7 +29,7 @@ namespace WindowsFormsML
             populate();
         }
 
-        // Populate the comboboxes with data from database
+        // Populate the comboboxes with data from the database
         public void populate()
         {
 
@@ -77,7 +73,7 @@ namespace WindowsFormsML
         }
 
         // Calculate posibilities from inputed data using Azure ML trained model
-        // Sets the result to genre and movie label
+        // Sets the result on the genre - and movie label
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             inputDTO = new InputDTO();
@@ -118,7 +114,7 @@ namespace WindowsFormsML
             }
         }
 
-        // sets the genre and movie labels plus birthyear textbox to default values
+        // sets the genre - and movie labels plus the birthyear textbox to default values
         private void btnReset_Click(object sender, EventArgs e)
         {
             lbGenre.Text = "Ingen data er sendt til modellen endnu...";
@@ -126,7 +122,7 @@ namespace WindowsFormsML
             tbBirthYear.Text = "";
         }
 
-        // Replaces characters in "text" with empty string
+        // Replaces characters in the returned possibilities string with an empty string
         private string beautifyText(string text)
         {
             var charsToRemove = new string[] { @"\", "\"", "[", "]", "{", "}", "Results", "Class ", "Output (Genre):", "Output (Movie):" };
@@ -137,49 +133,49 @@ namespace WindowsFormsML
             return text;
         }
 
-        // Open a message box with the "input" as message
+        // Opens a message box with the "input" as a message
         private void promptUser(string input)
         {
             MessageBox.Show(input);
         }
 
-        // Change the close-buttons image when mouse enters
+        // Change the close buttons image when mouse enters
         private void pbClose_MouseEnter(object sender, EventArgs e)
         {
             pbClose.BackgroundImage = Resources.Close_Red;
         }
 
-        // Change the close-buttons image when mouse leaves
+        // Change the close buttons image when mouse leaves
         private void pbClose_MouseLeave(object sender, EventArgs e)
         {
             pbClose.BackgroundImage = Resources.Close;
         }
 
-        // Change the minimize-buttons image when mouse enters
+        // Change the minimize buttons image when mouse enters
         private void pbMinimize_MouseEnter(object sender, EventArgs e)
         {
             pbMinimize.BackgroundImage = Resources.Minimize_Red;
         }
 
-        // Change the minimize-buttons image when mouse leaves
+        // Change the minimize buttons image when mouse leaves
         private void pbMinimize_MouseLeave(object sender, EventArgs e)
         {
             pbMinimize.BackgroundImage = Resources.Minimize;
         }
 
-        // Event that minizie the applikation
+        // Event that minimizes the application
         private void pbMinimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
-        // Event that exit the applikation
+        // Event that exits the applikation
         private void pbClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        // Event that check if Checkbox is enabled
+        // Event that checks if the include movies checkbox is enabled
         private void cbIncludeMovies_CheckedChanged(object sender, EventArgs e)
         {
             if (!cbIncludeMovies.Checked)
@@ -192,7 +188,7 @@ namespace WindowsFormsML
             }
         }
 
-        // Event that clear and repopulate Comboboxes
+        // Event that clears and then repopulates the comboboxes
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             cbSex.Items.Clear();

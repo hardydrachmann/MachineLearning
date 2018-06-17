@@ -1,12 +1,7 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Diagnostics;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 using WindowsFormsML.Models;
 
 namespace WindowsFormsML.DAL
@@ -15,7 +10,7 @@ namespace WindowsFormsML.DAL
     {
         HttpClient client;
 
-        // GET request to api/selection WEB API
+        // GET request to api/selections WEB API
         // Returns an object with lists of Sex, ClubMember, Genre and Movie
         public Selection GetSelections()
         {
@@ -53,7 +48,7 @@ namespace WindowsFormsML.DAL
             return response.Content.ReadAsStringAsync().Result;
         }
 
-        // Sets client if null
+        // Instantiates client if null
         private void getClient()
         {
             if (client == null)

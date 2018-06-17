@@ -16,7 +16,7 @@ namespace WebApiML.DAL.Repository
         }
 
         // Implementation of IRepository<T> interface
-        // Returns a list of movies from database
+        // Returns a list of movies from the database
         public List<string> GetAll()
         {
             List<string> movieList = new List<string>();
